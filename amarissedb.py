@@ -4,7 +4,7 @@ from mysql.connector import errorcode
 db_connection = None
 db_config = {
     'user': 'root',
-    'password': 'secret123',
+    'password': 'secret',
     'host': '127.0.0.1',
     'database': 'lvcc_attendance',
     'raise_on_warnings': True
@@ -13,17 +13,17 @@ db_config = {
 def connect():
     try:
         db_connection = mysql.connector.connect(**db_config)
-	print("Connected")
+        print("Connected")
         return db_connection
     except mysql.connector.Error as err:
         if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
-	    print("Something is wrong with your username and password")
+            print("Something is wrong with your username and password")
             db_connection = None
         elif err.errno == errorcode.ER_BAD_DB_ERROR:
-	    print("Database does not exist")
+            print("Database does not exist")
             db_connection = None
         else:
-	    print(err)
+            print(err)
             db_connection = None
     else:
         db_connection.close()
@@ -33,5 +33,5 @@ def connect():
 
 def disconnec():
     if db_connection == None:
-	db_connection.close()
+        db_connection.close()
 
