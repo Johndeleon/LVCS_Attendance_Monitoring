@@ -6,7 +6,7 @@ import datetime
 
 now = datetime.datetime.now()
 
-with open('files/students_tardiness_john.csv', 'r') as csvfile:
+with open('files/students_tardiness.csv', 'r') as csvfile:
     csvreader = csv.DictReader(csvfile,delimiter=',')
     cnx = amarissedb.connect()
     print(cnx)

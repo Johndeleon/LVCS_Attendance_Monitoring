@@ -1,8 +1,6 @@
 import amarissedb
 
 def searchId():
-    choice = True
-    while choice:
         number = input('Enter the id of the student to view: ')
         try:
             check = int(number)
@@ -11,11 +9,21 @@ def searchId():
             if cnx == None:
                 sys.exit(1)
             cursor = cnx.cursor()
-            cursor.execute(('SELECT * FROM students WHERE id LIKE %d'),("%"+number+"%",))
+
+            query2 = '''SELECT students.full_name,
+                     students_tardiness.tardiness_code,
+                     students_tardiness.tardiness_date
+                     FROM students 
+                     LEFT JOIN students_tardiness ON students.id = students_tardiness.student_id 
+                     WHERE students.id = %s'''
+            cursor.execute(query2,(number,))
             results = cursor.fetchall()
             for result in results:
-                print(result[1])
-
+                print('')
+                print("""Full Name: """,result[0])
+                print("""Tardiness Code: """,result[1])
+                print("""Tardiness Date: """,result[2])
+                print('')
         except ValueError:
             print('not a valid input')
 
@@ -51,11 +59,9 @@ def searchStudent():
                 sys.exit(1)
             cursor = cnx.cursor()
             cursor.execute(('SELECT * FROM students WHERE full_name LIKE %s'),("%"+name+"%",))
-            results = cursor.fetchall()
-            count=0
+            results = cursor.fetchall()         
             for result in results:
-                print(count, result[1])
-                count+=1   
+                print(result[0], result[1]) 
             searchSubmenu()
             name = None
     
