@@ -2,7 +2,7 @@ import amarissedb
 import csv
 import sys
 
-with open('files/students.csv', 'r') as csvfile:
+with open('files/students_absent.csv', 'r') as csvfile:
     csvreader = csv.DictReader(csvfile)
     cnx = amarissedb.connect()
     print(cnx)
@@ -10,8 +10,8 @@ with open('files/students.csv', 'r') as csvfile:
         sys.exit(1)
     cursor = cnx.cursor()
     for row in csvreader:
-        add_student = ("INSERT INTO students SET full_name=%s, year_level=%s, section=%s")
-        data_student = (row["full_name"], row["year_level"], row["section"])
+        add_student = ("INSERT INTO absent_students SET full_name=%s, grade=%s, section=%s")
+        data_student = (row["Full_name"], row["grade"], row["section"])
         print("Adding record")
         print(data_student)
         cursor.execute(add_student, data_student)
