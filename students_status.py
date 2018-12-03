@@ -27,7 +27,6 @@ def searchId():
         except ValueError:
             print('not a valid input')
 
-
 def searchSubmenu():
     choice = True
     while choice:
