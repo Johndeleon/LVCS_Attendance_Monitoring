@@ -5,7 +5,7 @@ Full_name,grade,section
 "Sarmiento, Lore Gail E.",12,ABM B
 "Sunga, Khaila Marie C.",12,ABM B
 "Valencia, Earl Christian Jayson M.",12,ABM B
-"Valguna, Jamelia S.",12,ABM B
+"Valguna, Jamelia S.",12,ABM A
 "Villarba, Camille Joyce G.",12,ABM B
 "Villareal, Zyrel John I.",12,ABM B
 "Yumang, Annie Pearl R.",12,ABM B
@@ -14,6 +14,7 @@ Full_name,grade,section
 "Castro, Xianelle Evon",12,CA
 "Diaz, Mary Ellies G.",12,CA
 "Espinosa, Joerma M.",12,CA
+"Flores, Gane Stephan A.",12,CA
 "Manio, Katrina Ann A.",12,CA
 "Montoya, Dorathee Joy M.",12,CA
 "Palma, Polah Gerrine A.",12,CA
@@ -72,7 +73,9 @@ Full_name,grade,section
 "Nono, Michelle Ann R.",12,HUMSS A
 "Ole, Bernard B.",12,HUMSS A
 "Pabustan, Carl Jemuel S.",12,HUMSS A
+"Palabasan, Leane Jane N.",12,HUMSS A
 "Pamintuan, Jethro Y.",12,HUMSS A
+"Pangan, Beverly P.",12,HUMSS A
 "Royo, Alliana Alyssa S.",12,HUMSS A
 "Sabiles, Jhonmar Eli G.",12,HUMSS A
 "Sagolili, Reynald V.",12,HUMSS A
@@ -82,6 +85,7 @@ Full_name,grade,section
 "Yambao, Trina Ricci G.",12,HUMSS A
 "Alfonso, Mellorraine Ann M.",12,HUMSS B
 "Atienza, Arlene Q.",12,HUMSS B
+"Balingit, Cyber John R.",12,HUMSS B
 "Batoctoy, Mary Joy C.",12,HUMSS B
 "Cabiltes, Xavier Daniel A.",12,HUMSS B
 "Cruz, Eunice A.",12,HUMSS B
@@ -799,3 +803,356 @@ Full_name,grade,section
 "Sunga, Stephanie Claire M.",9,THOMAS
 "Yambao, Denice Erich A.",9,THOMAS
 "Yamson, Lemuel Lance C.",9,THOMAS
+"Gatmaitan, Christoper Jorge V.",12,ABM B
+"Guese, Angelo B.",12,ABM B
+"Ibañez, Hannah Alyssa J.",12,ABM B
+"Ingal, Mariz F.",12,ABM B
+"Lacanlale, Jude M.",12,ABM B
+"Layson, Jericho John L.",12,ABM B
+"Lim, Jocell Daniel M.",12,ABM B
+"Madla, Jhanna Mae M.",12,ABM B
+"Domingo, Jeancy B.",12,ABM B
+"Dumaguin, June Marie Nicole C.",12,ABM B
+"Espiritu, Jovit A.",12,ABM B
+"Ferrer, Ma. Nicole Y.",12,ABM B
+"Garcia, Christian Jay E.",12,ABM B
+"De Mesa, Josette L.",12,ABM B
+"Reyes, Elaiza R.",12,ABM A
+"Ricohermoso, Patricia Ann L.",12,ABM A
+"Somes, Mike Angelo D.",12,ABM A
+"Trinidad, Michelle A.",12,ABM A
+"Tuazon, Wilzon L.",12,ABM A
+"Viray, Arianne Kate S.",12,ABM A
+"Yambao, Nicole Yehlen R.",12,ABM A
+"Casabaet, Marjorie B.",12,ABM A 
+"Marcelino, Daniel Kurt A.",12,ABM A 
+"Quita, Nalla Mae D.",12,ABM A 
+"Samson, Marie Elisha",12,ABM A 
+"Aga, Kathleen Joyce D.",12,ABM B
+"Agapito, Danielle Izzabel L.",12,ABM B
+"Alfaro, Jennica M.",12,ABM B
+"Angeles, Christine Kaila F.",12,ABM B
+"Apio, Elisea A.",12,ABM B
+"Aquino, Kayla Mae S.",12,ABM B
+"Balagtas, Jenelyn Marie M.",12,ABM B
+"Briones, Mika-Elka C.",12,ABM B
+"Bustos, Florendo S.",12,ABM B
+"Cabrera, Mary Ann A.",12,ABM B
+"Cano, Mary Jane G.",12,ABM B
+"Daray, Ma. Micaela L.",12,ABM B
+"Bagtas, Aubrey M.",12,ABM A
+"Balt, Heizel H.",12,ABM A
+"Bog-acon, Drexler D.",12,ABM A
+"Cabañero, Cherry Mae G.",12,ABM A
+"Capistrano, Mark Daniel L.",12,ABM A
+"Capulong, Alexandria Anne L.",12,ABM A
+"Carreon, Mark Vincent P.",12,ABM A
+"Del Rosario, Ma. Stifanny Y.",12,ABM A
+"Delos Santos, Patricia Anne A.",12,ABM A
+"Delos Trinos, Ammi Nicole I.",12,ABM A
+"Faustino, Nicole O.",12,ABM A
+"Fernandez, Hazel Anne H.",12,ABM A
+"Galon, Angelique Marie D.",12,ABM A
+"Intal, John Paulo S.",12,ABM A
+"Laxa, Dianne T.",12,ABM A
+"Lumbang, Seatiel S.",12,ABM A
+"Manansala, Lyka L.",12,ABM A
+"Miras, Chrizel T.",12,ABM A
+"Musni, Angelica Y.",12,ABM A
+"Nabong, Cyrish Kherleen B.",12,ABM A
+"Patiu, Marifie A.",12,ABM A
+"Pintes, Irah G.",12,ABM A
+"Quiambao, Charlene Jane M.",12,ABM A
+"Quiambao, Regine M.",12,ABM A
+"Quijano, Crislen Joie L.",12,ABM A
+"Lopez, Clodia Reign V.",11,STEM B
+"Lopez, Jerome Navarro",11,STEM B
+"Manalo, Gerion Izaak G.",11,STEM B
+"Marquez Jr., Ferdinand H.",11,STEM B
+"Miranda, Rianne Thea E.",11,STEM B
+"Montellano, Prince Jaycee Pacia",11,STEM B
+"Naquita, Nelma O.",11,STEM B
+"Orfano, Abegil Hope Porras",11,STEM B
+"Pangan, Fiona Apple T.",11,STEM B
+"Pangan, Mar Niño U.",11,STEM B
+"Patiño, Vhaugnn Diane G.",11,STEM B
+"Pineda, Aira Joyce Gatche",11,STEM B
+"Quiroz, Clarence Mark Jaingue",11,STEM B
+"Romero, Jomari A.",11,STEM B
+"Santos, Kimberly Dawn L.",11,STEM B
+"Santos, Patricia",11,STEM B
+"Sarmiento, Jose Fernando J.",11,STEM B
+"Toledo, Melvin Andrew Capuli",11,STEM B
+"Ingal, John Bernard T.",11,STEM B
+"Javier, John Matthew V.",11,STEM B
+"Galliguez, Sean Owen Y.",11,STEM B
+"Galzote, Jameson Tongol",11,STEM B
+"Godoy, Julienne Dorothy Auriel A.",11,STEM B
+"Hernandez, Charles William T.",11,STEM B
+"David, Roxanne Kaye D.",11,STEM B
+"De Guzman, Kiana Trisha M.",11,STEM B
+"Dungo, Dhealeen Nicole D.",11,STEM B
+"Ferrer, Shanti Hazel Yambao",11,STEM B
+"Torres, Ruzzel Eljay",11,STEM A
+"Atchico, Jhon Clarence Santos",11,STEM B
+"Banting, Ruchelle G.",11,STEM B
+"Batalla, Jed Angelo D.",11,STEM B
+"Bayta, Vanessa Kyla",11,STEM B
+"Bernardino, Adrian Revilla",11,STEM B
+"Buco, Carl Aidanne Marcelino",11,STEM B
+"Canlas, Jazmeer Galzote",11,STEM B
+"Cardeño, Patricia Gayle Fajardo",11,STEM B
+"Santos, Danitte Belmonte",11,STEM A
+"Pineda, Brixter Sien Muñoz",11,STEM A
+"Patricio, Axel I.",11,STEM A
+"Monillas, Gian Alec",11,STEM A
+"Navalta, Melan Rose C.",11,STEM A
+"Mata, Ruel Evangelista",11,STEM A
+"Meneses, Aira Mae Pineda",11,STEM A
+"Gaspar, Ma. Alexandra M.",11,STEM A
+"Lansangan, Princess Rhyssa Yzabelle L.",11,STEM A
+"Laquindanum, Kylah Jean G.",11,STEM A
+"Catiggay, Juhl Mayne Lina",11,STEM A
+"Botio, Francesca Phey Padilla",11,STEM A
+"Briones, Aaron Jade T.",11,STEM A
+"Buenaventura, TJ John Paul C.",11,STEM A
+"Bul-anon, Yanera F.",11,STEM A
+"Bulanhagui, Neil Joseph B.",11,STEM A
+"Bautista, Angel Mae Bautista",11,STEM A
+"Bermudez, Mecca B.",11,STEM A
+"Bernabe, Maxeen Asuncion",11,STEM A
+"Padrid, Kyla Marie",11,ICT
+"Rabajante, Eldrian B.",11,ICT
+"Musni, Ian Karl H.",11,ICT
+"Jimenez, Maria Carolina F.",11,ICT
+"Lopez, Melanie Aina M.",11,ICT
+"Guiwan Jr., Alexander V.",11,ICT
+"De Vera, Marielle Rowie Cerrer",11,ICT
+"Ulidan, Erickson F.",11,HUMSS B
+"Vargas, Edwin C.",11,HUMSS B
+"Velarde, Alexandra C.",11,HUMSS B
+"Villanueva, Jaynie L.",11,HUMSS B
+"Santiago, Shelee Mae L.",11,HUMSS B
+"Santiago, Veronica V.",11,HUMSS B
+"Silvestre, Richelle",11,HUMSS B
+"Lomibao, Patricia Mae Cera",11,HUMSS B
+"Macapagal, Iane Nicole P.",11,HUMSS B
+"Mendoza, Kylene G.",11,HUMSS B
+"Miranda, Leira Trixie Pangan",11,HUMSS B
+"Nabong, Trina C.",11,HUMSS B
+"Pagdanganan, Wheldrin G.",11,HUMSS B
+"Pangan, Marielle U.",11,HUMSS B
+"Garrote, Trishia Marie D.",11,HUMSS B
+"Isip, Christian Daniel Navales",11,HUMSS B
+"Edera, Eliseo Daniel Beberino",11,HUMSS B
+"Fadrigalan, Bianca Rose E.",11,HUMSS B
+"Bondoc, Ellaine M.",11,HUMSS B
+"Babon, Ma. Nuelma E.",11,HUMSS B
+"Baco, Jesel Jane R.",11,HUMSS B
+"Balaba, Kristine Claire La-as",11,HUMSS B
+"Bautista, Alicia Joana",11,HUMSS B
+"Zapata, Leiymie Khail Dungo",11,HUMSS A
+"Santos, Edralyn Shane Y.",11,HUMSS A
+"Sippi, Rosana D.",11,HUMSS A
+"Sandiego, Camille P.",11,HUMSS A
+"Santizo, Jastin Aramela M.",11,HUMSS A
+"Obispo, Mary Smileian Bagtas",11,HUMSS A
+"Rebello, Rizza Mae M.",11,HUMSS A
+"Refrea, Lance Jewell G.",11,HUMSS A
+"Malacad, Trixie Mae O.",11,HUMSS A
+"Mallari, Jemma Rose Hernandez",11,HUMSS A
+"Mallari, Juliana Marie Lacap",11,HUMSS A
+"Delmo, Janus Jane G.",11,HUMSS A
+"Dulujan, Rojan P.",11,HUMSS A
+"Estravila, Jamaica",11,HUMSS A
+"Borja, Astrid D.",11,HUMSS A 
+"Baul, Jasmine Cariño",11,HUMSS A
+"Sampang, Carlos Miguel M.",11,GAS
+"Silvestre, Mark Gedeon G.",11,GAS
+"Solayao, Dexter Jose V.",11,GAS
+"Tuazon, Kriza S.",11,GAS
+"Urbano, Francis Nicole D.",11,GAS
+"Yang, Jhercy Leonido",11,GAS
+"Moises, Vanessa Mae Urbano",11,GAS
+"Odo, Shaira Mae R.",11,GAS
+"Pagaduan, Rovee",11,GAS
+"Gannaban, Aliah Casco",11,GAS
+"Guevarra, Kathleen S.",11,GAS
+"Law, Khaihou James D.",11,GAS
+"Ferrer, Renee Mae Torres",11,GAS
+"Fuertes, Christel Ver T.",11,GAS
+"Celestial, Clarence Geguinto",11,GAS
+"De Jesus, Kevin Dave P.",11,GAS
+"Arcolas, Cindy Q.",11,GAS
+"Atchico, Miguel B.",11,GAS
+"Bajao, Kristalyn S.",11,GAS
+"Balingit, Aleli Joy G.",11,GAS
+"Baluyut, Christian Jennard B.",11,GAS
+"Basco, Carl Jason G.",11,GAS
+"Sunga, Cherry Maei D.",11,CA
+"Tagle, Joshua Gerard S.",11,CA
+"Topacio, Giane Lyle R.",11,CA
+"Aquino, Heaven Rose S.",11,GAS
+"Ebajan, Karen Macabacyao",11,CA
+"Guarin, Bernadette O.",11,CA
+"Hallig, Janet J.",11,CA
+"Mazo, Mac Neil S.",11,CA
+"Padrid, Kyla Marie L.",11,CA
+"Barcelona, Daniel B.",11,CA
+"Marin, Elaiza May Jacob",11,ABM B
+"Miclat, Jereldine Maglalang",11,ABM B
+"Oligario, Krisha Jean Umali",11,ABM B
+"Paracale, Janine S.",11,ABM B
+"Prado, Alyssa Jade B.",11,ABM B
+"Pulusan, Rany Viray",11,ABM B
+"Quemada, Mckenzie Nizette E.",11,ABM B
+"Ramolete, Donald Jr. S.",11,ABM B
+"Rosales, Jaycee Rose C.",11,ABM B
+"Saludar, Dennilyn S.",11,ABM B
+"Santiago, Bianca Ronangeline V.",11,ABM B
+"Sta. Maria, Trixie Kaye",11,ABM B
+"Tolentino, Jenevieve A.",11,ABM B
+"Valencia, Cyryl Mae V.",11,ABM B
+"Velicaria, Kimberly Anne C.",11,ABM B
+"Dela Cruz, Isabelle Gimena",11,ABM B
+"Doce, Princess Kate A.",11,ABM B
+"Enad, Khristine V.",11,ABM B
+"Gonzales, Airah Tongol",11,ABM B
+"Butiu, Cleo Tizon",11,ABM B
+"Carreon, Jheward P.",11,ABM B
+"Centeno, Michael Angelo Mutuc",11,ABM B
+"David, Ma. Luisa Dela Cruz",11,ABM B
+"Viray, Kathleen Joy Padilla",11,ABM A
+"Yang, Melanie Guiriba",11,ABM A
+"Alcantara, Gerie Anne Jereza",11,ABM B
+"Racoma, Diether D.",11,ABM A
+"Lopez, Joana Marie Macapas",11,ABM A
+"Lopez, Stephanie Cruz",11,ABM A
+"Loy, Aielah S.",11,ABM A
+"Peña, Alaine Joy T.",11,ABM A
+"Dela Cruz, Stephanie Nicole Gaerlan",11,ABM A
+"Celestial, Christine Geguinto",11,ABM A
+"Yumul, Rizalyn A.",10,TITUS
+"Andaman, Angelica Faith",11,ABM A
+"Bonifacio, Mary Denielle Castro",11,ABM A
+"Cabrera, Judith Santos",11,ABM A
+"Tizon, Jasper S.",10,TITUS
+"Tudio, Mary Kirsten Jane Pril Ann S.",10,TITUS
+"Tulod, Kelvin Gio M.",10,TITUS
+"Saliendra, Alyssa Kate T.",10,TITUS
+"Sunga, Diana Mariz M.",10,TITUS
+"Caguiat, Vinard Angelo S.",10,TITUS
+"Danganan, Cheska Yasmin G.",10,TITUS
+"De Guzman, Elah Marie C.",10,TITUS
+"Espiritu, Alyanna Marie",10,TITUS
+"Malonzo, Gilbert D. Jr.",10,TITUS
+"Valencia, Ara Jade V.",10,TIMOTHY
+"Villanueva, Mary Grace E.",10,TIMOTHY
+"Alfonso, Ma. Ellaysa L.",10,TITUS
+"Silva, Jeremy D.",10,TIMOTHY
+"Sorno, Franzine S.",10,TIMOTHY
+"Sunga, Kim Joy P.",10,TIMOTHY
+"Tanumtanum, Angelo V.",10,TIMOTHY
+"Tizon, Trixie Jeramie Q.",10,TIMOTHY
+"Minerva, Charlton L.",10,TIMOTHY
+"Nabong, Chamzelle B.",10,TIMOTHY
+"Pingol, Janross M.",10,TIMOTHY
+"Quiroz, Efren Jasper I.",10,TIMOTHY
+"Razon, Romel A.",10,TIMOTHY
+"Salonga, Don France Nicole F.",10,TIMOTHY
+"Lumbang, Elidan S.",10,TIMOTHY
+"Manansala, Armand M.",10,TIMOTHY
+"Mapili, Darryl Kurt S.",10,TIMOTHY
+"Lacap, Roxanne A.",10,TIMOTHY
+"Valera, Johna Mae M.",10,MARK
+"Yumul, Chris Anne M.",10,MARK
+"Baluyut, Ashley C.",10,TIMOTHY
+"Bantiling, Yuhum A.",10,TIMOTHY
+"Bernarte, Christian James S.",10,TIMOTHY
+"Bondoc, Ivan Paul M.",10,TIMOTHY
+"Cervantes, Mikaela G.",10,TIMOTHY
+"Dizon, John Enrick N.",10,TIMOTHY
+"Santos, Princess Rian",10,MARK
+"Sarmiento, Geraldine S.",10,MARK
+"Simon, Janne Trixy R.",10,MARK
+"Tejuco, Daniele Victor D.",10,MARK
+"Romero, Kathleen Grace A.",10,MARK
+"Rosario, Rainerio R. II",10,MARK
+"Meily, Lance Lionhart M.",10,MARK
+"Nocom, Pauleen S.",10,MARK
+"Odron, Cheery Mae T.",10,MARK
+"Garcia, Jerome G.",10,MARK
+"Gatbonton, John Rex",10,MARK
+"Gonzales, Adrian Paul D.",10,MARK
+"Guinto, Louise Anne S.",10,MARK
+"Lavarias, Maureene Jesse I.",10,MARK
+"Layson, Ariston Jake",10,MARK
+"Magat, Rovic M.",10,MARK
+"Bonifacio, Lorenzo D.",10,MARK
+"Bumaynin, Zhyrine T.",10,MARK
+"Chandler, Lavinia A.",10,MARK
+"Dazo, Andria Faye L.",10,MARK
+"Samson, Eugene T.",10,LUKE
+"Santiago, Yuan C.",10,LUKE
+"Silvestre, Isiduard Daniel B.",10,LUKE
+"Teves, Daniel D.",10,LUKE
+"Trinidad, Dyan Rose Z.",10,LUKE
+"Urbe, John Lerry A.",10,LUKE
+"Vinculado, Virna Mae Elizbeth A.",10,LUKE
+"Alfonso, Ryan Christian  M.",10,MARK
+"Batac, Yasmeena Almir B.",10,MARK
+"Pangan, Raiza Mae R.",10,LUKE
+"Pineda, Ronald Vince Jr. P.",10,LUKE
+"Razon, Christian Jesse H.",10,LUKE
+"Regondola, Kylie M.",10,LUKE
+"Lumaad, Alice N.",10,LUKE
+"Malapitan, Axcel Angelo L.",10,LUKE
+"Mamaril, Zara Mae D",10,LUKE
+"Erese, Ma. Triposa H.",10,LUKE
+"Figueroa, Darell Carlson A.",10,LUKE
+"Gatchalian, Justine M.",10,LUKE
+"Isip, Laurence Joie M.",10,LUKE
+"Diaz, Pauline Christianne G.",10,LUKE
+"Dungo, Francine Jade A.",10,LUKE
+"Baluyut, Eunice Jonah M.",10,LUKE
+"Bamba, Vittorio Paul Oliver B.",10,LUKE
+"Villegas, Gamliela Marie V.",1,JOEL
+"Navales, Eloisa Kristine Juan",1,JOEL
+"Navalta, Jacob Raphael D.",1,JOEL
+"Ocampo, Paulo Davi Reyes",1,JOEL
+"Ochoa, Chloe Mae Calma",1,JOEL
+"Pabustan, Elisha Belle B.",1,JOEL
+"Pingal, Maria Eunice L.",1,JOEL
+"Urbano, Eliaquim Gabriel Q.",1,JOEL
+"Magante, Racel Anne E.",1,JOEL
+"Manansala, Nathaniel B.",1,JOEL
+"Manlapaz, Matt Christoph I.",1,JOEL
+"Mariano, Jude Daniel P.",1,JOEL
+"Hilario, Stephen Jacob C.",1,JOEL
+"Isip, Elizabelle D.",1,JOEL
+"Catalan, Ishijah Eunice Hue Sanico",1,JOEL
+"Del Rosario, Nathalie T.",1,JOEL
+"Fagela, Uhane E.",1,JOEL
+"Silastre, Xian Gabriel D.",1,JOB
+"Velasco, Alexa Antonnete C.",1,JOB
+"Agbu, Sarah Halili",1,JOEL
+"Bacani, Zoe Jane B.",1,JOEL
+"Laxina, Lourish Laine T.",1,JOB
+"Libay, Eloise Marie Paduga",1,JOB
+"Maglalang, Djazmine O.",1,JOB
+"Manaay, Yllen Joyze Lobaton",1,JOB
+"Mandap, Cirie Anntonete L.",1,JOB
+"Mandap, Reylie Eunice Luann T.",1,JOB
+"Pangan, Jerica Joy P.",1,JOB
+"Dela Cruz, Eurica Kate G.",1,JOB
+"Dela Cruz, Rhenzchelle Retzch B.",1,JOB
+"Derain, Enrique Sebastian N.",1,JOB
+"Dinglasan, John Simon Asilum",1,JOB
+"Gapas, Azurlee Franz Gaerlan",1,JOB
+"Gariando, Aanzette",1,JOB
+"Gonzales, Gabriella M.",1,JOB
+"Isip, Jayden Ivan Cagas",1,JOB
+"Isip, Sophia Isabel P.",1,JOB
+"Jalbay, Yoshua Allain Gella",1,JOB
+"Antonio, Zeckiel Federico D.",1,JOB
+"Cervantes, Mishael Philip G.",1,JOB

@@ -1,4 +1,1849 @@
 full_name,date_absent,date_returned,excuse,remarks,
+"Antonio, Zeckiel Federico D.",7/16/2018,7/17/2018,Fever,Returned 
+"Antonio, Zeckiel Federico D.",7/16/2018,7/17/2018,Fever,Returned
+"Antonio, Zeckiel Federico D.",9/3/2018,9/4/2018,not feeling well,returned
+"Cervantes, Mishael Philip G.",7/2/2018,7/3/2018,fever,Returned 
+"Dela Cruz, Eurica Kate G.",7/20/2018,7/24/2018,Heavy Rain,Returned 
+"Dela Cruz, Rhenzchelle Retzch B.",7/11/2018,7/12/2018,stomach pain,Returned 
+"Derain, Enrique Sebastian N.",7/12/2018,7/13/2018,Fever,Returned 
+"Dinglasan, John Simon Asilum",7/30/2018,7/31/2018,UTI,Returned 
+"Dinglasan, John Simon Asilum",10/29/2018,11/5/2018,UTI and Flu,returned
+"Gapas, Azurlee Franz Gaerlan",8/31/2018,9/3/2018,Sick,Returned 
+"Gariando, Aanzette",6/25/2018,6/26/2018,fever,Returned 
+"Gonzales, Gabriella M.",6/21/2018,6/22/2018,check-up,Returned 
+"Gonzales, Gabriella M.",7/4/2018,7/5/2018,grandparent's golden wedding,Returned
+"Isip, Jayden Ivan Cagas",9/14/2018,9/17/2018,Fever,Returned 
+"Isip, Sophia Isabel P.",7/11/2018,7/12/2018,stomach pain,Returned 
+"Jalbay, Yoshua Allain Gella",7/20/2018,7/26/2018,Fever,Returned 
+"Laxina, Lourish Laine T.",8/16/2018,8/22/2018,Sick,Returned 
+"Laxina, Lourish Laine T.",8/17/2018,8/22/2018,Sick,Returned
+"Laxina, Lourish Laine T.",8/18/2018,8/22/2018,Sick,Returned
+"Laxina, Lourish Laine T.",8/19/2018,8/22/2018,Sick,Returned
+"Laxina, Lourish Laine T.",8/20/2018,8/22/2018,Sick,Returned
+"Libay, Eloise Marie Paduga",8/5/2018,8/16/2018,mother is sick,Returned 
+"Libay, Eloise Marie Paduga",11/19/2018,11/21/2018,Fever,Returned
+"Libay, Eloise Marie Paduga",11/20/2018,11/21/2018,Fever,Returned
+"Libay, Eloise Marie Paduga",9/12/2018,9/13/2018,Checkup,Returned
+"Maglalang, Djazmine O.",7/9/2018,7/11/2018,Fever,Returned 
+"Maglalang, Djazmine O.",7/10/2018,7/11/2018,Fever,Returned
+"Manaay, Yllen Joyze Lobaton",9/9/2018,9/11/2018,Sick,Returned 
+"Manaay, Yllen Joyze Lobaton",9/10/2018,9/11/2018,sick,Returned
+"Mandap, Cirie Anntonete L.",8/16/2018,8/22/2018,Sick,Returned 
+"Mandap, Cirie Anntonete L.",8/17/2018,8/22/2018,Sick,Returned
+"Mandap, Cirie Anntonete L.",8/18/2018,8/22/2018,Sick,Returned
+"Mandap, Cirie Anntonete L.",8/19/2018,8/22/2018,Sick,Returned
+"Mandap, Cirie Anntonete L.",8/20/2018,8/22/2018,Sick,Returned
+"Mandap, Reylie Eunice Luann T.",10/29/2018,11/5/2018,Fever,Returned 
+"Mandap, Reylie Eunice Luann T.",11/16/2018,11/26/2018,Pneumonia,Returned
+"Mandap, Reylie Eunice Luann T.",11/17/2018,11/26/2018,Pneumonia,Returned
+"Mandap, Reylie Eunice Luann T.",11/18/2018,11/26/2018,Pneumonia,Returned
+"Mandap, Reylie Eunice Luann T.",11/19/2018,11/26/2018,Pneumonia,Returned
+"Mandap, Reylie Eunice Luann T.",11/20/2018,11/26/2018,Pneumonia,Returned
+"Mandap, Reylie Eunice Luann T.",11/21/2018,11/26/2018,Pneumonia,Returned
+"Mandap, Reylie Eunice Luann T.",11/22/2018,11/26/2018,Pneumonia,Returned
+"Mandap, Reylie Eunice Luann T.",11/23/2018,11/26/2018,Pneumonia,Returned
+"Pangan, Jerica Joy P.",8/8/2018,10/8/2018,Sick,Returned 
+"Pangan, Jerica Joy P.",8/9/2018,10/8/2018,Sick,Returned
+"Silastre, Xian Gabriel D.",7/10/2018,7/12/2018,fever and cough,Returned 
+"Silastre, Xian Gabriel D.",7/11/2018,7/12/2018,fever and cough,Returned
+"Silastre, Xian Gabriel D.",7/12/2018,7/12/2018,fever and cough,Returned
+"Velasco, Alexa Antonnete C.",6/14/2018,6/18/2018,"fever, UTI",Returned 
+"Velasco, Alexa Antonnete C.",10/29/2018,11/5/2018,Cold and Fever,returned
+"Agbu, Sarah Halili",8/22/2018,8/23/2018,Fever and Cough,Returned 
+"Agbu, Sarah Halili",8/30/2018,8/31/2018,Cough and Fever,returned 
+"Agbu, Sarah Halili",10/18/2018,10/22/2018,Sick,returned
+"Bacani, Zoe Jane B.",8/22/2018,8/23/2018,Fever,Returned 
+"Bacani, Zoe Jane B.",8/25/2018,8/28/2018,Cough,Returned 
+"Catalan, Ishijah Eunice Hue Sanico",,,Heavy Rain Flood,Returned 
+"Del Rosario, Nathalie T.",7/11/2018,7/16/2018,Cough and cold,Returned 
+"Del Rosario, Nathalie T.",7/20/2018,7/24/2018,Heavy rain and Flood,returned
+"Del Rosario, Nathalie T.",9/3/2018,9/4/2018,Flood,returned
+"Del Rosario, Nathalie T.",9/11/2018,9/12/2018,Baha,returned
+"Fagela, Uhane E.",7/10/2018,7/11/2018,Check up,Returned 
+"Fagela, Uhane E.",9/28/2018,10/1/2018,OMR,returned
+"Fagela, Uhane E.",11/5/2018,11/12/2018,Confined in hospital,returned
+"Fagela, Uhane E.",11/6/2018,11/12/2018,Confined in hospital,returned
+"Fagela, Uhane E.",11/7/2018,11/12/2018,Confined in hospital,returned
+"Fagela, Uhane E.",11/8/2018,11/12/2018,Confined in hospital,returned
+"Fagela, Uhane E.",11/9/2018,11/12/2018,Confined in hospital,returned
+"Hilario, Stephen Jacob C.",10/18/2018,10/19/2018,Fever and Cough,returned
+"Isip, Elizabelle D.",10/11/2018,10/12/2018,Headache,returned
+"Magante, Racel Anne E.",7/20/2018,7/24/2018,Cough and Colds,Returned 
+"Magante, Racel Anne E.",9/3/2018,9/4/2018,Power Interruption,returned
+"Manansala, Nathaniel B.",11/9/2018,11/12/2018,Fever and Flu,Returned 
+"Manlapaz, Matt Christoph I.",8/6/2018,8/22/2018,Chicken pox,Returned 
+"Manlapaz, Matt Christoph I.",8/7/2018,8/22/2018,Chicken pox,returned
+"Manlapaz, Matt Christoph I.",8/8/2018,8/22/2018,Chicken pox,returned
+"Manlapaz, Matt Christoph I.",8/9/2018,8/22/2018,Chicken pox,returned
+"Manlapaz, Matt Christoph I.",8/16/2018,8/22/2018,Chicken pox,returned
+"Manlapaz, Matt Christoph I.",8/17/2018,8/22/2018,Chicken pox,returned
+"Manlapaz, Matt Christoph I.",8/20/2018,,Pigsa,returned
+"Mariano, Jude Daniel P.",11/5/2018,11/7/2018,mother gave birth,returned 
+"Mariano, Jude Daniel P.",11/6/2018,11/7/2018,mother gave birth,returned
+"Navales, Eloisa Kristine Juan",8/16/2018,8/22/2018,High Fever,Returned 
+"Navales, Eloisa Kristine Juan",8/17/2018,8/22/2018,High Fever,returned
+"Navales, Eloisa Kristine Juan",11/7/2018,11/9/2018,Fever and Colds,returned
+"Navales, Eloisa Kristine Juan",11/8/2018,11/9/2018,fever and colds,returned
+"Navalta, Jacob Raphael D.",7/20/2018,,,
+"Ocampo, Paulo Davi Reyes",7/10/2018,7/12/2018,"Fever, Cough and Coryza",Returned 
+"Ocampo, Paulo Davi Reyes",10/22/2018,10/23/2018,walang susundo,returned
+"Ocampo, Paulo Davi Reyes",11/9/2018,11/12/2018,Fever,returned
+"Ochoa, Chloe Mae Calma",10/17/2018,10/19/2018,Sick,returned 
+"Ochoa, Chloe Mae Calma",10/18/2018,10/19/2018,sick,Returned
+"Ochoa, Chloe Mae Calma",11/14/2018,11/15/2018,Headache and Fever,Returned
+"Pabustan, Elisha Belle B.",7/13/2018,7/16/2018,Cough and cold,Returned 
+"Pingal, Maria Eunice L.",8/16/2018,8/17/2018,Sick,Returned 
+"Pingal, Maria Eunice L.",8/27/2018,8/31/2018,Grandmother's death,returned
+"Pingal, Maria Eunice L.",8/28/2018,8/31/2018,Grandmother's death,returned
+"Pingal, Maria Eunice L.",8/29/2018,8/31/2018,Grandmother's death,returned
+"Pingal, Maria Eunice L.",8/30/2018,8/31/2018,Grandmother's death,returned
+"Pingal, Maria Eunice L.",8/31/2018,8/31/2018,Grandmother's death,returned
+"Urbano, Eliaquim Gabriel Q.",,7/20/2018,Fever and cold,Returned 
+"Villegas, Gamliela Marie V.",6/20/2018,6/22/2018,cold and fever,Returned 
+"Villegas, Gamliela Marie V.",6/21/2018,6/22/2018,cold and fever,Returned
+"Baluyut, Eunice Jonah M.",9/10/2018,9/11/2018,Fever,Returned
+"Bamba, Vittorio Paul Oliver B.",9/18/2018,9/19/2018,Flood,
+"Diaz, Pauline Christianne G.",11/16/2018,11/19/2018,Family Ocassion,RD Returned
+"Dungo, Francine Jade A.",10/23/2018,10/24/2018,Grandmother's Funeral,returned
+"Erese, Ma. Triposa H.",,6/19/2018,,Returned
+"Erese, Ma. Triposa H.",6/26/2018,6/27/2018,cold & cough ,Returned
+"Erese, Ma. Triposa H.",7/20/2018,7/24/2018,Dysmenorrhea,Returned
+"Erese, Ma. Triposa H.",8/8/2018,8/9/2018,Not Feeling well,returned
+"Erese, Ma. Triposa H.",9/12/2018,9/18/2018,Went to music Lesson ,returned
+"Erese, Ma. Triposa H.",9/19/2018,9/20/2018,Music Lesson,returned
+"Erese, Ma. Triposa H.",9/24/2018,9/25/2018,Music Lesson,Returned
+"Erese, Ma. Triposa H.",9/26/2018,10/3/2018,Preparation for examination ,returned
+"Erese, Ma. Triposa H.",10/8/2018,10/10/2018,Music Lesson,returned
+"Erese, Ma. Triposa H.",10/9/2018,10/10/2018,Music Lesson,returned
+"Erese, Ma. Triposa H.",11/5/2018,11/7/2018,Music Lesson,
+"Erese, Ma. Triposa H.",11/6/2018,11/7/2018,Music Lesson,
+"Erese, Ma. Triposa H.",11/12/2018,11/14/2018,Music Lesson,
+"Erese, Ma. Triposa H.",11/12/2018,11/14/2018,Music Lesson,
+"Erese, Ma. Triposa H.",11/19/2018,11/21/2018,emergency,
+"Erese, Ma. Triposa H.",11/20/2018,11/21/2018,emergency,
+"Figueroa, Darell Carlson A.",7/26/2018,7/27/2018,Diarrhea,Returned
+"Figueroa, Darell Carlson A.",8/16/2018,8/17/2018,Flood,Returned
+"Figueroa, Darell Carlson A.",9/19/2018,9/20/2018,Diarrhea,
+"Figueroa, Darell Carlson A.",10/12/2018,10/17/2018,Fever and Flu,(RD) Returned
+"Figueroa, Darell Carlson A.",11/26/2018,11/27/2018,Diarrhea,
+"Gatchalian, Justine M.",7/20/2018,7/26/2018,heavy rain and floods,Returned
+"Isip, Laurence Joie M.",7/11/2018,7/12/2018,Fever,Returned
+"Isip, Laurence Joie M.",11/8/2018,11/9/2018,Fever and Headache,returned
+"Lumaad, Alice N.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Lumaad, Alice N.",9/8/2018,9/10/2018,Bad Weather ,
+"Lumaad, Alice N.",9/3/2018,,,NO EL 
+"Lumaad, Alice N.",9/7/2018,,,NO EL
+"Malapitan, Axcel Angelo L.",7/11/2018,7/16/2018,"Headache, cough and Fever",Returned
+"Malapitan, Axcel Angelo L.",7/12/2018,7/16/2018,"Headache, cough and Fever",Returned
+"Malapitan, Axcel Angelo L.",7/13/2018,7/16/2018,"Headache, cough and Fever",Returned
+"Malapitan, Axcel Angelo L.",9/7/2018,9/10/2018,Headache,Returned
+"Malapitan, Axcel Angelo L.",10/1/2018,10/2/2018,Checkup,returned
+"Malapitan, Axcel Angelo L.",10/4/2018,10/8/2018,Checkup,RD
+"Malapitan, Axcel Angelo L.",10/29/2018,11/5/2018,Nakipaglibing ,RD
+"Malapitan, Axcel Angelo L.",11/26/2018,11/27/2018,Checkup,
+"Mamaril, Zara Mae D",10/17/2018,10/18/2018,My mom is sick,returned
+"Mamaril, Zara Mae D",11/12/2018,11/13/2018,not feeling well,returned
+"Mamaril, Zara Mae D",9/25/2018,,,NO EL 
+"Pangan, Raiza Mae R.",8/20/2018,,Bad Weather ,
+"Pangan, Raiza Mae R.",10/18/2018,10/19/2018,Cough and Colds,returned
+"Pangan, Raiza Mae R.",9/3/2018,,,NO EL
+"Pineda, Ronald Vince Jr. P.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Pineda, Ronald Vince Jr. P.",10/9/2018,10/11/2018,Dizziness due to hot weather,RD 
+"Pineda, Ronald Vince Jr. P.",10/10/2018,10/11/2018,Dizziness due to hot weather,RD
+"Pineda, Ronald Vince Jr. P.",10/17/2018,10/22/2018,Sinusitis,returned
+"Pineda, Ronald Vince Jr. P.",10/18/2018,10/22/2018,Sinusitis,returned
+"Pineda, Ronald Vince Jr. P.",10/19/2018,10/22/2018,Sinusitis,returned
+"Pineda, Ronald Vince Jr. P.",10/29/2018,11/5/2018,Sinusitis,RD Returned
+"Razon, Christian Jesse H.",9/19/2018,9/20/2018,Flu and Body pain,Returned
+"Razon, Christian Jesse H.",9/26/2018,9/27/2018,Bodypain,returned
+"Razon, Christian Jesse H.",10/17/2018,10/18/2018,Body pain,returned
+"Razon, Christian Jesse H.",11/14/2018,11/15/2018,Not Feeling Well,Returned
+"Regondola, Kylie M.",7/8/2018,8/8/2018,Went to airport,Returned
+"Regondola, Kylie M.",10/8/2018,8/16/2018,headache,returned
+"Regondola, Kylie M.",11/12/2018,11/13/2018,Headache,Returned
+"Samson, Eugene T.",7/20/2018,7/25/2018,heavy rain and floods,Returned
+"Santiago, Yuan C.",7/3/2018,7/4/2018,check-up ,
+"Santiago, Yuan C.",7/20/2018,7/25/2018,Checkup,Returned
+"Santiago, Yuan C.",8/25/2018,8/28/2018,Fever,Returned
+"Santiago, Yuan C.",9/21/2018,9/24/2018,Severe Cough,
+"Silvestre, Isiduard Daniel B.",11/9/2018,11/12/2018,Passport,
+"Teves, Daniel D.",10/17/2018,10/18/2018,Fever and Flu,returned
+"Teves, Daniel D.",11/22/2018,11/23/2018,Bodypain,
+"Trinidad, Dyan Rose Z.",10/12/2018,10/17/2018,Diarrhea,returned
+"Urbe, John Lerry A.",6/25/2018,6/27/2018,fever & muscle pain,Returned
+"Urbe, John Lerry A.",6/26/2018,6/27/2018,fever & muscle pain,Returned
+"Urbe, John Lerry A.",7/25/2018,7/26/2018,Diarrhea,Returned
+"Urbe, John Lerry A.",8/16/2018,8/17/2018,Flood,Returned
+"Urbe, John Lerry A.",10/12/2018,10/17/2018,Headache,returned
+"Vinculado, Virna Mae Elizbeth A.",9/3/2018,9/4/2018,no uniform no sleep,Returned
+"Alfonso, Ryan Christian  M.",7/27/2018,7/30/2018,Fever,
+"Alfonso, Ryan Christian  M.",9/12/2018,9/17/2018,LBM ,Returned
+"Alfonso, Ryan Christian  M.",10/12/2018,10/17/2018,Injured,RD
+"Alfonso, Ryan Christian  M.",11/9/2018,11/12/2018,went to airport,returned
+"Batac, Yasmeena Almir B.",10/8/2018,10/12/2018,Grandfather's death,returned
+"Batac, Yasmeena Almir B.",10/9/2018,10/12/2018,Grandfather's death,returned
+"Batac, Yasmeena Almir B.",10/10/2018,10/12/2018,Grandfather's death,returned
+"Batac, Yasmeena Almir B.",10/11/2018,10/12/2018,Grandfather's death,returned
+"Bonifacio, Lorenzo D.",10/8/2018,10/17/2018,SUSPENSION,returned
+"Bonifacio, Lorenzo D.",10/9/2018,10/17/2018,SUSPENSION,returned
+"Bonifacio, Lorenzo D.",10/10/2018,10/17/2018,SUSPENSION,returned
+"Bonifacio, Lorenzo D.",10/11/2018,10/17/2018,SUSPENSION,returned
+"Bonifacio, Lorenzo D.",10/12/2018,10/17/2018,SUSPENSION,returned
+"Bumaynin, Zhyrine T.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Chandler, Lavinia A.",8/23/2018,8/24/2018,headache,Returned
+"Chandler, Lavinia A.",9/28/2018,10/2/2018,SUSPENSION,returned
+"Chandler, Lavinia A.",10/1/2018,10/2/2018,SUSPENSION,returned
+"Dazo, Andria Faye L.",11/26/2018,11/27/2018,sore eyes,
+"Garcia, Jerome G.",9/3/2018,9/4/2018,Fever,
+"Gatbonton, John Rex",7/11/2018,7/13/2018,masama pakiramdam,Returned
+"Gatbonton, John Rex",7/12/2018,7/13/2018,masama pakiramdam,Returned
+"Gatbonton, John Rex",10/26/2018,10/29/2018,Mass Baptism ,returned
+"Gonzales, Adrian Paul D.",7/12/2018,7/16/2018,Hyperacidity and Vomiting,Returned
+"Guinto, Louise Anne S.",7/20/2018,7/25/2018,Fever,Returned
+"Guinto, Louise Anne S.",7/23/2018,7/25/2018,fever,Returned
+"Guinto, Louise Anne S.",7/24/2018,7/25/2018,fever,Returned
+"Guinto, Louise Anne S.",8/16/2018,8/17/2018,LBM ,Returned
+"Guinto, Louise Anne S.",8/20/2018,8/22/2018,Fever,Returned
+"Guinto, Louise Anne S.",8/28/2018,8/30/2018,Family Problem,returned
+"Guinto, Louise Anne S.",8/29/2018,8/30/2018,Family Problem,returned
+"Guinto, Louise Anne S.",9/3/2018,9/5/2018,went to manila,returned
+"Guinto, Louise Anne S.",9/4/2018,9/5/2018,went to manila,returned
+"Guinto, Louise Anne S.",9/10/2018,9/11/2018,Dysmenorrhea,returned
+"Guinto, Louise Anne S.",9/25/2018,9/28/2018,LBM,returned
+"Guinto, Louise Anne S.",9/26/2018,9/28/2018,LBM,returned
+"Guinto, Louise Anne S.",9/27/2018,9/28/2018,LBM,returned
+"Guinto, Louise Anne S.",10/12/2018,10/17/2018,Fever,returned
+"Guinto, Louise Anne S.",11/6/2018,11/8/2018,Financial Problem,returned
+"Guinto, Louise Anne S.",11/7/2018,11/8/2018,Financial Problem,returned
+"Guinto, Louise Anne S.",11/22/2018,11/26/2018,Family Problem ,Returned
+"Guinto, Louise Anne S.",11/23/2018,11/26/2018,Family Problem,Returned
+"Lavarias, Maureene Jesse I.",8/8/2018,8/9/2018,Fever,Returned
+"Lavarias, Maureene Jesse I.",8/16/2018,8/20/2018,Flood,returned
+"Lavarias, Maureene Jesse I.",8/17/2018,8/20/2018,flood,returned
+"Lavarias, Maureene Jesse I.",10/19/2018,10/22/2018,Fever,RD Returned
+"Layson, Ariston Jake",7/12/2018,7/16/2018,Grandmother's Birthday and his uncle was confined in Hospital,Returned
+"Layson, Ariston Jake",7/12/2018,7/16/2018,Grandmother's Birthday and his uncle was confined in Hospital,Returned
+"Layson, Ariston Jake",8/16/2018,8/20/2018,Fever,
+"Layson, Ariston Jake",8/17/2018,8/20/2018,fever,
+"Magat, Rovic M.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Meily, Lance Lionhart M.",7/16/218,7/17/2018,Paper works,Returned
+"Meily, Lance Lionhart M.",7/27/2018,7/30/2018,Airport,returned
+"Meily, Lance Lionhart M.",8/20/2018,8/22/2018,Went to Obando,Returned
+"Meily, Lance Lionhart M.",9/10/2018,9/11/2018,Gathering,returned
+"Meily, Lance Lionhart M.",9/24/2018,9/25/2018,Manila,
+"Meily, Lance Lionhart M.",10/3/2018,10/8/2018,License and Bank acc,RD Returned
+"Meily, Lance Lionhart M.",10/11/2018,10/12/2018,Kuya's Birthday,returned
+"Meily, Lance Lionhart M.",10/29/2018,11/6/2018,Laguna,RD Returned
+"Nocom, Pauleen S.",8/8/2018,8/9/2018,Visited grandmother in Hospital,Returned
+"Nocom, Pauleen S.",9/19/2018,9/21/2018,SUSPENSION,returned
+"Nocom, Pauleen S.",9/20/2018,9/21/2018,SUSPENSION,returned
+"Odron, Cheery Mae T.",7/3/2018,7/4/2018,fever,Returned
+"Odron, Cheery Mae T.",9/7/2018,9/10/2018,not feeling well,Returned
+"Odron, Cheery Mae T.",10/8/2018,10/10/2018,checkup,RD Returned
+"Odron, Cheery Mae T.",10/9/2018,10/10/2018,Check up,RD Returned
+"Odron, Cheery Mae T.",10/22/2018,10/23/2018,Followup check up,returned
+"Odron, Cheery Mae T.",11/12/2018,11/13/2018,Tooth Extraction,returned
+"Romero, Kathleen Grace A.",7/13/2018,7/24/2018,"Fever, Stomache and measles ",Returned
+"Romero, Kathleen Grace A.",7/16/2018,7/24/2018,"Fever, Stomache and measles ",Returned
+"Romero, Kathleen Grace A.",7/17/2018,7/24/2018,"Fever, Stomache and measles ",Returned
+"Romero, Kathleen Grace A.",7/18/2018,7/24/2018,"Fever, Stomache and measles ",Returned
+"Romero, Kathleen Grace A.",7/19/2018,7/24/2018,"Fever, Stomache and measles ",Returned
+"Romero, Kathleen Grace A.",7/20/2018,7/24/2018,"Fever, Stomache and measles ",Returned
+"Rosario, Rainerio R. II",6/26/2018,7/2/2018,mild pneumonia,Returned
+"Rosario, Rainerio R. II",6/27/2018,7/2/2018,mild pneumonia,Returned
+"Rosario, Rainerio R. II",8/16/2018,8/17/2018,Flood,Returned
+"Rosario, Rainerio R. II",9/8/2018,9/10/2018,LBM,Returned
+"Rosario, Rainerio R. II",9/27/2018,9/28/2018,Acidic,returned
+"Rosario, Rainerio R. II",10/22/2018,10/23/2018,Dizziness,returned
+"Rosario, Rainerio R. II",11/12/2018,11/13/2018,Fever,Returned
+"Santos, Princess Rian",8/16/2018,8/17/2018,Flood,Returned
+"Santos, Princess Rian",8/20/2018,8/22/2018,Car Accident,returned
+"Sarmiento, Geraldine S.",10/4/2018,10/8/2018,Visit my Grandmother,returned
+"Simon, Janne Trixy R.",9/7/2018,9/10/2018,Toothache,Returned
+"Simon, Janne Trixy R.",10/24/2018,10/25/2018,Toothache and Cough ,returned
+"Tejuco, Daniele Victor D.",7/9/2018,7/10/2018,slight fever and runny nose,Returned
+"Valera, Johna Mae M.",7/11/2018,7/12/2018,Family emergency,Returned
+"Yumul, Chris Anne M.",8/17/2018,8/20/2018,Flood,Returned
+"Yumul, Chris Anne M.",8/31/2018,9/3/2018,Abdominal Pain,returned
+"Baluyut, Ashley C.",8/16/2018,8/20/2018,Flood and Heavyrain,Returned
+"Baluyut, Ashley C.",8/17/2018,8/20/2018,Flood and Heavyrain,Returned
+"Bantiling, Yuhum A.",6/26/2018,6/27/2018,stomachache (1st subj only),
+"Bernarte, Christian James S.",7/20/2018,7/24/2018,Fever,Returned
+"Bernarte, Christian James S.",8/16/2018,8/17/2018,Flood,Returned
+"Bernarte, Christian James S.",9/18/2018,9/19/2018,Wedding,Returned
+"Bondoc, Ivan Paul M.",10/18/2018,10/19/2018,Fever and Headache,returned
+"Cervantes, Mikaela G.",10/8/2018,10/17/2018,SUSPENSION,returned
+"Cervantes, Mikaela G.",10/9/2018,10/17/2018,SUSPENSION,returned
+"Cervantes, Mikaela G.",10/10/2018,10/17/2018,SUSPENSION,returned
+"Cervantes, Mikaela G.",10/11/2018,10/17/2018,SUSPENSION,returned
+"Cervantes, Mikaela G.",10/12/2018,10/17/2018,SUSPENSION,returned
+"Dizon, John Enrick N.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Lacap, Roxanne A.",7/24/2018,,heavy rain and floods,Returned
+"Lacap, Roxanne A.",8/16/2018,8/22/2018,Flood,
+"Lacap, Roxanne A.",8/17/2018,8/22/2018,flood,
+"Lumbang, Elidan S.",7/13/2018,7/16/2018,Fever and Cough,
+"Lumbang, Elidan S.",7/20/2018,,Heavyrain and Floods,Returned
+"Lumbang, Elidan S.",10/19/2018,10/22/2018,"Cough and Colds, Checkup",RD
+"Manansala, Armand M.",6/19/2018,6/20/2018,,
+"Manansala, Armand M.",7/20/2018,7/24/2018,Bad Weather ,Returned
+"Manansala, Armand M.",8/17/2018,8/20/2018,Fever,Returned
+"Manansala, Armand M.",8/29/2018,8/30/2018,Fever and Vomitting,returned
+"Manansala, Armand M.",10/2/2018,10/3/2018,Acidity,(RD)returned
+"Manansala, Armand M.",10/12/2018,10/18/2018,Gastro,returned
+"Manansala, Armand M.",11/9/2018,11/12/2018,Gastro,RD
+"Manansala, Armand M.",11/22/2018,11/26/2018,GAstro,
+"Mapili, Darryl Kurt S.",8/30/2018,9/3/2018,Wedding,Returned
+"Mapili, Darryl Kurt S.",8/31/2018,9/3/2018,wedding,returned
+"Minerva, Charlton L.",7/13/2018,7/16/2018,Fever,Returned
+"Minerva, Charlton L.",7/20/2018,7/24/2018,Heavy Rain,Returned
+"Nabong, Chamzelle B.",9/7/2018,9/10/2018,Fever,Returned
+"Nabong, Chamzelle B.",9/26/2018,9/27/2018,DFA,returned
+"Nabong, Chamzelle B.",10/23/2018,10/23/2018,Vaccine (HALFDAY),returned
+"Pingol, Janross M.",11/12/2018,11/13/2018,Asthma and Fever,Returned
+"Quiroz, Efren Jasper I.",10/17/2018,10/18/2018,Fever,returned
+"Razon, Romel A.",10/8/2018,8/16/2018,flood,
+"Razon, Romel A.",8/16/2018,8/20/2018,Fever,returned
+"Razon, Romel A.",9/17/2018,9/18/2018,Stomachache,Returned
+"Razon, Romel A.",9/17/2018,9/18/2018,stomachache ,Returned
+"Razon, Romel A.",9/28/2018,,Stomachache,
+"Razon, Romel A.",11/9/2018,11/12/2018,Appointment with my dentist,returned
+"Salonga, Don France Nicole F.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Salonga, Don France Nicole F.",8/16/2018,8/20/2018,Flood,returned
+"Salonga, Don France Nicole F.",8/17/2018,8/20/2018,flood,returned
+"Salonga, Don France Nicole F.",8/28/2018,8/29/2018,pabless ng bahay,
+"Salonga, Don France Nicole F.",9/3/2018,9/4/2018,visit my grandfather,returned
+"Silva, Jeremy D.",8/24/2018,8/25/2018,Dizziness,Returned
+"Silva, Jeremy D.",9/19/2018,9/21/2018,SUSPENSION,Returned
+"Silva, Jeremy D.",9/20/2018,9/21/2018,SUSPENSION,Returned
+"Sorno, Franzine S.",8/24/2018,8/28/2018,Fever,Returned
+"Sorno, Franzine S.",8/25/2018,8/28/2018,fever,Returned
+"Sorno, Franzine S.",8/29/2018,9/3/2018,German Measles,returned
+"Sorno, Franzine S.",8/30/2018,9/3/2018,German Measles,returned
+"Sorno, Franzine S.",8/31/2018,9/3/2018,German Measles,returned
+"Sunga, Kim Joy P.",7/30/2018,7/31/2018,headache,Returned
+"Sunga, Kim Joy P.",8/6/2018,8/7/2018,Reunion,returned
+"Sunga, Kim Joy P.",8/31/2018,9/3/2018,Headache,Returned
+"Sunga, Kim Joy P.",11/13/2018,11/14/2018,accompany my mother ,returned
+"Tanumtanum, Angelo V.",9/3/2018,9/4/2018,Not feeling well,Returned
+"Tanumtanum, Angelo V.",9/25/2018,9/26/2018,Fever,Returned
+"Tizon, Trixie Jeramie Q.",8/16/2018,8/17/2018,Flood,Returned
+"Tizon, Trixie Jeramie Q.",8/20/2018,8/22/2018,Car Accident,returned
+"Tizon, Trixie Jeramie Q.",9/19/2018,9/20/2018,vomitting (Checkup),Returned
+"Valencia, Ara Jade V.",7/24/2018,7/25/2018,heavy rain and floods,Returned
+"Valencia, Ara Jade V.",11/13/2018,11/11/2018,Funeral Mass,Returned
+"Villanueva, Mary Grace E.",8/28/2018,8/30/2018,,Returned
+"Villanueva, Jaynie L.",8/29/2018,8/30/2018,,Returned
+"Villanueva, Mary Grace E.",9/17/2018,9/18/2018,my sibling went to hospital,Returned
+"Villanueva, Mary Grace E.",11/14/2018,11/15/2018,Accompany my brother,returned
+"Alfonso, Ma. Ellaysa L.",11/21/2018,11/22/2018,inquring for SHS,Returned
+"Caguiat, Vinard Angelo S.",8/16/2018,8/17/2018,Flood,Returned
+"Caguiat, Vinard Angelo S.",9/12/2018,9/17/2018,Tuberculine Test,
+"Danganan, Cheska Yasmin G.",10/4/2018,10/8/2018,Colds and Asthma ,returned
+"De Guzman, Elah Marie C.",7/17/2018,7/24/2018,Hyperventilation,Returned
+"De Guzman, Elah Marie C.",7/20/2018,7/24/2018,hyperventilation,Returned
+"De Guzman, Elah Marie C.",9/28/2018,10/26/2018,Take care of my father,returned
+"De Guzman, Elah Marie C.",10/18/2018,10/19/2018,Dysmenorrhea,returned
+"Espiritu, Alyanna Marie",7/9/2018,7/10/2018,grandfather's death,Returned
+"Malonzo, Gilbert D. Jr.",10/4/2018,10/8/2018,Fever,returned
+"Saliendra, Alyssa Kate T.",11/21/2018,11/22/2018,Inquiring to SHS ,Returned
+"Sunga, Diana Mariz M.",7/13/2018,7/16/2018,Hyperacidity,Returned
+"Sunga, Diana Mariz M.",7/24/2018,7/25/2018,Flood,
+"Tizon, Jasper S.",8/16/2018,8/17/2018,Flood,Returned
+"Tizon, Jasper S.",8/20/2018,8/22/2018,Car Accident,returned
+"Tizon, Jasper S.",9/10/2018,9/11/2018,Fever,returned
+"Tizon, Jasper S.",10/1/2018,10/3/2018,Fever and Asthma ,RD
+"Tudio, Mary Kirsten Jane Pril Ann S.",8/29/2018,8/30/2018,Headache,Returned
+"Tulod, Kelvin Gio M.",7/20/2018,7/24/2018,Bad weather,Returned
+"Yumul, Rizalyn A.",11/21/2018,11/22/2018,Inquiring SHS,Returned
+"Andaman, Angelica Faith",8/20/2018,8/22/2018,Checkup,Returned
+"Andaman, Angelica Faith",9/3/2018,9/4/2018,Checkup,returned
+"Bonifacio, Mary Denielle Castro",7/24/2018,7/25/2018,heavy rain and floods,Returned
+"Cabrera, Judith Santos",8/28/2018,8/29/2018,Dysmenorrhea,Returned
+"Celestial, Christine Geguinto",11/26/2018,11/27/2018,Dysmenorrhea,
+"Dela Cruz, Stephanie Nicole Gaerlan",8/20/2018,8/22/2018,broght my father to the hospital,Returned
+"Dela Cruz, Stephanie Nicole Gaerlan",9/3/2018,9/4/2018,father is sick,
+"Lopez, Joana Marie Macapas",8/16/2018,8/17/2018,Flood,Returned
+"Lopez, Stephanie Cruz",7/24/2018,7/25/2018,Fever,Returned
+"Lopez, Stephanie Cruz",9/11/2018,9/12/2018,Fever,returned
+"Loy, Aielah S.",8/20/2018,8/22/2018,Heavyrain,Returned
+"Loy, Aielah S.",9/17/2018,9/18/2018,Uncertain because of Weather,
+"Peña, Alaine Joy T.",9/10/2018,9/11/2018,Dysmenorrhea,
+"Peña, Alaine Joy T.",11/26/2018,11/27/2018,Allergy,
+"Racoma, Diether D.",7/10/2018,7/11/2018,Headache and tonsilitis,Returned
+"Viray, Kathleen Joy Padilla",7/9/2018,7/10/2018,grandfather died,Returned
+"Yang, Melanie Guiriba",8/17/2018,8/20/2018,Funeral,Returned
+"Alcantara, Gerie Anne Jereza",8/16/2018,8/17/2018,Flood,Returned
+"Butiu, Cleo Tizon",10/10/2018,10/11/2018,Sickness,returned
+"Carreon, Jheward P.",9/28/2018,10/26/2018,Body Pain |Fever ,
+"Carreon, Jheward P.",11/13/2018,11/14/2018,Fever,RD Returned
+"Centeno, Michael Angelo Mutuc",9/12/2018,9/17/2018,Suspension,returned
+"David, Ma. Luisa Dela Cruz",8/16/2018,8/17/2018,Dysmenorrhea(HALFDAY),
+"David, Ma. Luisa Dela Cruz",9/17/2018,9/18/2018,Pelvic Pain,returned
+"David, Ma. Luisa Dela Cruz",10/10/2018,10/11/2018,Bleeding of Wound,returned
+"David, Ma. Luisa Dela Cruz",10/22/2018,10/23/2018,headache and Bodypain,RD
+"Dela Cruz, Isabelle Gimena",7/12/2018,7/13/2018,Fever,Returned
+"Dela Cruz, Isabelle Gimena",9/17/2018,9/18/2018,Fever,Returned
+"Dela Cruz, Isabelle Gimena",10/8/2018,10/9/2018,Dysmenorrhea,RD Returned
+"Doce, Princess Kate A.",11/20/2018,11/21/2018,Headache and Fever,
+"Enad, Khristine V.",6/14/2018,6/18/2018,claimed ATM card ,Returned
+"Gonzales, Airah Tongol",8/16/2018,8/20/2018,Urinary infection,Returned
+"Gonzales, Airah Tongol",8/17/2018,8/20/2018,Urinary infection,Returned
+"Gonzales, Airah Tongol",9/17/2018,9/18/2018,Fever,returned
+"Marin, Elaiza May Jacob",8/9/2018,8/22/2018,Fever and Floods,Returned
+"Marin, Elaiza May Jacob",8/10/2018,8/22/2018,fever and floods,Returned
+"Marin, Elaiza May Jacob",8/29/2018,8/30/2018,not feeling well,
+"Marin, Elaiza May Jacob",9/10/2018,9/11/2018,Dyemenorrhea,returned
+"Marin, Elaiza May Jacob",9/18/2018,9/24/2018,Flood,returned
+"Marin, Elaiza May Jacob",9/19/2018,9/24/2018,flood,returned
+"Marin, Elaiza May Jacob",9/20/2018,9/24/2018,flood,returned
+"Marin, Elaiza May Jacob",9/21/2018,9/24/2018,flood,returned
+"Marin, Elaiza May Jacob",10/9/2018,10/10/2018,Dysmenorrhea,RD
+"Miclat, Jereldine Maglalang",11/21/2018,11/22/2018,Stomach pain (HalfDay),RD
+"Oligario, Krisha Jean Umali",9/10/2018,9/11/2018,LBM,
+"Oligario, Krisha Jean Umali",11/21/2018,11/22/2018,Fever,
+"Paracale, Janine S.",10/23/2018,10/24/2018,Headache,RD
+"Prado, Alyssa Jade B.",7/4/2018,7/9/2018,fever and dysmenorrhea,
+"Prado, Alyssa Jade B.",7/4/2018,7/9/2018,fever and dysmenorrhea,returned
+"Prado, Alyssa Jade B.",11/14/2018,11/15/2018,Dysmenorrhea,returned
+"Pulusan, Rany Viray",8/9/2018,8/10/2018,Fever,Returned
+"Pulusan, Rany Viray",10/2/2018,10/3/2018,Fever,returned
+"Quemada, Mckenzie Nizette E.",9/3/2018,9/4/2018,walang kuryente,Returned
+"Quemada, Mckenzie Nizette E.",11/22/2018,11/26/2018,Libing ng Lolo,
+"Quemada, Mckenzie Nizette E.",11/23/2018,11/26/2018,libing ng lolo,
+"Ramolete, Donald Jr. S.",7/30/2018,7/31/2018,LBM,
+"Ramolete, Donald Jr. S.",9/3/2018,9/4/2018,Power interruption,returned
+"Ramolete, Donald Jr. S.",11/9/2018,11/12/2018,Visited my father,RD
+"Rosales, Jaycee Rose C.",7/5/2018,7/9/2018,high fever and colds,Returned
+"Rosales, Jaycee Rose C.",7/10/2018,7/16/2018,"Pneumonia, Fever and Cough",Returned
+"Rosales, Jaycee Rose C.",7/11/2018,7/16/2018,"Pneumonia, Fever and Cough",Returned
+"Rosales, Jaycee Rose C.",7/12/2018,7/16/2018,"Pneumonia, Fever and Cough",Returned
+"Rosales, Jaycee Rose C.",7/13/2018,7/16/2018,"Pneumonia, Fever and Cough",Returned
+"Rosales, Jaycee Rose C.",9/21/2018,9/24/2018,Checkup,
+"Saludar, Dennilyn S.",9/3/2018,9/4/2018,walang kuryente,Returned
+"Santiago, Bianca Ronangeline V.",9/3/2018,9/4/2018,LBM,Returned
+"Santiago, Bianca Ronangeline V.",10/2/2018,10/3/2018,Cough and Colds,returned
+"Sta. Maria, Trixie Kaye",8/20/2018,8/22/2018, Family Emergency,Returned
+"Sta. Maria, Trixie Kaye",9/17/2018,9/18/2018,Visit My Mother,returned
+"Sta. Maria, Trixie Kaye",10/17/2018,10/18/2018,Headache,returned
+"Tolentino, Jenevieve A.",7/16/2018,7/17/2018,Fever,Returned
+"Valencia, Cyryl Mae V.",7/20/2018,7/25/2018,heavy rain and floods,Returned
+"Valencia, Cyryl Mae V.",7/24/2018,7/25/2018,heavy rain and floods,Returned
+"Valencia, Cyryl Mae V.",11/13/2018,11/14/2018,Funeral Mass,Returned
+"Velicaria, Kimberly Anne C.",10/3/2018,10/4/2018,Bloodtest,returned
+"Velicaria, Kimberly Anne C.",10/1/2018,10/2/2018,General Checkup,returned
+"Barcelona, Daniel B.",9/3/2018,9/4/2018,power interruption,Returned
+"Barcelona, Daniel B.",10/17/2018,10/18/2018,LBM,returned
+"Barcelona, Daniel B.",11/12/2018,11/13/2018,Diarrhea,
+"Ebajan, Karen Macabacyao",8/16/2018,8/22/2018,Fever,
+"Guarin, Bernadette O.",2/8/2018,6/8/2018,Cold and headache,Returned
+"Guarin, Bernadette O.",9/7/2018,9/11/2018,Sick,
+"Guarin, Bernadette O.",9/10/2018,9/11/2018,sick,
+"Guarin, Bernadette O.",10/4/2018,10/9/2018,Grandfather died,RD
+"Guarin, Bernadette O.",10/8/2018,10/9/2018,Grandfather died,RD
+"Guarin, Bernadette O.",10/18/2018,10/22/2018,Fever,RD
+"Guarin, Bernadette O.",10/19/2018,10/22/2018,fever,RD
+"Guarin, Bernadette O.",11/5-15/2018,,,
+"Guarin, Bernadette O.",11/6/2018,,,
+"Guarin, Bernadette O.",11/7/2018,,,
+"Guarin, Bernadette O.",11/8/2018,,,
+"Guarin, Bernadette O.",11/9/2018,,,
+"Guarin, Bernadette O.",11/10/2018,,,
+"Guarin, Bernadette O.",11/11/2018,,,
+"Guarin, Bernadette O.",11/12/2018,,,
+"Guarin, Bernadette O.",11/13/2018,,,
+"Guarin, Bernadette O.",11/14/2018,,,
+"Guarin, Bernadette O.",11/5/2018,,,
+"Hallig, Janet J.",8/29/2018,8/30/2018,Nagbantay sa Hospital,Returned
+"Hallig, Janet J.",9/17/2018,9/18/2018,Transportation,returned
+"Mazo, Mac Neil S.",8/16/2018,8/17/2018,Flood,Returned
+"Mazo, Mac Neil S.",9/12/2018,9/18/2018,SUSPENSION,Returned
+"Mazo, Mac Neil S.",9/17/2018,9/18/2018,SUSPENSION,Returned
+"Mazo, Mac Neil S.",9/19/2018,9/21/2018,Diarrhea,returned
+"Mazo, Mac Neil S.",9/20/2018,9/21/2018,Diarrhea,returned
+"Mazo, Mac Neil S.",10/19/2018,10/22/2018,LBM,returned
+"Mazo, Mac Neil S.",11/12/2018,11/13/2018,Napilayan,RD
+"Padrid, Kyla Marie L.",9/19/2018,,Headache and Flu,returned
+"Padrid, Kyla Marie L.",10/8/2018,10/9/2018,Financial Problem,RD Returned
+"Sunga, Cherry Maei D.",10/8/2018,8/16/2018,flood,Returned
+"Sunga, Cherry Maei D.",11/26/2018,11/27/2018,Bodypain,
+"Tagle, Joshua Gerard S.",9/24/2018,9/25/2018,Stomachache,Returned
+"Tagle, Joshua Gerard S.",11/16/2018,11/19/2018,went to airport,Returned
+"Topacio, Giane Lyle R.",9/3/2018,9/4/2018,power interruption,Returned
+"Aquino, Heaven Rose S.",9/12/2018,9/18/2018,SUSPENSION,Returned
+"Aquino, Heaven Rose S.",9/17/2018,9/18/2018,SUSPENSION,Returned
+"Aquino, Heaven Rose S.",10/22/2018,10/23/2018,Diarrhea,returned
+"Arcolas, Cindy Q.",9/18/2018,9/19/2018,Flu,
+"Arcolas, Cindy Q.",7/12/2018,9/19/2018,Flu,
+"Atchico, Miguel B.",9/11/2018,9/17/2018,SUSPENSION,returned
+"Atchico, Miguel B.",9/10/2018,9/17/2018,SUSPENSION,returned
+"Atchico, Miguel B.",9/11/2018,9/17/2018,SUSPENSION,returned
+"Atchico, Miguel B.",10/2/2018,10/3/2018,baston,returned
+"Bajao, Kristalyn S.",9/17/2018,9/18/2018,LBM,Returned
+"Bajao, Kristalyn S.",11/26/2018,11/27/2018,Fever,
+"Balingit, Aleli Joy G.",9/21/2018,9/24/2018,Flood,Returned
+"Balingit, Aleli Joy G.",10/10/2018,10/22/2018,Dengue,Returned
+"Balingit, Aleli Joy G.",10/11/2018,10/22/2018,Dengue,Returned
+"Balingit, Aleli Joy G.",10/12/2018,10/22/2018,Dengue,Returned
+"Balingit, Aleli Joy G.",10/13/2018,10/22/2018,Dengue,Returned
+"Balingit, Aleli Joy G.",10/14/2018,10/22/2018,Dengue,Returned
+"Balingit, Aleli Joy G.",10/15/2018,10/22/2018,Dengue,Returned
+"Balingit, Aleli Joy G.",10/16/2018,10/22/2018,Dengue,Returned
+"Balingit, Aleli Joy G.",10/17/2018,10/22/2018,Dengue,Returned
+"Balingit, Aleli Joy G.",10/18/2018,10/22/2018,Dengue,Returned
+"Balingit, Aleli Joy G.",10/19/2018,10/22/2018,Dengue,Returned
+"Baluyut, Christian Jennard B.",9/3/2018,9/4/2018,LBM,Returned
+"Baluyut, Christian Jennard B.",9/12/2018,9/19/2018,SUSPENSION,Returned
+"Baluyut, Christian Jennard B.",9/17/2018,9/19/2018,SUSPENSION,Returned
+"Baluyut, Christian Jennard B.",10/2/2018,10/3/2018,Baston Pants,returned
+"Baluyut, Christian Jennard B.",11/6/2018,11/7/2018,Vomitting,RD
+"Basco, Carl Jason G.",9/11/2018,9/17/2018,Suspension,returned
+"Basco, Carl Jason G.",9/12/2018,9/17/2018,Suspension,returned
+"Celestial, Clarence Geguinto",11/26/2018,11/27/2018,LBM ,
+"De Jesus, Kevin Dave P.",8/31/2018,9/3/2018,Hyperventilate,Returned
+"De Jesus, Kevin Dave P.",10/2/2018,10/3/2018,Hyperventilate,returned
+"De Jesus, Kevin Dave P.",11/9/2018,11/12/2018,Hyperventilating ,returned
+"Ferrer, Renee Mae Torres",9/12/2018,9/18/2018,SUSPENSION,Returned
+"Ferrer, Renee Mae Torres",9/17/2018,9/18/2018,SUSPENSION,Returned
+"Ferrer, Renee Mae Torres",9/26/2018,9/27/2018,Headache,Returned
+"Fuertes, Christel Ver T.",8/31/2018,9/3/2018,toothache,Returned
+"Fuertes, Christel Ver T.",9/12/2018,9/17/2018,tooth extraction,
+"Gannaban, Aliah Casco",8/28/2018,8/29/2018,Fever,Returned
+"Gannaban, Aliah Casco",9/3/2018,9/4/2018,Fever,returned
+"Guevarra, Kathleen S.",9/28/2018,9/28/2018,Fequesting of F137(HALFDAY),returned
+"Guevarra, Kathleen S.",11/21/2018,11/23/2018,vomitting (21 Halfday)(22wholeday),returned
+"Guevarra, Kathleen S.",11/22/2018,11/23/2018,vomitting (21 Halfday)(22wholeday),returned
+"Law, Khaihou James D.",8/28/2018,8/29/2018,Toothache,
+"Law, Khaihou James D.",9/5/2018,9/6/2018,Toothache,returned
+"Law, Khaihou James D.",9/25/2018,9/26/2018,Diarrhea,returned
+"Law, Khaihou James D.",11/19/2018,11/20/2018,Sick,Returned
+"Moises, Vanessa Mae Urbano",9/17/2018,9/18/2018,Stranded,Returned
+"Odo, Shaira Mae R.",8/6/2018,8/8/2018,Grandfather's Death,Returned
+"Odo, Shaira Mae R.",8/7/2018,8/8/2018,Grandfather's Death,Returned
+"Odo, Shaira Mae R.",8/25/2018,8/28/2018,Checkup,Returned
+"Odo, Shaira Mae R.",9/17/2018,9/18/2018,bad weather,returned
+"Odo, Shaira Mae R.",10/12/2018,10/17/2018,Accompany my sister,returned
+"Odo, Shaira Mae R.",11/26/2018,11/27/2018,,
+"Pagaduan, Rovee",9/12/2018,9/18/2018,SUSPENSION,Returned
+"Pagaduan, Rovee",9/17/2018,9/18/2018,SUSPENSION,Returned
+"Pagaduan, Rovee",11/21/2018,11/26/2018,SUSPENSION,Returned
+"Pagaduan, Rovee",11/22/2018,11/26/2018,SUSPENSION,Returned
+"Pagaduan, Rovee",11/23/2018,11/26/2018,SUSPENSION,Returned
+"Sampang, Carlos Miguel M.",6/25/2018,6/26/2018,diarrhea,Returned
+"Sampang, Carlos Miguel M.",7/25/2018,7/26/2018,Flood,Returned
+"Sampang, Carlos Miguel M.",9/12/2018,9/18/2018,SUSPENSION,returned
+"Sampang, Carlos Miguel M.",9/17/2018,9/18/2018,SUSPENSION,returned
+"Silvestre, Mark Gedeon G.",7/20/2018,7/26/2018,Infection,Returned
+"Silvestre, Mark Gedeon G.",7/24/2018,7/26/2018,Infection,remarks
+"Silvestre, Mark Gedeon G.",7/25/2018,7/26/2018,Infection,Returned
+"Solayao, Dexter Jose V.",9/12/2018,9/18/2018,SUSPENSION,Returned
+"Solayao, Dexter Jose V.",9/17/2018,9/18/2018,SUSPENSION,Returned
+"Tuazon, Kriza S.",9/12/2018,,SUSPENSION,Returned
+"Tuazon, Kriza S.",9/25/2018,9/26/2018,Uncle's Burial,returned
+"Urbano, Francis Nicole D.",10/2/2018,10/3/2018,Headache,returned
+"Urbano, Francis Nicole D.",10/4/2018,10/8/2018,haircut,RD
+"Urbano, Francis Nicole D.",11/6/2018,11/8/2018,Toothache and swelling of gums,Returned
+"Urbano, Francis Nicole D.",11/7/2018,11/8/2018,Toothache and swelling of gums,Returned
+"Urbano, Francis Nicole D.",11/19/2018,11/20/2018,LBM,Returned
+"Yang, Jhercy Leonido",8/17/2018,8/20/2018,Flood,returned
+"Yang, Jhercy Leonido",9/12/2018,9/18/2018,SUSPENSION,returned
+"Yang, Jhercy Leonido",9/17/2018,9/18/2018,SUSPENSION,returned
+"Baul, Jasmine Cariño",7/11/2018,7/13/2018,Cough and Fever,Returned
+"Baul, Jasmine Cariño",7/12/2018,7/13/2018,Cough and Fever,Returned
+"Borja, Astrid D.",8/16/2018,8/22/2018,Dysmenorrhea,Returned
+"Borja, Astrid D.",8/17/2018,8/22/2018,Dysmenorrhea,Returned
+"Borja, Astrid D.",8/18/2018,8/22/2018,Dyemenorrhea,Returned
+"Borja, Astrid D.",8/19/2018,8/22/2018,Dyemenorrhea,Returned
+"Borja, Astrid D.",8/20/2018,8/22/2018,Dyemenorrhea,Returned
+"Borja, Astrid D.",9/3/2018,9/4/2018,walang tubig at kuryente,returned
+"Borja, Astrid D.",9/17/2018,9/18/2018,my mom did not let me to attend class,returned
+"Borja, Astrid D.",10/11/2018,10/18/2018,High Fever and Burial,RD
+"Borja, Astrid D.",10/12/2018,10/18/2018,High Fever and Burial,RD
+"Borja, Astrid D.",10/17/2018,10/18/2018,High Fever and Burial,RD
+"Borja, Astrid D.",11/20/2018,11/21/2018,LBM Dysmenorrhea,RD Returned
+"Borja, Astrid D.",11/23/2018,11/26/2018,LBM,Returned
+"Delmo, Janus Jane G.",8/20/2018,8/22/2018,Mother is sick,Returned
+"Delmo, Janus Jane G.",9/3/2018,9/4/2018,walang kuryente at tubig,returned
+"Delmo, Janus Jane G.",9/17/2018,9/18/2018,Typhoon,returned
+"Dulujan, Rojan P.",10/24/2018,10/24/2018,Hyperacidity ( LATE),RD
+"Estravila, Jamaica",8/20/2018,8/22/2018,Went to Cavite,
+"Estravila, Jamaica",8/16/2018,8/17/2018,Headache,returned
+"Malacad, Trixie Mae O.",,6/18/2018,,
+"Malacad, Trixie Mae O.",8/16/2018,8/20/2018,Flood,
+"Malacad, Trixie Mae O.",8/17/2018,8/20/2018,flood,
+"Malacad, Trixie Mae O.",11/20/2018,11/21/2018,Fever,Returned
+"Mallari, Jemma Rose Hernandez",8/16/2018,8/17/2018,Flood,Returned
+"Mallari, Jemma Rose Hernandez",9/3/2018,9/3/2018,Checkup,returned
+"Mallari, Juliana Marie Lacap",7/24/2018,7/25/2018,Fever,Returned
+"Mallari, Juliana Marie Lacap",8/16/2018,8/17/2018,Flood(Late-Last Subject),Returned
+"Obispo, Mary Smileian Bagtas",11/14/2018,11/15/2018,Chestpain,returned
+"Rebello, Rizza Mae M.",9/3/2018,9/4/2018,Food Poisoning,Returned
+"Refrea, Lance Jewell G.",8/20/2018,8/22/2018,Funeral,Returned
+"Refrea, Lance Jewell G.",9/3/2018,9/4/2018,walang tubig at kuryente,returned
+"Refrea, Lance Jewell G.",9/17/2018,9/18/2018,Typhoon,returned
+"Sandiego, Camille P.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Sandiego, Camille P.",8/16/2018,8/17/2018,Flood,Returned
+"Sandiego, Camille P.",9/21/2018,9/25/2018,Head and Stomachache,returned
+"Sandiego, Camille P.",11/15/2018,11/19/2018,Funeral,RD
+"Sandiego, Camille P.",11/16/2018,11/19/2018,funeral,RD
+"Santizo, Jastin Aramela M.",7/24/2018,7/25/2018,Fever,Returned
+"Santos, Edralyn Shane Y.",7/4/2018 PM,7/5/2018,dysmenorrhea,
+"Sippi, Rosana D.",6/22/2018,6/25/2018,baptism,Returned
+"Zapata, Leiymie Khail Dungo",11/9/2018,11/12/2018,High Fever,Returned
+"Babon, Ma. Nuelma E.",7/3/2018,7/4/2018,fever,Returned
+"Babon, Ma. Nuelma E.",8/31/2018,9/4/2018,Fever,Returned
+"Babon, Ma. Nuelma E.",9/3/2018,9/4/2018,fever,Returned
+"Babon, Ma. Nuelma E.",9/17/2018,9/18/2018,Not Felling Well,returned
+"Babon, Ma. Nuelma E.",10/4/2018,10/8/2018,Transfer form,RD
+"Babon, Ma. Nuelma E.",11/13/2018,11/14/2018,Fever and Cough,RD
+"Baco, Jesel Jane R.",9/17/2018,9/18/2018,Toothache,Returned
+"Baco, Jesel Jane R.",9/28/2018,10/2/2018,SUSPENSION,returned
+"Baco, Jesel Jane R.",10/1/2018,10/2/2018,SUSPENSION,returned
+"Baco, Jesel Jane R.",10/22/2018,10/23/2018,Diarrhea,returned
+"Balaba, Kristine Claire La-as",11/12/2018,11/15/2018,Eczema,
+"Balaba, Kristine Claire La-as",11/26/2018,11/27/2018,Dysmenorrhea,
+"Bautista, Alicia Joana",9/3/2018,9/4/2018,power interruption,Returned
+"Bondoc, Ellaine M.",8/22/2018,8/23/2018,Fever,Returned
+"Bondoc, Ellaine M.",8/22/2018,8/23/2018,Fever,returned
+"Bondoc, Ellaine M.",9/7/2018,9/10/2018,LBM,returned
+"Bondoc, Ellaine M.",10/4/2018,10/8/2018,not feeling well,returned
+"Bondoc, Ellaine M.",10/4/2018,10/8/2018,not feeling well ,returned
+"Bondoc, Ellaine M.",11/5/2018,11/6/2018,not allowed by my parents,returned
+"Edera, Eliseo Daniel Beberino",11/14/2018,11/15/2018,Went to Marilao(personal Reason),Returned
+"Fadrigalan, Bianca Rose E.",9/3/2018,9/4/2018,power interruption,Returned
+"Garrote, Trishia Marie D.",6/21/2018,6/22/2018,fever,Returned
+"Isip, Christian Daniel Navales",10/9/2018,10/10/2018,"Fever, Headache and LBM",RD
+"Isip, Christian Daniel Navales",10/12/2018,,,
+"Lomibao, Patricia Mae Cera",10/10/2018,10/12/2018,Fever and UTI,Returned
+"Lomibao, Patricia Mae Cera",10/11/2018,10/12/2018,fever and UTI,Returned
+"Lomibao, Patricia Mae Cera",11/6/2018,11/7/2018,Checkup and Laboratory,RD Returned
+"Lomibao, Patricia Mae Cera",11/23/2018,11/27/2018,Fever,
+"Lomibao, Patricia Mae Cera",11/26/2018,11/27/2018,fever,
+"Macapagal, Iane Nicole P.",7/31/2018,1/8/2018,Fever,Returned
+"Macapagal, Iane Nicole P.",9/17/2018,9/18/2018,Fever,Returned
+"Mendoza, Kylene G.",9/3/2018,9/4/2018,bad weather,Returned
+"Miranda, Leira Trixie Pangan",7/16/2018,7/17/2018,Fever,Returned
+"Miranda, Leira Trixie Pangan",9/26/2018,9/27/2018,dysmenorrhea,Returned
+"Miranda, Leira Trixie Pangan",11/9/2018,11/12/2018,Dysmenorrhea,returned
+"Nabong, Trina C.",7/11/2018,7/13/2018,Sick,Returned
+"Nabong, Trina C.",7/12/2018,7/13/2018,Sick,Returned
+"Nabong, Trina C.",7/20/2018,7/24/2018,Sick,Returned
+"Nabong, Trina C.",9/20/2018,9/21/2018,LBM,returned
+"Nabong, Trina C.",10/4/2018,10/8/2018,Fever,RD
+"Nabong, Trina C.",10/12/2018,10/17/2018,Dysmenorrhea,RD
+"Pagdanganan, Wheldrin G.",8/16/2018,8/17/2018,Flood,Returned
+"Pagdanganan, Wheldrin G.",7/20/2018,,,NO EL
+"Pagdanganan, Wheldrin G.",9/17/2018,9/18/2018,Flood,returned
+"Pagdanganan, Wheldrin G.",9/21/2018,9/24/2018,Flood,returned
+"Pagdanganan, Wheldrin G.",9/19/2018,9/24/2018,Flood,
+"Pagdanganan, Wheldrin G.",9/20/2018,9/24/2018,Flood,
+"Pagdanganan, Wheldrin G.",9/21/2018,9/24/2018,Flood,
+"Pagdanganan, Wheldrin G.",10/1/2018,10/2/2018,Headache,returned
+"Pagdanganan, Wheldrin G.",10/8/2018,10/9/2018,Sick,RD Returned
+"Pagdanganan, Wheldrin G.",11/8/2018,11/9/2018,Headache ,Returned
+"Pangan, Marielle U.",8/16/2018,8/17/2018,Headache,
+"Pangan, Marielle U.",9/3/2018,9/4/2018,Power interruption,returned
+"Pangan, Marielle U.",10/22/2018,10/23/2018,Diarrhea,returned
+"Santiago, Shelee Mae L.",9/3/2018,9/4/2018,power interruption,Returned
+"Santiago, Shelee Mae L.",9/17/2018,9/18/2018,Sick,Returned
+"Santiago, Shelee Mae L.",10/3/2018,10/4/2018,Sick,returned
+"Santiago, Shelee Mae L.",11/21/2018,11/22/2018,Sick,Returned
+"Santiago, Veronica V.",7/4/2018,7/5/2018,asthma,Returned
+"Santiago, Veronica V.",9/10/2018,,Body Pain,Returned
+"Santiago, Veronica V.",11/21/2018,11/22/2018,Dizziness and Headache,returned
+"Silvestre, Richelle",8/28/2018,8/29/2018,Vomitting,returned
+"Silvestre, Richelle",10/17/2018,,,
+"Silvestre, Richelle",10/18/2018,,,
+"Silvestre, Richelle",10/19/2018,,,
+"Ulidan, Erickson F.",9/17/2018,9/18/2018,Flood,Returned
+"Ulidan, Erickson F.",9/26/2018,9/27/2018,Fever,returned
+"Vargas, Edwin C.",6/22/2018,6/25/2018,baptism,Returned
+"Velarde, Alexandra C.",8/31/2018,9/4/2018,checkup,Returned
+"Velarde, Alexandra C.",9/3/2018,9/4/2018,Check up,Returned
+"Velarde, Alexandra C.",9/17/2018,9/18/2018,Tumulong sa Pagaayos ng Bahay,Returned
+"Velarde, Alexandra C.",10/4/2018,10/8/2018,transfer form,RD
+"Villanueva, Jaynie L.",7/16/2018,7/17/2018,Diarrhea and Fever,Returned
+"Villanueva, Jaynie L.",9/3/2018,9/4/2018,Power interruption,
+"Villanueva, Jaynie L.",11/20/2018,11/21/2018,Diarrhea,returned
+"De Vera, Marielle Rowie Cerrer",10/2/2018,10/3/2018,Checkup,RD Returned
+"De Vera, Marielle Rowie Cerrer",10/17/2018,10/18/2018,Fever,returned
+"Guiwan Jr., Alexander V.",8/20/2018,8/22/2018,Attend Viewing,returned
+"Guiwan Jr., Alexander V.",10/4/2018,10/8/2018,Headache,RD Returned
+"Jimenez, Maria Carolina F.",10/8/2018,10/9/2018,Sick,RD returned
+"Jimenez, Maria Carolina F.",10/17/2018,10/22/2018,Headache and |Fever,returned
+"Jimenez, Maria Carolina F.",10/18/2018,10/22/2018,Headache and |Fever,returned
+"Jimenez, Maria Carolina F.",10/19/2018,10/22/2018,Headache and |Fever,returned
+"Lopez, Melanie Aina M.",9/24/2018,9/25/2018,NO ID,Returned
+"Musni, Ian Karl H.",7/24/2018,7/25/2018,heavy rain and floods,Returned
+"Padrid, Kyla Marie",8/28/2018,8/29/2018,Checkup,
+"Padrid, Kyla Marie",9/21/2018,9/24/2018,,
+"Rabajante, Eldrian B.",8/20/2018,8/22/2018,visited Grandmother in Hospital,Returned
+"Rabajante, Eldrian B.",9/3/2018,9/4/2018,Power interruption,returned
+"Bautista, Angel Mae Bautista",8/16/2018,8/20/2018,Flood,Returned
+"Bautista, Angel Mae Bautista",8/17/2018,9/20/2018,Flood,Returned
+"Bermudez, Mecca B.",8/28/2018,8/29/2018,Fever,
+"Bernabe, Maxeen Asuncion",11/22/2018,11/23/2018,Sister's Wedding,Returned
+"Botio, Francesca Phey Padilla",10/11/2018,10/12/2018,Fever and Headache,Returned
+"Briones, Aaron Jade T.",10/1/2018,10/2/2018,Flu,RD Returned
+"Buenaventura, TJ John Paul C.",9/6/2018,9/7/2018,body pain ,Returned
+"Buenaventura, TJ John Paul C.",10/4/2018,10/8/2018,Headache,RD
+"Bul-anon, Yanera F.",9/3/2018,9/4/2018,power interruption,Returned
+"Bulanhagui, Neil Joseph B.",9/27/2018,,Confined ,
+"Bulanhagui, Neil Joseph B.",9/28/2018,,Confined ,
+"Catiggay, Juhl Mayne Lina",7/20/2018,7/24/2018,Checkup,Returned
+"Catiggay, Juhl Mayne Lina",9/21/2018,9/24/2018,Abdominal pain,returned
+"Catiggay, Juhl Mayne Lina",10/9/2018,10/10/2018,Fever and Sorethroat,RD Returned
+"Gaspar, Ma. Alexandra M.",9/17/2018,9/18/2018,Stranded,Returned
+"Gaspar, Ma. Alexandra M.",9/21/2018,9/25/2018,Viewing,returned
+"Gaspar, Ma. Alexandra M.",9/24/2018,9/25/2018,Viewing,returned
+"Lansangan, Princess Rhyssa Yzabelle L.",8/16/2018,8/20/2018,Flood,Returned
+"Lansangan, Princess Rhyssa Yzabelle L.",8/17/2018,8/20/2018,Flood,Returned
+"Lansangan, Princess Rhyssa Yzabelle L.",11/14/2018,11/15/2018,Fever,returned
+"Lansangan, Princess Rhyssa Yzabelle L.",11/21/2018,11/22/2018,Migraine,
+"Laquindanum, Kylah Jean G.",8/16/2018,8/20/2018,Flood,Returned
+"Laquindanum, Kylah Jean G.",8/17/2018,8/20/2018,Flood,Returned
+"Mata, Ruel Evangelista",11/26/2018,11/27/2018,Fever,
+"Meneses, Aira Mae Pineda",10/8/2018,10/9/2018,SPES Scholarship,returned
+"Monillas, Gian Alec",10/4/2018,10/8/2018,Body pain,returned
+"Navalta, Melan Rose C.",6/22/2018,6/25/2018,baptism,Returned
+"Patricio, Axel I.",7/10/2018,7/11/2018,Flu,Returned
+"Patricio, Axel I.",9/3/2018,9/4/2018,muscle pain,returned
+"Patricio, Axel I.",9/17/2018,9/18/2018,Typhoon,
+"Pineda, Brixter Sien Muñoz",10/24/2018,11/5/2018,Fever and UTI,returned
+"Pineda, Brixter Sien Muñoz",10/25/2018,11/5/2018,Fever and UTI,returned
+"Pineda, Brixter Sien Muñoz",10/26/2018,11/5/2018,Fever and UTI,returned
+"Santos, Danitte Belmonte",8/16/2018,8/17/2018,Flood,
+"Torres, Ruzzel Eljay",8/16/2018,8/20/2018,Fever,
+"Torres, Ruzzel Eljay",8/17/2018,8/20/2018,Fever,
+"Torres, Ruzzel Eljay",9/24/2018,10/3/2018,Dengue,returned
+"Torres, Ruzzel Eljay",9/25/2018,10/3/2018,Dengue,returned
+"Torres, Ruzzel Eljay",9/26/2018,10/3/2018,Dengue,returned
+"Torres, Ruzzel Eljay",9/27/2018,10/3/2018,Dengue,returned
+"Torres, Ruzzel Eljay",9/28/2018,10/3/2018,Dengue,returned
+"Torres, Ruzzel Eljay",10/1/2018,10/3/2018,Dengue,returned
+"Torres, Ruzzel Eljay",10/2/2018,10/3/2018,Dengue,returned
+"Torres, Ruzzel Eljay",10/22/2018,10/23/2018,Not Feeling well,RD Returned
+"Atchico, Jhon Clarence Santos",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Atchico, Jhon Clarence Santos",8/162018,8/17/2018,Flood,
+"Atchico, Jhon Clarence Santos",9/11/2018,9/17/2018,Suspension,returned
+"Atchico, Jhon Clarence Santos",9/12/2018,9/17/2018,Suspension,returned
+"Atchico, Jhon Clarence Santos",7/26/2018,,,NO EL
+"Atchico, Jhon Clarence Santos",7/27/2018,,,NO EL
+"Atchico, Jhon Clarence Santos",8/28/2018,,SUSPENSION,Returned
+"Atchico, Jhon Clarence Santos",8/29/2018,,SUSPENSION,Returned
+"Atchico, Jhon Clarence Santos",8/30/2018,,SUSPENSION,Returned
+"Atchico, Jhon Clarence Santos",10/2/2018,10/3/2018,Baston Pants,RD
+"Atchico, Jhon Clarence Santos",9/10/2018,,,NO EL 
+"Atchico, Jhon Clarence Santos",9/11/2018,,,NO EL 
+"Atchico, Jhon Clarence Santos",9/12/2018,,,NO EL 
+"Atchico, Jhon Clarence Santos",11/26/2018,11/27/2018,,
+"Banting, Ruchelle G.",10/22/2018,10/23/2018,Confined (Cancer),returned
+"Batalla, Jed Angelo D.",9/7/2018,9/10/2018,Migraine,
+"Batalla, Jed Angelo D.",10/4/2018,10/8/2018,Went to San fernando,RD
+"Batalla, Jed Angelo D.",11/21/2018,11/22/2018,Migraine,RD
+"Bayta, Vanessa Kyla",7/20/2018,7/24/2018,Floods,Returned
+"Bayta, Vanessa Kyla",8/17/2018,8/20/2018,Flood,returned
+"Bayta, Vanessa Kyla",9/7/2018,9/10/2018,Acid,returned
+"Bayta, Vanessa Kyla",9/26/2018,9/27/2018,LBM ,returned
+"Bayta, Vanessa Kyla",10/22/2018,10/23/2018,Headache,RD Returned
+"Bayta, Vanessa Kyla",11/14/2018,11/15/2018,Went to Airport,Returned
+"Bernardino, Adrian Revilla",8/30/2018,8/31/2018,Mass Baptism ,
+"Bernardino, Adrian Revilla",9/3/2018,9/4/2018,power Interruption,returned
+"Bernardino, Adrian Revilla",8/17/2018,,,NO EL
+"Buco, Carl Aidanne Marcelino",11/20/2018,11/21/2018,Funeral ,Returned
+"Canlas, Jazmeer Galzote",8/16/2018,8/17/2018,Flood,
+"Cardeño, Patricia Gayle Fajardo",7/20/2018,,,NO EL
+"David, Roxanne Kaye D.",7/20/2018,,,NO EL
+"De Guzman, Kiana Trisha M.",8/28/2018,8/29/2018,Fever,Returned
+"Dungo, Dhealeen Nicole D.",7/10/2018,7/12/2018,Stomachache,Returned
+"Dungo, Dhealeen Nicole D.",7/20/2018,7/24/2018,Flood,
+"Dungo, Dhealeen Nicole D.",8/16/2018,8/17/2018,Flood,returned
+"Ferrer, Shanti Hazel Yambao",9/26/2018,9/27/2018,LBM,
+"Galliguez, Sean Owen Y.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Galliguez, Sean Owen Y.",7/25/2018,7/26/2018,Passport release,Returned
+"Galliguez, Sean Owen Y.",8/16/2018,8/17/2018,Flood,Returned
+"Galliguez, Sean Owen Y.",8/28/2018,,,NO EL
+"Galliguez, Sean Owen Y.",8/29/2018,,,NO EL
+"Galliguez, Sean Owen Y.",8/30/2018,,,NO EL
+"Galzote, Jameson Tongol",07/10/2018,07/24/2018,Hypertension,Returned
+"Galzote, Jameson Tongol",8/16/2018,8/17/2018,Heavyrain and Flood,Returned
+"Godoy, Julienne Dorothy Auriel A.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Godoy, Julienne Dorothy Auriel A.",9/3/2018,9/4/2018,Power interruption,Returned
+"Godoy, Julienne Dorothy Auriel A.",9/24/2018,9/25/2018,document process,returned
+"Godoy, Julienne Dorothy Auriel A.",11/13/2018,11/14/2018,Leg Injury,returned
+"Hernandez, Charles William T.",7/20/2018,,,NO EL
+"Hernandez, Charles William T.",8/16/2018,,,NO EL
+"Hernandez, Charles William T.",8/17/2018,,,NO EL
+"Hernandez, Charles William T.",9/3/2018,,,NO EL
+"Ingal, John Bernard T.",7/4/2018,7/5/2018,headache,Returned
+"Ingal, John Bernard T.",9/17/2018,9/18/2018,Flood,Returned
+"Ingal, John Bernard T.",11/8/2018,11/9/2018,headache,returned
+"Javier, John Matthew V.",8/16/2018,8/17/2018,Flood,Returned
+"Javier, John Matthew V.",9/17/2018,9/18/2018,Stomach Pain,
+"Lopez, Clodia Reign V.",10/1/2018,10/2/2018,Toothache,RD
+"Lopez, Clodia Reign V.",9/27/2018,,,NO EL
+"Lopez, Clodia Reign V.",10/9/2018,10/10/2018,LBM ,Returned
+"Lopez, Clodia Reign V.",11/19/2018,11/20/2018,Went to airport,Returned
+"Lopez, Jerome Navarro",7/20/2018,,,NO EL
+"Manalo, Gerion Izaak G.",7/9/2018,7/10/2018,fever,Returned
+"Manalo, Gerion Izaak G.",7/26/2018,7/27/2018,Passport renewal,
+"Manalo, Gerion Izaak G.",7/6/2018,,,NO EL
+"Marquez Jr., Ferdinand H.",8/28/2018,,SUSPENSION,NO EL
+"Marquez Jr., Ferdinand H.",8/29/2018,,SUSPENSION,NO EL
+"Marquez Jr., Ferdinand H.",8/30/2018,,SUSPENSION,NO EL
+"Miranda, Rianne Thea E.",7/20/2018,7/24/2018,hinatid ang tatay sa airport,Returned
+"Miranda, Rianne Thea E.",8/16/2018,8/17/2018, ,Returned
+"Miranda, Rianne Thea E.",9/3/2018,9/4/2018,power interuption,Returned
+"Miranda, Rianne Thea E.",10/1/2018,10/2/2018,Body Pain,RD
+"Miranda, Rianne Thea E.",10/3/2018,10/4/2018,Accompany my mother in the hospital,RD
+"Montellano, Prince Jaycee Pacia",9/11/2018,9/12/2018,Stomachache,Returned
+"Naquita, Nelma O.",8/16/2018,8/17/2018,Fever,Returned
+"Naquita, Nelma O.",9/3/2018,9/4/2018,Power interruption,returned
+"Naquita, Nelma O.",9/10/2018,9/11/2018,still in Laguna,returned
+"Naquita, Nelma O.",10/4/2018,10/8/2018,Fever,returned
+"Naquita, Nelma O.",10/22/2018,,,NO EL
+"Naquita, Nelma O.",11/26/2018,11/27/2018,Checkup,
+"Orfano, Abegil Hope Porras",7/20/2018,7/26/2018,Heavy rain,Returned
+"Orfano, Abegil Hope Porras",10/1/2018,10/2/2018,Stomachache,RD Returned
+"Pangan, Fiona Apple T.",7/30/2018,7/31/2018,hyperacidity,Returned
+"Pangan, Fiona Apple T.",7/20/2018,7/24/2018,heavy rain and floods,returned
+"Pangan, Fiona Apple T.",9/18/2018,9/19/2018,Grandmother's Birthday,Returned
+"Pangan, Fiona Apple T.",10/10/2018,10/11/2018,Hyperacidity,RD Returned
+"Pangan, Fiona Apple T.",9/3/2018,,,NO EL
+"Pangan, Mar Niño U.",7/20/2018,,,NO EL
+"Patiño, Vhaugnn Diane G.",6/22/2018,6/25/2018,baptism,Returned
+"Pineda, Aira Joyce Gatche",7/17/2018,7/24/2018,Heavy Rain,Returned
+"Pineda, Aira Joyce Gatche",7/20/2018,7/24/2018,Heavy Rain,Returned
+"Pineda, Aira Joyce Gatche",9/3/2018,,,Returned
+"Pineda, Aira Joyce Gatche",10/4/2018,10/8/2018,Jaw Pain and Headache,returned
+"Quiroz, Clarence Mark Jaingue",6/18/2018,6/21/2018,went to NAIA,Returned
+"Quiroz, Clarence Mark Jaingue",7/20/2018,7/25/2018,Flood,Returned
+"Romero, Jomari A.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Romero, Jomari A.",8/8/18(HalfDay),8/8/2018,Church related,Returned
+"Santos, Kimberly Dawn L.",10/8/2018,,Fever and Cough,Returned
+"Santos, Patricia",7/20/2018,7/25/2018,heavy rain and floods,Returned
+"Santos, Patricia",9/3/2018,,,NO EL
+"Sarmiento, Jose Fernando J.",7/30/2018,7/31/2018,Grandfather died,Returned
+"Toledo, Melvin Andrew Capuli",9/17/2018,9/18/2018,Severe Headache,Returned
+"Toledo, Melvin Andrew Capuli",9/27/2018,9/28/2018,Fever,returned
+"Bagtas, Aubrey M.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Bagtas, Aubrey M.",9/20/2018,9/21/2018,BULSU,returned
+"Bagtas, Aubrey M.",10/18/2018,10/19/2018,College Application,returned
+"Balt, Heizel H.",7/24/2018,7/25/2018,Checkup,Returned
+"Balt, Heizel H.",9/10/2018,9/12/2018,dysmenorrhea,
+"Balt, Heizel H.",9/11/2018,9/12/2018,dysmenorrhea,
+"Balt, Heizel H.",10/3/2018,10/4/2018,Fever and Colds,Returned
+"Bog-acon, Drexler D.",7/9/2018,7/10/2018,body pain and cough,RD
+"Bog-acon, Drexler D.",7/17/2018,7/20/2018,Severe Cough ,Returned
+"Bog-acon, Drexler D.",9/3/2018,9/4/2018,appointment with my sister,Returned
+"Bog-acon, Drexler D.",10/8/2018,10/9/2018,Personal Problem,returned
+"Bog-acon, Drexler D.",11/19/2018,11/20/2018,woke uplate,returned
+"Cabañero, Cherry Mae G.",9/20/2018,9/21/2018,BULSU,returned
+"Cabañero, Cherry Mae G.",10/18/2018,10/19/2018,College Application,Returned
+"Capistrano, Mark Daniel L.",7/9/2018,7/10/2018,fever,Returned
+"Capistrano, Mark Daniel L.",7/20/2018,7/24/2018,Flood,Returned
+"Capistrano, Mark Daniel L.",8/8/2018,8/9/2018,UPCAT,Returned
+"Capistrano, Mark Daniel L.",8/16/2018,8/22/2018,Flood,returned
+"Capistrano, Mark Daniel L.",8/17/2018,8/22/2018,Flood,returned
+"Capistrano, Mark Daniel L.",9/20/2018,9/21/2018,BULSU,returned
+"Capistrano, Mark Daniel L.",10/18/2018,10/19/2018,BULSU,returned
+"Capulong, Alexandria Anne L.",10/18/2018,10/19/2018,College Applicaion,returned
+"Carreon, Mark Vincent P.",8/8/2018,8/9/2018,UPCAT,Returned
+"Carreon, Mark Vincent P.",9/20/2018,9/21/2018,BULSU,returned
+"Carreon, Mark Vincent P.",10/11/2018,10/12/2018,Not Feeling well,RD Returned
+"Carreon, Mark Vincent P.",10/18/2018,10/19/2018,College Application,returned
+"Del Rosario, Ma. Stifanny Y.",8/8/2018,8/9/2018,UPCAT,Returned
+"Del Rosario, Ma. Stifanny Y.",8/30/2018,8/31/2018,Mass Baptism,Returned
+"Del Rosario, Ma. Stifanny Y.",9/20/2018,9/21/2018,BULSU,returned
+"Del Rosario, Ma. Stifanny Y.",10/18/2018,10/19/2018,College Application,returned
+"Delos Santos, Patricia Anne A.",8/8/2018,8/9/2018,UPCAT,Returned
+"Delos Santos, Patricia Anne A.",9/20/2018,9/21/2018,BULSU,
+"Delos Santos, Patricia Anne A.",11/5/2018,11/6/2018,got home yesterday from Vacation,RD Returned
+"Delos Trinos, Ammi Nicole I.",7/5/2018,7/9/2018,fever and headache,Returned
+"Delos Trinos, Ammi Nicole I.",1/8/2018,2/8/2018,Headache,Returned
+"Delos Trinos, Ammi Nicole I.",8/8/2018,8/9/2018,UPCAT,Returned
+"Delos Trinos, Ammi Nicole I.",9/25/2018,9/26/2018,Concert Organizer,returned
+"Delos Trinos, Ammi Nicole I.",10/18/2018,10/19/2018,Abdominal Pain,returned
+"Delos Trinos, Ammi Nicole I.",11/19/2018,11/20/2018,Viewing PBB,returned
+"Faustino, Nicole O.",7/20/2018,7/24/2018,Fever,Returned
+"Faustino, Nicole O.",8/8/2018,8/9/2018,UPCAT,Returned
+"Faustino, Nicole O.",9/20/2018,9/21/2018,BSU,Returned
+"Faustino, Nicole O.",9/19/2018,9/21/2018,Flood,returned
+"Faustino, Nicole O.",9/26/2018,9/27/2018,Vacation,returned
+"Faustino, Nicole O.",10/18/2018,10/19/2018,College Application,returned
+"Faustino, Nicole O.",11/22/2018,11/26/2018,Sick,
+"Fernandez, Hazel Anne H.",7/10/2018,7/11/2018,"Fever, cough and colds",Returned
+"Fernandez, Hazel Anne H.",8/8/2018,8/9/2018,UPCAT,returned
+"Fernandez, Hazel Anne H.",9/20/2018,9/21/2018,BULSU,returned
+"Fernandez, Hazel Anne H.",10/18/2018,10/19/2018,College Application,returned
+"Galon, Angelique Marie D.",8/8/2018,8/9/2018,UPCAT,Returned
+"Galon, Angelique Marie D.",10/22/2018,10/23/2018,College Application,Returned
+"Intal, John Paulo S.",8/8/2018,8/9/2018,UPCAT,Returned
+"Intal, John Paulo S.",8/29/2018,8/30/2018,Emergency,Returned
+"Intal, John Paulo S.",9/19/2018,9/21/2018,BULSU,returned
+"Intal, John Paulo S.",9/20/2018,9/21/2018,BULSU,returned
+"Intal, John Paulo S.",10/18/2018,10/19/2018,College Application,returned
+"Laxa, Dianne T.",8/31/2018,9/3/2018,Dysmenorrhea,Returned
+"Laxa, Dianne T.",10/1/2018,10/2/2018,family matter,RD
+"Laxa, Dianne T.",9/20/2018,9/21/2018,BULSU,returned
+"Laxa, Dianne T.",10/18/2018,10/19/2018,College Application,returned
+"Lumbang, Seatiel S.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Lumbang, Seatiel S.",10/22/2018,10/23/2018,College Application,returned
+"Lumbang, Seatiel S.",11/7/2018,11/8/2018,accompany my mother for her checkup,returned
+"Manansala, Lyka L.",8/8/2018,8/9/2018,UPCAT,Returned
+"Manansala, Lyka L.",8/30/2018,8/31/2018,Mass Baptism,returned
+"Manansala, Lyka L.",10/1/2018,10/2/2018,Fever and LBM,returned
+"Manansala, Lyka L.",9/20/2018,9/21/2018,BULSU,returned
+"Manansala, Lyka L.",10/18/2018,10/19/2018,College Application,Returned
+"Miras, Chrizel T.",8/9/2018,,UPCAT,Returned
+"Miras, Chrizel T.",9/20/2018,9/21/2018,,BSU
+"Musni, Angelica Y.",9/11/2018,9/12/2018,Dysmenorrhea,
+"Nabong, Cyrish Kherleen B.",8/8/2018,8/9/2018,UPCAT,Returned
+"Nabong, Cyrish Kherleen B.",9/20/2018,9/21/2018,College Req.,returned
+"Nabong, Cyrish Kherleen B.",10/18/2018,10/19/2018,College Application,returned
+"Patiu, Marifie A.",8/8/2018,8/9/2018,UPCAT,Returned
+"Patiu, Marifie A.",9/20/2018,9/21/2018,BULSU,returned
+"Patiu, Marifie A.",10/18/2018,10/19/2018,College Application,returned
+"Pintes, Irah G.",8/8/2018,8/9/2018,UPCAT,Returned
+"Pintes, Irah G.",9/20/2018,9/21/2018,,
+"Quiambao, Charlene Jane M.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Quiambao, Charlene Jane M.",8/8/2018,8/9/2018,UPCAT,Returned
+"Quiambao, Charlene Jane M.",9/8/2018,8/10/2018,Sick,returned
+"Quiambao, Charlene Jane M.",9/3/2018,9/4/2018,Sick,returned
+"Quiambao, Charlene Jane M.",10/22/2018,10/23/2018,College Application,returned
+"Quiambao, Charlene Jane M.",11/19/2018,11/20/2018,Not Feeling well,returned
+"Quiambao, Regine M.",,6/18/2018,fever(HALFDAY),Returned
+"Quiambao, Regine M.",7/5/2018,7/10/2018,medical check-up,Returned
+"Quiambao, Regine M.",7/9/2018,7/10/2018,medical check-up,Returned
+"Quiambao, Regine M.",7/20/2018,7/24/2018,Fever,Returned
+"Quiambao, Regine M.",8/20/2018,8/22/2018,Fever,returned
+"Quiambao, Regine M.",8/28/2018,8/29/2018,LBM ,
+"Quiambao, Regine M.",8/31/2018,9/3/2018,Bodypain and headache,returned
+"Quiambao, Regine M.",9/9/2018,9/12/2018,Fever,returned
+"Quiambao, Regine M.",9/10/2018,9/12/2018,Fever,returned
+"Quiambao, Regine M.",9/11/2018,9/12/2018,Fever,returned
+"Quiambao, Regine M.",9/17/2018,9/18/2018,LBM ,returned
+"Quiambao, Regine M.",9/26/2018,10/26/2018,Funeral,returned
+"Quiambao, Regine M.",9/27/2018,10/26/2018,Funeral,returned
+"Quiambao, Regine M.",9/28/2018,10/26/2018,Funeral,returned
+"Quiambao, Regine M.",10/2/2018,10/8/2018,Funeral,RETURNED
+"Quiambao, Regine M.",10/3/2018,10/8/2018,Funeral,RETURNED
+"Quiambao, Regine M.",10/4/2018,10/8/2018,Funeral,RETURNED
+"Quiambao, Regine M.",10/26/2018,10/29/2018,Mass Baptism ,returned
+"Quiambao, Regine M.",11/7/2018,11/8/2018,Fever,RD
+"Quijano, Crislen Joie L.",7/13/2018,7/16/2018,Religious treat,Returned
+"Quijano, Crislen Joie L.",8/20/2018,8/22/2018,Fever,
+"Quijano, Crislen Joie L.",9/20/2018,9/21/2018,BULSU,returned
+"Quijano, Crislen Joie L.",10/18/2018,10/19/2018,BULSU,returned
+"Reyes, Elaiza R.",9/3/2018,9/4/2018,Headache,Returned
+"Ricohermoso, Patricia Ann L.",8/8/2018,8/9/2018,UPCAT,Returned
+"Ricohermoso, Patricia Ann L.",9/5/2018,9/6/2018,Checkup,Returned
+"Ricohermoso, Patricia Ann L.",9/20/2018,9/21/2018,BULSU,returned
+"Ricohermoso, Patricia Ann L.",10/18/2018,10/19/2018,College Application,returned
+"Somes, Mike Angelo D.",7/20/2018,7/24/2018,Fever,Returned
+"Somes, Mike Angelo D.",7/30-/2018,6/8/2018,Confined,Returned
+"Somes, Mike Angelo D.",8/2/2018,6/8/2018,Confined,Returned
+"Somes, Mike Angelo D.",8/8/2018,8/9/2018,UPCAT,Returned
+"Somes, Mike Angelo D.",9/20/2018,9/21/2018,BULSU,returned
+"Somes, Mike Angelo D.",10/18/2018,10/19/2018,College Application,returned
+"Trinidad, Michelle A.",6/26/2018,7/2/2018,libing ng lolo,Returned
+"Trinidad, Michelle A.",6/27/2018,7/2/2018,libing ng lolo,Returned
+"Trinidad, Michelle A.",8/16/2018,8/17/2018,Flood,Returned
+"Trinidad, Michelle A.",8/30/2018,8/31/2018,emergency,Returned
+"Trinidad, Michelle A.",10/8/2018,10/9/2018,Req. F137(ELEM),returned
+"Trinidad, Michelle A.",11/8/2018,11/12/2018,Document Application,returned
+"Trinidad, Michelle A.",11/9/2018,11/12/2018,Document Application,returned
+"Tuazon, Wilzon L.",8/8/2018,8/9/2018,UPCAT,Returned
+"Tuazon, Wilzon L.",9/6/2018,9/7/2018,Family Ocassion,returned
+"Tuazon, Wilzon L.",9/20/2018,9/21/2018,BULSU,Returned
+"Tuazon, Wilzon L.",9/25/2018,9/26/2018,Uncle's Burial,returned
+"Tuazon, Wilzon L.",10/18/2018,10/19/2018,College Application,returned
+"Valguna, Jamelia S.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Valguna, Jamelia S.",8/8/2018,8/9/2018,UPCAT,Returned
+"Valguna, Jamelia S.",9/20/2018,9/21/2018,Went to BulSU,returned
+"Valguna, Jamelia S.",10/18/2018,10/19/2018,College Application,RD
+"Viray, Arianne Kate S.",7/3/2018,7/4/2018,check-up,Returned
+"Viray, Arianne Kate S.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Viray, Arianne Kate S.",8/8/2018,8/9/2018,UPCAT,Returned
+"Viray, Arianne Kate S.",9/20/2018,9/21/2018,BULSU,returned
+"Viray, Arianne Kate S.",10/18/2018,10/19/2018,Colege Application,returned
+"Yambao, Nicole Yehlen R.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Yambao, Nicole Yehlen R.",9/20/2018,9/21/2018,BULSU,returned
+"Yambao, Nicole Yehlen R.",10/18/2018,10/19/2018,College Application,returned
+"Casabaet, Marjorie B.",8/8/2018,8/9/2018,UPCAT,Returned
+"Casabaet, Marjorie B.",9/20/2018,9/21/2018,BULSU,returned
+"Casabaet, Marjorie B.",10/18/2018,10/19/2018,College Application,returned
+"Marcelino, Daniel Kurt A.",8/16/2018,8/17/2018,Sinusitis,Returned
+"Marcelino, Daniel Kurt A.",9/20/2018,9/21/2018,BULSU,
+"Marcelino, Daniel Kurt A.",9/3/2018,9/4/2018,cough and colds,returned
+"Marcelino, Daniel Kurt A.",9/7/2018,9/10/2018,Tooth extraction,returned
+"Marcelino, Daniel Kurt A.",11/21/2018,11/22/2018,Colds,
+"Quita, Nalla Mae D.",7/20/2018,7/24/2018,heavy rain and floods and not feeling well,Returned
+"Quita, Nalla Mae D.",8/8/2018,8/9/2018,UPCAT,Returned
+"Quita, Nalla Mae D.",8/20/2018,8/23/2018,Went home,
+"Quita, Nalla Mae D.",8/21/2018,8/23/2018,Went home,
+"Quita, Nalla Mae D.",8/22/2018,8/23/2018,Went home,
+"Quita, Nalla Mae D.",9/17/2018,9/18/2018,Went home,returned
+"Quita, Nalla Mae D.",8/31/2018,,,
+"Quita, Nalla Mae D.",10/4/2018,10/8/2018,DCAT Application,RD Returned
+"Quita, Nalla Mae D.",11/19/2018,11/20/2018,Went home,Returned
+"Samson, Marie Elisha",6/18/2018,6/19/2018,backpain/scoliosis,Returned
+"Samson, Marie Elisha",7/5/2018,7/9/2018,acute respiratory track infection,Returned
+"Samson, Marie Elisha",8/8/2018,9/8/2018,UPCAT,Returned
+"Samson, Marie Elisha",9/3/2018,9/4/2018,power interuption,returned
+"Samson, Marie Elisha",9/20/2018,9/21/2018,BULSU,returned
+"Samson, Marie Elisha",10/18/2018,10/19/2018,College Application,returned
+"Aga, Kathleen Joyce D.",7/30/2018,7/31/2018,UTI nad headache,Returned
+"Aga, Kathleen Joyce D.",9/3/20218,9/4/2018,Grandfather died,returned
+"Aga, Kathleen Joyce D.",9/10/2018,9/12/2018,hospital/UTI,Returned
+"Aga, Kathleen Joyce D.",9/11/2018,9/12/2018,hospital/UTI,Returned
+"Aga, Kathleen Joyce D.",8/16/2018,,,NO EL
+"Aga, Kathleen Joyce D.",10/2/2018,10/3/2018,UTI,RD
+"Aga, Kathleen Joyce D.",11/20/2018,11/21/2018,Headache and Cough,returned
+"Agapito, Danielle Izzabel L.",7/4/2018,7/5/2018,dysmenorrhea & bodyache,Returned
+"Agapito, Danielle Izzabel L.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Agapito, Danielle Izzabel L.",7/25/2018,7/30/2018,UTI and Fever,Returned
+"Agapito, Danielle Izzabel L.",7/26/2018,7/30/2018,UTI and Fever,Returned
+"Agapito, Danielle Izzabel L.",7/25/2018,7/30/2018,UTI and Fever,Returned
+"Agapito, Danielle Izzabel L.",8/8/2018,9/10/2018,UPCAT,returned
+"Agapito, Danielle Izzabel L.",8/16/2018,8/20/2018,Fever,
+"Agapito, Danielle Izzabel L.",8/17/2018,8/20/2018,Fever,
+"Agapito, Danielle Izzabel L.",9/3/2018,9/11/2018,Mother Passed away,returned
+"Agapito, Danielle Izzabel L.",9/4/2018,9/11/2018,Mother Passed away,returned
+"Agapito, Danielle Izzabel L.",9/5/2018,9/11/2018,Mother Passed away,returned
+"Agapito, Danielle Izzabel L.",9/6/2018,9/11/2018,Mother Passed away,returned
+"Agapito, Danielle Izzabel L.",9/7/2018,9/11/2018,Mother Passed away,returned
+"Agapito, Danielle Izzabel L.",9/10/2018,9/11/2018,Mother Passed away,returned
+"Agapito, Danielle Izzabel L.",8/29/2018,,,NO EL
+"Agapito, Danielle Izzabel L.",8/31/2018,,,NO EL
+"Agapito, Danielle Izzabel L.",9/18/2018,9/19/2018,LBM,
+"Agapito, Danielle Izzabel L.",10/8/2018,10/9/2018,College Requirements,RD
+"Agapito, Danielle Izzabel L.",11/7/2018,11/8/2018,Flu and Fever,RD
+"Agapito, Danielle Izzabel L.",11/9/2018,11/13/2018,Tonsilities and Fever,returned
+"Alfaro, Jennica M.",10/18/2018,10/19/2018,BULSU,RD 
+"Angeles, Christine Kaila F.",7/31/2018,7/31/2018,Late galing byahe,Returned
+"Angeles, Christine Kaila F.",8/22/2018,9/3/2018,grandfather's death,returned
+"Angeles, Christine Kaila F.",8/23/2018,9/3/2018,grandfather's death,returned
+"Angeles, Christine Kaila F.",8/24/2018,9/3/2018,grandfather's death,returned
+"Angeles, Christine Kaila F.",8/25/2018,9/3/2018,grandfather's death,returned
+"Angeles, Christine Kaila F.",8/26/2018,9/3/2018,grandfather's death,returned
+"Angeles, Christine Kaila F.",8/27/2018,9/3/2018,grandfather's death,returned
+"Angeles, Christine Kaila F.",8/28/2018,9/3/2018,grandfather's death,returned
+"Angeles, Christine Kaila F.",8/29/2018,9/3/2018,grandfather's death,returned
+"Angeles, Christine Kaila F.",8/30/2018,9/3/2018,grandfather's death,returned
+"Angeles, Christine Kaila F.",8/31/2018,9/3/2018,grandfather's death,returned
+"Apio, Elisea A.",8/16/2018,8/20/2018,Flood,Returned
+"Apio, Elisea A.",8/17/2018,8/20/2018,Flood,Returned
+"Apio, Elisea A.",9/3/2018,9/4/2018,no uniform,returned
+"Apio, Elisea A.",11/8/2018,11/12/2018,Checkup,returned
+"Apio, Elisea A.",11/9/2018,11/12/2018,Checkup,returned
+"Aquino, Kayla Mae S.",8/16/2018,8/20/2018,Fever,Returned
+"Aquino, Kayla Mae S.",8/17/2018,8/20/2018,Fever,Returned
+"Aquino, Kayla Mae S.",9/3/2018,9/10/2018,Grandfather died,Returned
+"Aquino, Kayla Mae S.",9/4/2018,9/10/2018,Grandfather died,Returned
+"Aquino, Kayla Mae S.",9/5/2018,9/10/2018,Grandfather died,Returned
+"Aquino, Kayla Mae S.",9/6/2018,9/10/2018,Grandfather died,Returned
+"Aquino, Kayla Mae S.",9/7/2018,9/10/2018,Grandfather died,Returned
+"Aquino, Kayla Mae S.",9/8/2018,9/10/2018,Grandfather died,Returned
+"Aquino, Kayla Mae S.",10/4/2018,10/8/2018,Vomitting,returned
+"Balagtas, Jenelyn Marie M.",10/2/2018,10/4/2018,BULSU,returned
+"Balagtas, Jenelyn Marie M.",10/3/2018,10/4/2018,BULSU,returned
+"Briones, Mika-Elka C.",8/16/2018,8/20/2018,Flood,Returned
+"Briones, Mika-Elka C.",8/17/2018,8/20/2018,Flood,Returned
+"Briones, Mika-Elka C.",9/17/2018,9/18/2018,Fever,
+"Briones, Mika-Elka C.",10/23/2018,10/24/2018,F137(notWholeday),RD
+"Bustos, Florendo S.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Bustos, Florendo S.",8/16/2018,8/20/2018,Flood,returned
+"Bustos, Florendo S.",8/17/2018,8/20/2018,Flood,returned
+"Bustos, Florendo S.",9/17/2018,9/18/2018,Fever,Returned
+"Bustos, Florendo S.",8/31/2018,,personal matter,returned
+"Bustos, Florendo S.",9/24/2018,9/25/2018,Stomachache,
+"Bustos, Florendo S.",10/2/2018,10/3/2018,Baston Pants,returned
+"Bustos, Florendo S.",10/4/2018,10/8/2018,went somewhere with my parents,returned
+"Bustos, Florendo S.",11/6/2018,11/7/2018,accompany my sister in hopital,RD Returned
+"Cabrera, Mary Ann A.",7/25/2018,7/26/2018,Fever,Returned
+"Cabrera, Mary Ann A.",8/2/2018,8/6/2018,Personal Matter(HALF DAY),returned
+"Cabrera, Mary Ann A.",9/5/2018,9/6/2018,went to hospital,Returned
+"Cabrera, Mary Ann A.",10/2/2018,10/4/2018,"left my ID, Went to BULSU",RD
+"Cabrera, Mary Ann A.",10/3/2018,10/4/2018,"left my ID, Went to BULSU",RD
+"Cano, Mary Jane G.",8/16/2018,8/20/2018,Flood,Returned
+"Cano, Mary Jane G.",8/17/2018,8/20/2018,Flood,Returned
+"Cano, Mary Jane G.",10/10/2018,10/11/2018,BULSU(HALFDAY),returned
+"Daray, Ma. Micaela L.",7/10/2018,7/11/2018,Fever and LBM,Returned
+"Daray, Ma. Micaela L.",7/27/2018,7/30/2018,Dysmenorhea,returned
+"Daray, Ma. Micaela L.",8/29/2018,8/30/2018,pamamaga ng paa,Returned
+"Daray, Ma. Micaela L.",9/10/2018,9/12/2018,Accident,returned
+"Daray, Ma. Micaela L.",10/3/2018,10/4/2018,BULSU,returned
+"Daray, Ma. Micaela L.",10/19/2018,10/22/2018,Vomitting and stomachache,returned
+"Daray, Ma. Micaela L.",11/13/2018,11/15/2018,Swollen of Feet,Returned
+"Daray, Ma. Micaela L.",11/14/2018,11/15/2018,Swollen of Feet,Returned
+"De Mesa, Josette L.",8/16/2018,8/22/2018,Dengue,Returned
+"De Mesa, Josette L.",8/17/2018,8/22/2018,Dengue,Returned
+"De Mesa, Josette L.",8/18/2018,8/22/2018,Dengue,Returned
+"De Mesa, Josette L.",8/19/2018,8/22/2018,Dengue,Returned
+"De Mesa, Josette L.",8/20/2018,8/22/2018,Dengue,Returned
+"De Mesa, Josette L.",9/17/2018,9/18/2018,Fever And Headache,Returned
+"De Mesa, Josette L.",11/7/2018,11/8/2018,Fever and Headache,returned
+"Domingo, Jeancy B.",7/10/2018,7/11/2018,Fever,Returned
+"Domingo, Jeancy B.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Domingo, Jeancy B.",8/8/2018,8/9/2018,UPCAT,Returned
+"Domingo, Jeancy B.",11/5/2018,11/6/2018,Di nakauwi ng Apalit,returned
+"Dumaguin, June Marie Nicole C.",7/24/2018,7/25/2018,heavy rain and floods,
+"Dumaguin, June Marie Nicole C.",8/29/2018,8/30/2018,Fever and Colds,Returned
+"Dumaguin, June Marie Nicole C.",8/16/2018,8/20/2018,Flood,returned
+"Dumaguin, June Marie Nicole C.",8/17/2018,8/20/2018,Flood,returned
+"Dumaguin, June Marie Nicole C.",10/1/2018,10/8/2018,Grandmother's Funeral,(RD)returned 
+"Dumaguin, June Marie Nicole C.",10/2/2018,10/8/2018,Grandmother's Funeral,(RD)returned 
+"Dumaguin, June Marie Nicole C.",10/3/2018,10/8/2018,Grandmother's Funeral,(RD)returned 
+"Dumaguin, June Marie Nicole C.",10/4/2018,10/8/2018,Grandmother's Funeral,(RD)returned 
+"Espiritu, Jovit A.",8/16/2018,8/20/2018,Flood,Returned
+"Espiritu, Jovit A.",8/17/2018,8/20/2018,Flood,Returned
+"Espiritu, Jovit A.",10/2/2018,10/4/2018,BULSU,returned
+"Espiritu, Jovit A.",10/3/2018,10/4/2018,BULSU,returned
+"Espiritu, Jovit A.",11/5/2018,11/6/2018,Sick,returned
+"Ferrer, Ma. Nicole Y.",8/8/2018,8/9/2018,UPCAT,Returned
+"Ferrer, Ma. Nicole Y.",9/21/2018,9/24/2018,Headache and Fever,Returned
+"Ferrer, Ma. Nicole Y.",10/18/2018,10/19/2018,College Application,RD
+"Garcia, Christian Jay E.",6/8/2018,8/7/2018,Diarrhea,
+"Garcia, Christian Jay E.",8/16/2018,8/17/2018,Flood,Returned
+"Garcia, Christian Jay E.",8/29/2018,8/30/2018,Cough,returned
+"Garcia, Christian Jay E.",7/2/2018,,,NO EL
+"Garcia, Christian Jay E.",7/20/2018,,,
+"Garcia, Christian Jay E.",6/27/2018,,,NO EL
+"Garcia, Christian Jay E.",9/18/2018,9/19/2018,College Requirements,returned
+"Garcia, Christian Jay E.",11/16/2018,11/19/2018,Family Gathering ,returned
+"Gatmaitan, Christoper Jorge V.",7/20/2018,7/24/2018,Fever,Returned
+"Gatmaitan, Christoper Jorge V.",10/8/2018,8/16/2018,headache and cough,
+"Gatmaitan, Christoper Jorge V.",8/8/2018,,UPCAT,NO EL
+"Guese, Angelo B.",8/16/2018,8/20/2018,Flood,Returned
+"Guese, Angelo B.",8/17/2018,8/20/2018,Flood,Returned
+"Guese, Angelo B.",8/29/2018,8/30/2018,Fever,Returned
+"Ibañez, Hannah Alyssa J.",7/17/2018,7/24/2018,heavy rain and floods,Returned
+"Ibañez, Hannah Alyssa J.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Ibañez, Hannah Alyssa J.",7/26/2018,7/27/2018,Backpain,Returned
+"Ibañez, Hannah Alyssa J.",8/8/2018,8/9/2018,UPCAT,Returned
+"Ibañez, Hannah Alyssa J.",8/16/2018,8/17/2018,Low bowel movement,returned
+"Ibañez, Hannah Alyssa J.",8/29/2018,9/3/2018,LBM,
+"Ibañez, Hannah Alyssa J.",8/30/2018,9/3/2018,LBM,
+"Ibañez, Hannah Alyssa J.",8/31/2018,9/3/2018,LBM,
+"Ibañez, Hannah Alyssa J.",9/12/2018,9/17/2018,Dysmenorrhea,returned
+"Ibañez, Hannah Alyssa J.",10/8/2018,10/9/2018,Dysmenorrhea,returned
+"Ibañez, Hannah Alyssa J.",10/22/2018,10/23/2018,College Application,returned
+"Ibañez, Hannah Alyssa J.",11/7/2018,11/8/2018,Headache,RD
+"Ibañez, Hannah Alyssa J.",11/19/2018,11/20/2018,Fever,RD
+"Ingal, Mariz F.",6/20/2018,6/21/2018,wound (foot),Returned
+"Ingal, Mariz F.",7/10/2018,7/11/2018,Fever,Returned
+"Ingal, Mariz F.",7/24/2018,7/25/2018,Flood,Returned
+"Ingal, Mariz F.",8/16/2018,8/17/2018,Flood,returned
+"Ingal, Mariz F.",9/17/2018,9/18/2018,Flood,
+"Ingal, Mariz F.",10/4/2018,10/8/2018,Dysmenorrhea,RD
+"Ingal, Mariz F.",10/18/2018,10/18/2018,College Application|(Halfday),RD
+"Ingal, Mariz F.",11/9/2018,11/12/2018,Headache,returned
+"Lacanlale, Jude M.",7/24/2018,7/25/2018,heavy rain and floods,Returned
+"Lacanlale, Jude M.",8/16/2018,8/20/2018,Flood,Returned
+"Lacanlale, Jude M.",8/17/2018,8/20/2018,Flood,Returned
+"Lacanlale, Jude M.",8/28/2018,9/3/2018,Fever,Returned
+"Lacanlale, Jude M.",8/29/2018,9/3/2018,Fever,Returned
+"Lacanlale, Jude M.",8/22/2018,,,NO EL
+"Layson, Jericho John L.",9/3/2018,9/4/2018,power interruption,Returned
+"Layson, Jericho John L.",8/31/2018,,,NO EL
+"Layson, Jericho John L.",9/17/2018,9/18/2018,Lack of Sleep,
+"Layson, Jericho John L.",11/15/2018,,F137 Document process,
+"Lim, Jocell Daniel M.",7/8/2018,8/8/2018,Diarhea,Returned
+"Lim, Jocell Daniel M.",8/17/2018,8/20/2018,Body Pain,Returned
+"Lim, Jocell Daniel M.",9/3/2018,9/4/2018,Fever,Returned
+"Lim, Jocell Daniel M.",8/31/2018,,,NO EL
+"Lim, Jocell Daniel M.",10/1/2018,10/2/2018,accompany my brother for documents,RD Returned
+"Lim, Jocell Daniel M.",10/9/2018,10/10/2018,BULSU,RD Returned
+"Lim, Jocell Daniel M.",11/9/2018,11/12/2018,Went to Cavite for a package,returned
+"Madla, Jhanna Mae M.",10/3/2018,10/4/2018,College Admission,returned
+"Musngi, Vanessa C.",10/17/2018,10/18/2018,College Application(HALFDAY),returned
+"Ochoa, Mary Grace I.",8/8/2018,8/9/2018,Fever,Returned
+"Ochoa, Mary Grace I.",8/16/2018,8/17/2018,Flood,returned
+"Quiroz, Karence Kyra I.",7/31/2018,8/1/2018,Fever and Headache,Returned
+"Sarmiento, Lore Gail E.",6/25/2018,6/26/2018,monthly check-up,Returned
+"Sarmiento, Lore Gail E.",7/11/2018,7/10/2018,monthly check up,Returned
+"Sarmiento, Lore Gail E.",8/9/2018,8/10/2018,Diarrhea,Returned
+"Sarmiento, Lore Gail E.",9/3/2018,9/4/2018,Checkup,returned
+"Sarmiento, Lore Gail E.",9/17/2018,9/18/2018,Check up,returned
+"Sarmiento, Lore Gail E.",11/14/2018,11/16/2018,Pneumonia,returned
+"Sarmiento, Lore Gail E.",11/15/2018,11/16/2018,Pneumonia,returned
+"Sunga, Khaila Marie C.",7/24/2018,7/25/2018,heavy rain and floods,Returned
+"Sunga, Khaila Marie C.",8/16/2018,8/20/2018,Flood,Returned
+"Sunga, Khaila Marie C.",8/17/2018,8/20/2018,Flood,Returned
+"Sunga, Khaila Marie C.",9/17/2018,9/18/2018,Flood and Transportation,Returned
+"Sunga, Khaila Marie C.",10/17/2018,10/17/2018,College Applicatio(HALFDAY),RD Returned
+"Valencia, Earl Christian Jayson M.",6/14/2018,6/18/2018,heavy rain,Returned
+"Valencia, Earl Christian Jayson M.",7/5/2018,7/9/2018,helped in family business,Returned
+"Valencia, Earl Christian Jayson M.",7/24/2018,7/25/2018,Fever and LBM,Returned
+"Valencia, Earl Christian Jayson M.",7/30/2018,7/31/2018,LBM,returned
+"Valencia, Earl Christian Jayson M.",7/30/2018,7/31/2018,LBM,returned
+"Valencia, Earl Christian Jayson M.",9/11/2018,9/12/2018,spend time with relatives ,returned
+"Valencia, Earl Christian Jayson M.",9/17/2018,9/18/2018,Family business,returned
+"Valencia, Earl Christian Jayson M.",11/21/2018,11/22/2018,Fever,
+"Villarba, Camille Joyce G.",8/20/2018,8/22/2018,Family Bonding,Returned
+"Villarba, Camille Joyce G.",9/11/2018,9/12/2018,Dysmenorrhea,Returned
+"Villarba, Camille Joyce G.",9/17/2018,9/18/2018,Fever,Returned
+"Villareal, Zyrel John I.",8/8/2018,9/8/2018S,UPCAT,Returned
+"Yumang, Annie Pearl R.",,6/20/2018,,Returned
+"Yumang, Annie Pearl R.",9/11/2018,9/12/2018,colds,Returned
+"Yumang, Annie Pearl R.",11/5/2018,11/6/2018,Stomachache,RD
+"Angeles, Alyanna Marie C.",6/21/2018,6/25/2018,,
+"Angeles, Alyanna Marie C.",9/11/2018,9/12/2018,accompany my mom in the Hospital,Returned
+"Angeles, Alyanna Marie C.",7/20/2018,,,
+"Angeles, Alyanna Marie C.",8/10/2018,,,returned
+"Angeles, Alyanna Marie C.",9/17/2018,9/18/2018,BSU,
+"Angeles, Alyanna Marie C.",9/28/2018,10/1/2018,registration for voters,returned
+"Angeles, Alyanna Marie C.",10/8/2018,10/9/2018,BULSU,returned
+"Carreon, Leopoldo M.",8/10/2018,8/16/2018,Fever,Returned
+"Carreon, Leopoldo M.",7/12/2018,,,NO EL
+"Carreon, Leopoldo M.",8/31/2018,,,NO EL
+"Carreon, Leopoldo M.",9/17/2018,9/18/2018,Headache,returned
+"Carreon, Leopoldo M.",9/25/2018,9/26/2018,Checkup,
+"Castro, Xianelle Evon",8/9/2018,8/9/2018,UPCAT,Returned
+"Castro, Xianelle Evon",9/5/2018,9/6/2018,Fever,Returned
+"Castro, Xianelle Evon",9/7/2018,9/10/2018,Fever,Returned
+"Castro, Xianelle Evon",10/18/2018,10/22/2018,Hyperacidity,returned
+"Castro, Xianelle Evon",10/19/2018,10/22/2018,Hyperacidity,returned
+"Castro, Xianelle Evon",10/23/2018,10/24/2018,Hyperacidity,RD
+"Castro, Xianelle Evon",11/6/2018,11/7/2018,sick,RD
+"Diaz, Mary Ellies G.",7/20/2018,7/24/2018,hinatid ang papa sa airport,Returned
+"Diaz, Mary Ellies G.",7/30/2018,7/31/2018,LBM,Returned
+"Diaz, Mary Ellies G.",8/16/2018,8/17/2018,walang masakyan,returned
+"Diaz, Mary Ellies G.",8/31/2018,,,NO EL
+"Diaz, Mary Ellies G.",9/21/2018,9/24/2018,Stomachache,
+"Diaz, Mary Ellies G.",9/28/2018,10/26/2018,International License ,returned
+"Diaz, Mary Ellies G.",11/5/2018,11/6/2018,Requirements,RD
+"Diaz, Mary Ellies G.",11/19/2018,11/20/2018,LBM,RD Returned
+"Espinosa, Joerma M.",8/28/2018,8/30/2018,Not feeling well ,
+"Espinosa, Joerma M.",8/29/2018,8/30/2018,Not feeling well ,
+"Espinosa, Joerma M.",10/3/2018,10/4/2018,Tooth Extraction,RD
+"Flores, Gane Stephan A.",6/14/2018,,,NO EL
+"Flores, Gane Stephan A.",11/22/2018,11/26/2018,not Feeling well,
+"Manio, Katrina Ann A.",7/20/2018,7/31/2018,Fever LBM,Returned
+"Manio, Katrina Ann A.",7/24/2018,7/31/2018,Fever LBM,Returned
+"Manio, Katrina Ann A.",7/25/2018,7/31/2018,Fever LBM,Returned
+"Manio, Katrina Ann A.",7/26/2018,7/31/2018,Fever LBM,Returned
+"Manio, Katrina Ann A.",9/24/2018,9/25/2018,not feeling well,returned
+"Manio, Katrina Ann A.",10/18/2018,10/19/2018,Sick,RD
+"Manio, Katrina Ann A.",11/5/2018,11/7/2018,Flu,RD
+"Manio, Katrina Ann A.",11/6/2018,11/7/2018,Flu,RD
+"Montoya, Dorathee Joy M.",9/20/2018,9/21/2018,College Req,Returned
+"Montoya, Dorathee Joy M.",10/18/2018,10/19/2018,COllege Application,returned
+"Palma, Polah Gerrine A.",7/20/2018,7/24/2018,Fever,Returned
+"Palma, Polah Gerrine A.",8/16/2018,8/17/2018,Flood,Returned
+"Palma, Polah Gerrine A.",8/28/2018,8/29/2018,Fever,Returned
+"Palma, Polah Gerrine A.",9/6/2018,9/7/2018,Headache,returned
+"Palma, Polah Gerrine A.",9/20/2018,9/21/2018,BULSU,returned
+"Palma, Polah Gerrine A.",10/18/2018,10/19/2018,College Application,returned
+"Palma, Polah Gerrine A.",11/6/2018,11/7/2018,Funeral,RD Returned
+"Raro, Michael C.",6/14/2018,7/4/2018,muscular spasm,Returned
+"Raro, Michael C.",6/18/2018,7/4/2018,muscular spasm,Returned
+"Raro, Michael C.",6/19/2018,7/4/2018,muscular spasm,Returned
+"Raro, Michael C.",6/20/2018,7/4/2018,muscular spasm,Returned
+"Raro, Michael C.",6/25/2018,7/4/2018,muscular spasm,Returned
+"Raro, Michael C.",6/26/2018,7/4/2018,muscular spasm,Returned
+"Raro, Michael C.",6/27/2018,7/4/2018,muscular spasm,Returned
+"Raro, Michael C.",7/3/2018,7/4/2018,muscular spasm,Returned
+"Raro, Michael C.",7/24/2018,7/25/2018,assist his father to diagnostic,Returned
+"Raro, Michael C.",8/16/2018,8/20/2018,Flood,Returned
+"Raro, Michael C.",8/17/2018,8/20/2018,Flood,Returned
+"Raro, Michael C.",9/3/2018,9/4/2018,Dizziness,returned
+"Raro, Michael C.",7/2/2018,,,
+"Raro, Michael C.",7/3/2018,,,
+"Raro, Michael C.",7/9/2018,,,NO EL
+"Raro, Michael C.",7/20/2018,,,NO EL
+"Raro, Michael C.",7/24/2018,,,NO EL
+"Raro, Michael C.",9/17/2018,9/18/2018,Entrance Exam,returned
+"Raro, Michael C.",10/8/2018,10/9/2018,College Requirements,returned
+"Raro, Michael C.",10/19/2018,10/22/2018,College Application,RD Returned
+"Raro, Michael C.",11/12/2018,11/14/2018,F137 and releasing of Passport,RD Returned
+"Raro, Michael C.",11/13/2018,11/14/2018,F137 and releasing of Passport,RD Returned
+"Saba, Khizhia Mae B.",9/17/2018,9/18/2018,Entrance Exam,Returned
+"Saba, Khizhia Mae B.",9/28/2018,10/1/2018,Stomachache,RD Returned
+"Sangilan, Anadie C.",7/20/2018,7/24/2018,Fever,Returned
+"Sangilan, Anadie C.",8/28/2018,8/29/2018,LBM ,
+"Sangilan, Anadie C.",8/17/2018,,,NO EL
+"Sangilan, Anadie C.",9/20/2018,9/21/2018,Went to BULSU,returned
+"Sangilan, Anadie C.",10/18/2018,10/19/2018,College Application,returned
+"Sangilan, Anadie C.",11/12/2018,11/13/2018,Fever,RD Returned
+"Sasondoncillo, Paul L.",6/14/2018,6/20/2018,,
+"Sasondoncillo, Paul L.",8/28/2018,8/30/2018,body malaise,
+"Sasondoncillo, Paul L.",8/29/2018,8/30/2018,body malaise,
+"Sasondoncillo, Paul L.",7/5/2018,,,NO EL
+"Sasondoncillo, Paul L.",11/7/2018,11/8/2018,Emergency,RD
+"Silvestre, Jennie C.",10/18/2018,10/19/2018,College Application,RD Returned
+"Silvestre, Jennie C.",11/21/2018,11/22/2018,Grandma's birthday,
+"Suing, Jon Marie B.",8/9/2018,8/9/2018,UPCAT,Returned
+"Suing, Jon Marie B.",9/20/2018,9/24/2018,BSU,Returned
+"Suing, Jon Marie B.",9/21/2018,9/24/2018,BSU,Returned
+"Suing, Jon Marie B.",10/18/2018,10/19/2018,College Application,RD Returned
+"Tongol, Ivy G.",8/16/2018,8/17/2018,Flood,Returned
+"Tongol, Ivy G.",9/20/2018,9/21/2018,Entrance Exam ,Returned
+"Tongol, Ivy G.",10/18/2018,10/22/2018,College Application,returned
+"Tongol, Ivy G.",10/19/2018,10/22/2018,College Application,returned
+"Tongol, Ivy G.",11/19/2018,11/20/2018,Document Process,Returned
+"Ungsod, Alexa Nicole A.",6/18/2018,6/19/2018,headache,Returned
+"Ungsod, Alexa Nicole A.",8/8/2018,8/9/2018,UPCAT,Returned
+"Alfonso, Gwyneth L.",8/17/2018,8/22/2018,Infection of Anti Rabies,Returned
+"Alfonso, Gwyneth L.",8/18/2018,8/22/2018,Infection of Anti Rabies,Returned
+"Alfonso, Gwyneth L.",8/19/2018,8/22/2018,Infection of Anti Rabies,Returned
+"Alfonso, Gwyneth L.",8/20/2018,8/22/2018,Infection of Anti Rabies,Returned
+"Alfonso, Gwyneth L.",8/29/2018,8/30/2018,Vaccine,returned
+"Alfonso, Gwyneth L.",9/18/2018,9/20/2018,Vaccine for Rabies,returned
+"Almario, Diana Angelica S.",9/7/2018,9/10/2018,DOST,Returned
+"Almario, Diana Angelica S.",10/3/2018,10/4/2018,BULSU,RD
+"Almario, Diana Angelica S.",10/10/2018,10/11/2018,not feeling well,returned
+"Añonuevo, Jazmin M.",8/8/2018,8/9/2018,UPCAT,Returned
+"Añonuevo, Jazmin M.",10/8/2018,8/16/2018,fever,
+"Añonuevo, Jazmin M.",9/27/2018,10/2/2018,BUCET,returned
+"Añonuevo, Jazmin M.",10/1/2018,10/2/2018,BUCET,returned
+"Añonuevo, Jazmin M.",11/5/2018,11/6/2018,From Bicol,RD
+"Caña, Clyde Drexler E.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Caña, Clyde Drexler E.",9/4/2018,9/10/2018,Trangkaso,Returned
+"Caña, Clyde Drexler E.",9/5/2018,9/10/2018,Trangkaso,Returned
+"Caña, Clyde Drexler E.",9/6/2018,9/10/2018,Trangkaso,Returned
+"Caña, Clyde Drexler E.",9/7/2018,9/10/2018,Trangkaso,Returned
+"Caña, Clyde Drexler E.",7/25/2018,,,NO EL
+"Caña, Clyde Drexler E.",8/6/2018,,,NO EL
+"Caña, Clyde Drexler E.",8/17/2018,,,
+"Caña, Clyde Drexler E.",11/6/2018,11/7/2018,Flu,returned
+"Cañete, Chriztalline",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Cañete, Chriztalline",8/8/2018,8/9/2018,Stomachache and Diarrhea,Returned
+"Cañete, Chriztalline",8/28/2018,8/29/2018,Fever,Returned
+"Cañete, Chriztalline",9/3/2018,9/4/2018,No water and electricity,returned
+"Cañete, Chriztalline",9/7/2018,9/10/2018,DOST,returned
+"Cañete, Chriztalline",10/3/2018,10/8/2018,Fever,returned
+"Cañete, Chriztalline",10/4/2018,10/8/2018,Fever,returned
+"Cañete, Chriztalline",11/7/2018,11/8/2018,Acid Reflux and Body pain,returned
+"Cañete, Chriztalline",11/9/2018,11/26/2018,Father passed away,
+"Cañete, Chriztalline",11/12/2018,11/26/2018,Father passed away,
+"Cañete, Chriztalline",11/13/2018,11/26/2018,Father passed away,
+"Cañete, Chriztalline",11/14/2018,11/26/2018,Father passed away,
+"Cañete, Chriztalline",11/15/2018,11/26/2018,Father passed away,
+"Cañete, Chriztalline",11/16/2018,11/26/2018,Father passed away,
+"Cañete, Chriztalline",11/19/2018,11/26/2018,Father passed away,
+"Cañete, Chriztalline",11/20/2018,11/26/2018,Father passed away,
+"Cañete, Chriztalline",11/21/2018,11/26/2018,Father passed away,
+"Cañete, Chriztalline",11/22/2018,11/26/2018,Father passed away,
+"Canlas, Jervie P.",9/7/2018,9/10/2018,DOST,Returned
+"Canlas, Mary Joy M.",9/17/2018,9/18/2018,Entrance Exam,Returned
+"Canlas, Mary Joy M.",9/24/2018,9/25/2018,High Fever,returned
+"Capulong, Archie O.",7/20/2018,7/24/2018,"heavy rain and floods, headache",Returned
+"Capulong, Archie O.",8/9/2018,8/10/2018,UPCAT,Returned
+"Capulong, Archie O.",8/16/2018,8/17/2018,Fever,Returned
+"Capulong, Archie O.",8/22/2018,8/23/2018,Fever,returned
+"Capulong, Archie O.",8/28/2018,8/29/2018,Baston,
+"Capulong, Archie O.",9/7/2018,9/11/2018,DOST,returned
+"Capulong, Archie O.",9/10/2018,9/11/2018,DOST,returned
+"Capulong, Archie O.",9/11 /2018,9/11/2018,DOST,returned
+"Capulong, Archie O.",9/24/2018,9/25/2018,DOST,returned
+"Capulong, Archie O.",10/4/2018,10/8/2018,BULSU,returned
+"Castro, Raymart B.",9/10/2018,9/11/2018,Fever,
+"Castro, Raymart B.",9/24/2018,9/25/2018,LBM,returned
+"Castro, Raymart B.",10/19/2018,10/22/2018,College Application,RD
+"De Leon, Nowela C.",6/26/2018,6/27/2018,fever,
+"De Leon, Nowela C.",7/20/2018,7/25/2018,heavy rain and floods,returned
+"De Leon, Nowela C.",7/24/2018,7/25/2018,heavy rain and floods,returned
+"De Leon, Nowela C.",8/16/2018,8/22/2018,Flood,
+"De Leon, Nowela C.",8/17/2018,8/22/2018,Flood,
+"De Leon, Nowela C.",8/28/2018,,,
+"De Leon, Nowela C.",8/29/2018,,,
+"De Leon, Nowela C.",10/1/2018,10/2/2018,LBM,RD
+"De Leon, Nowela C.",11/7/2018,11/8/2018,Headache,returned
+"Dizon, Lhester C.",8/16/2018,8/20/2018,Flood,Returned
+"Dizon, Lhester C.",9/7/2018,9/10/2018,DOSt,Returned
+"Dizon, Lhester C.",10/3/2018,10/4/2018,BULSU,RD
+"Fajardo, Fatima S.",8/8/2018,8/9/2018,UPCAT,Returned
+"Fajardo, Fatima S.",9/7/2018,9/10/2018,DOST,Returned
+"Fajardo, Fatima S.",10/3/2018,10/4/2018,College Requirements,returned
+"Flores, Jovelle S.",9/7/2018,9/10/2018,DOST,Returned
+"Flores, Jovelle S.",10/3/2018,10/4/2018,College Application,returned
+"Flores, Jovelle S.",10/11/2018,10/12/2018,Checkup,returned
+"Isip, Ivan Angelo P.",8/8/2018,8/9/2018,UPCAT,Returned
+"Isip, Ivan Angelo P.",9/7/2018,9/10/2018,DOST,returned
+"Isip, Ivan Angelo P.",9/27/2018,9/28/2018,BSU,returned
+"Lelina, Jenzon Paul A.",7/11/2018,7/12/2018,Check up,Returned
+"Lelina, Jenzon Paul A.",8/8/2018,8/9/2018,UPCAT,Returned
+"Lelina, Jenzon Paul A.",8/17/2018,,,no EL
+"Lelina, Jenzon Paul A.",9/21/2018,9/24/2018,Flu,returned
+"Lopez, Janine Rose M.",8/16/2018,8/20/2018,Flood,Returned
+"Meneses, Ivan Karlo A.",7/3/2018,7/4/2018,hemodialysis,Returned
+"Meneses, Ivan Karlo A.",7/12/2018,7/13/2018,Hemodialysis,Returned
+"Meneses, Ivan Karlo A.",7/20/2018,7/24/2018,Heavyrains ,Returned
+"Meneses, Ivan Karlo A.",7/25/2018,7/27/2018,Dialysis,returned
+"Meneses, Ivan Karlo A.",7/26/2018,7/27/2018,Dialysis,returned
+"Moral, Beverly D.",7/10/2018,7/10/2018,LBM,Returned
+"Moral, Beverly D.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Moral, Beverly D.",8/20/2018,8/23/2018,Checkup,Returned
+"Moral, Beverly D.",8/21/2018,8/23/2018,Checkup,Returned
+"Moral, Beverly D.",8/22/2018,8/23/2018,Checkup,Returned
+"Moral, Beverly D.",9/5/2018,9/6/2018,Checkup,returned
+"Moral, Beverly D.",8/28/2018,,Suspension,
+"Moral, Beverly D.",8/29/2018,,Suspension,
+"Moral, Beverly D.",7/10/2018,,Checkup,returned
+"Olermo, Jolina M.",9/18/2018,9/19/2018,Viewing ,returned
+"Olermo, Jolina M.",10/1/2018,10/2/2018,Headache and Allergy,returned
+"Oronce, Ann Margarette R.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Oronce, Ann Margarette R.",8/8/2018,8/9/2018,UPCAT,Returned
+"Oronce, Ann Margarette R.",9/26/2018,9/27/2018,BSU,returned
+"Paule, Franchel A.",8/16/2018,8/17/2018,Flood,Returned
+"Paule, Franchel A.",9/7/2018,9/10/2018,DOST,returned
+"Pineda, Gabriel M.",7/4/2018,7/5/2018,headache,Returned
+"Pineda, Gabriel M.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Pineda, Gabriel M.",8/17/2018,8/20/2018,Flood,
+"Pineda, Gabriel M.",8/28/2018,8/29/2018,Headache,returned
+"Pineda, Gabriel M.",9/18/2018,9/20/2018,Fever,
+"Pineda, Gabriel M.",9/19/2018,9/20/2018,Fever,
+"Pineda, Gabriel M.",10/11/2018,10/23/2018,Surgical Operation,returned
+"Pineda, Gabriel M.",10/12/2018,10/23/2018,Surgical Operation,returned
+"Pineda, Gabriel M.",10/15/2018,10/23/2018,Surgical Operation,returned
+"Pineda, Gabriel M.",10/16/2018,10/23/2018,Surgical Operation,returned
+"Pineda, Gabriel M.",10/17/2018,10/23/2018,Surgical Operation,returned
+"Pineda, Gabriel M.",10/18/2018,10/23/2018,Surgical Operation,returned
+"Pineda, Gabriel M.",10/19/2018,10/23/2018,Surgical Operation,returned
+"Pineda, Gabriel M.",10/22/2018,10/23/2018,Surgical Operation,returned
+"Pineda, Gabriel M.",11/7/2018,,checkup,returned
+"Pineda, Gabriel M.",11/15/2018,11/16/2018,in pain because of surgical operation,Returned
+"Ramos, Wednesday I.",7/9-11/2018,7/12/2018,umuwe sa muntinlupa,Returned
+"Ramos, Wednesday I.",7/9-11/2018,7/12/2018,umuwe sa muntinlupa,Returned
+"Ramos, Wednesday I.",7/9-11/2018,7/12/2018,umuwe sa muntinlupa,Returned
+"Ramos, Wednesday I.",8/17/2018,8/20/2018,Fever,Returned
+"Ramos, Wednesday I.",10/10/2018,10/11/2018,pahinga after competition,returned
+"Ramos, Wednesday I.",10/12/2018,10/17/2018,Headache and not feeling well,returned
+"Sampang, Willie Cezar M.",6/20/2018,6/21/2018,knee pain,Returned
+"Sampang, Willie Cezar M.",7/4/2018,7/5/2018,knee pain,Returned
+"Sampang, Willie Cezar M.",7/20/2018,7/24/2018,Heavyrains ,Returned
+"Sampang, Willie Cezar M.",7/25/2018,7/27/2018,Flood,returned
+"Sampang, Willie Cezar M.",7/26/2018,7/27/2018,Flood,returned
+"Sampang, Willie Cezar M.",8/17/2018,8/20/2018,Flood,
+"Sampang, Willie Cezar M.",8/28/2018,8/29/2018,"Baston, Jogging pants",returned
+"Sampang, Willie Cezar M.",9/7/2018,9/10/2018,Knee Pain,returned
+"Sampang, Willie Cezar M.",9/12/2018,9/17/2018,DOST,
+"Sampang, Willie Cezar M.",9/18/20185,9/20/2018,Flood,
+"Sampang, Willie Cezar M.",9/19/20185,9/20/2018,Flood,
+"Santos, Janice C.",7/12/2018,7/13/2018,Nagbantay sa Hospital,
+"Santos, Janice C.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Santos, Janice C.",8/13/2018,,Kinasal ate,returned
+"Santos, Janice C.",8/28/2018,,,No EL
+"Santos, Janice C.",8/29/2018,,,No EL
+"Santos, Janice C.",8/31/2018,,,
+"Santos, Stephanie M.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Santos, Stephanie M.",8/28/2018,,,NO EL
+"Santos, Stephanie M.",8/29/2018,,,NO EL
+"Urbano, Janelle Marjorie D.",9/7/2018,9/10/2018,Asthma ,Returned
+"Agustin, Martin A.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Agustin, Martin A.",8/30/2018,8/30/2018,Scholarship,Returned
+"Agustin, Martin A.",9/3/2018,9/5/2018,Flu,Returned
+"Agustin, Martin A.",9/4/2018,9/5/2018,Flu,Returned
+"Agustin, Martin A.",9/24/2018,9/25/2018,Requesting of form 137 ,returned
+"Agustin, Martin A.",10/11/2018,10/17/2018,FORM 137 and College Application,returned
+"Agustin, Martin A.",10/12/2018,10/17/2018,FORM 137 and College Application,returned
+"Baluyut, Laico Christle M.",8/16/2018,8/20/2018,Flood,
+"Baluyut, Laico Christle M.",8/17/2018,8/20/2018,Flood,
+"Baluyut, Laico Christle M.",9/18/2018,9/19/2018,Passing of Requirements,Returned
+"Baluyut, Laico Christle M.",10/11/2018,10/12/2018,BULSU,returned
+"Baluyut, Laico Christle M.",11/19/2018,11/20/2018,Family Matter,Returned
+"Bermudez, Lovely Joice",7/30/2018,6/8/2018,Funeral,Returned
+"Bermudez, Lovely Joice",9/3/2018,9/4/2018,Visited my sick sister,Returned
+"Bermudez, Lovely Joice",9/18/2018,9/19/2018,Entrance Exam,Returned
+"Bermudez, Lovely Joice",9/28/2018,10/26/2018,Toothache,
+"Bermudez, Lovely Joice",10/11/2018,10/12/2018,College Application,RD
+"Bermudez, Lovely Joice",11/7/2018,11/8/2018,Sinusitis,returned
+"Celso, Cheska Jenille S.",7/25/2018,7/26/2018,Parents visit,Returned
+"Celso, Cheska Jenille S.",7/31/2018,8/1/2018,Dysmenorhea,Returned
+"Celso, Cheska Jenille S.",8/20/2018,8/22/2018,from tanay,Returned
+"Celso, Cheska Jenille S.",8/31/2018,9/4/2018,went home,returned
+"Celso, Cheska Jenille S.",9/3/2018,9/4/2018,went home,returned
+"Celso, Cheska Jenille S.",9/28/2018,9/26/2018,"need to go home, Trouble in dorm",
+"Celso, Cheska Jenille S.",9/24/2018,9/26/2018,Apply in manila,returned
+"Celso, Cheska Jenille S.",9/25/2018,9/26/2018,Apply in manila,returned
+"Celso, Cheska Jenille S.",10/11/2018,10/17/2018,Backache and Dysmenorrhea,RD Returned
+"Celso, Cheska Jenille S.",10/12/2018,10/17/2018,Backache and Dysmenorrhea,RD Returned
+"Celso, Cheska Jenille S.",10/22/2018,10/23/2018,Cold And Dysmenorrhea,returned
+"Celso, Cheska Jenille S.",10/29/2018,,Bronchitis,RD
+"Celso, Cheska Jenille S.",11/8/2018,11/9/2018,Headache,RD
+"Del Monte, Alexandra Marie L.",9/8/2018,8/10/2018,UPCAT,Returned
+"Del Monte, Alexandra Marie L.",9/18/2018,9/19/2018,Entrance Exam ,Returned
+"Del Monte, Alexandra Marie L.",10/11/2018,10/12/2018,College Application,Returned
+"Del Monte, Alexandra Marie L.",11/7/2018,11/8/2018,Work Immersion application,returned
+"Del Monte, Alexandra Marie L.",11/7/2018,11/8/2018,,RD
+"Diezmos, Jeca Mill I.",8/9/2018,8/10/2018,UPCAT,Returned
+"Diezmos, Jeca Mill I.",9/18/2018,9/19/2018,Entrance Exam,Returned
+"Diezmos, Jeca Mill I.",10/11/2018,10/12/2018,BULSU,Returned
+"Diezmos, Jeca Mill I.",11/8/2018,11/9/2018,sinikmura,returned
+"Dondriano, Kate T.",7/11/2018,7/12/2018,Fever,Returned
+"Dondriano, Kate T.",8/20/2018,8/22/2018,went to airport,Returned
+"Dondriano, Kate T.",9/7/2018,9/10/2018,Flood,Returned
+"Dondriano, Kate T.",9/18/2018,9/19/2018,Entrance Exam,returned
+"Dondriano, Kate T.",10/11/2018,10/12/2018,BULSU,returned
+"Galang, Gabrielle Anne A.",10/18/2018,10/19/2018,College Application(Halfday),RD
+"Galang, Jihan Carla H.",9/18/2018,9/19/2018,Entrance Exam ,returned
+"Galang, Jihan Carla H.",10/11/2018,10/12/2018,BULSU,RD Returned
+"Golfo, Charlene Mae D.",8/9/2018,8/10/2018,UPCAT,Returned
+"Golfo, Charlene Mae D.",9/6/2018,9/7/2018,DOST,Returned
+"Golfo, Charlene Mae D.",9/18/2018,9/19/2018,Entrance Exam ,Returned
+"Golfo, Charlene Mae D.",10/11/2018,10/12/2018,College Application,RD Returned
+"Golfo, Charlene Mae D.",11/13/2018,11/15/2018,Funeral of Grandmother,Returned
+"Golfo, Charlene Mae D.",11/14/2018,11/15/2018,Funeral of Grandmother,Returned
+"Isip, Jonathan I.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Isip, Jonathan I.",8/10-9/18/2018,9/19/2018,Undergo Appendectomy,returned
+"Isip, Jonathan I.",10/1/2018,10/2/2018,Fever,returned
+"Isip, Jonathan I.",10/11/2018,10/12/2018,College Application,RD returned
+"Jose, Eloisa Marie R.",8/9/2018,8/16/2018,Went to Cavite,Returned
+"Isip, Jonathan I.",8/10/2018,8/16/2018,Went to Cavite,Returned
+"Isip, Jonathan I.",8/31/2018,9/3/2018,Sick,Returned
+"Isip, Jonathan I.",9/11/2018,9/12/2018,walang tubig,Returned
+"Isip, Jonathan I.",10/12/2018,10/17/2018,not Feeling well,RD Returned
+"Isip, Jonathan I.",9/25/2018,9/26/2018,Bugoy Concert,returned
+"Isip, Jonathan I.",10/24/2018,10/25/2018,No Uniform ,returned
+"Isip, Jonathan I.",11/8/2018,11/13/2018,Went ot Cebu(for a Seminar),returned
+"Isip, Jonathan I.",11/9/2018,11/13/2018,Went ot Cebu(for a Seminar),returned
+"Isip, Jonathan I.",11/12/2018,11/13/2018,Went ot Cebu(for a Seminar),returned
+"Lacap, Patricia Mae M.",8/9/2018,8/10/2018,UPCAT,Returned
+"Lacap, Patricia Mae M.",8/18/2018,8/20/2018,Fever,returned
+"Lacap, Patricia Mae M.",10/11/2018,10/12/2018,BULSU,Returned
+"Lumba, Joezel John C.",8/8/2018,8/9/2018,UPCAT,Returned
+"Mendoza, Heidi Bautista",6/19/2018,6/20/2018,wishful 5 concert,Returned
+"Mendoza, Heidi Bautista",7/12/2018,7/13/2018,Taping ASOP,Returned
+"Mendoza, Heidi Bautista",8/30/2018,8/31/2018,Mass Baptism,Returned
+"Mendoza, Heidi Bautista",9/3/2018,9/4/2018,Fever ,returned
+"Mendoza, Heidi Bautista",10/11/2018,10/12/2018,College Requirements,returned
+"Mercado, Richard",7/3/2018,7/3/2018,swelling of wound and headache,Returned
+"Mercado, Richard",7/30/2018,7/31/2018,asthma,Returned
+"Mercado, Richard",8/17/2018,8/20/2018,Flood,Returned
+"Mercado, Richard",8/18/2018,8/20/2018,Flood,Returned
+"Mercado, Richard",8/23/2018,8/24/2018,Hyperacidity,
+"Mercado, Richard",10/11/2018,,College Requirements,returned
+"Miclat, Raiza Nice E.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Miclat, Raiza Nice E.",7/27/2018,7/30/2018,Youth Conference,returned
+"Miclat, Raiza Nice E.",8/9/2018,8/10/2018,UPCAT,Returned
+"Miclat, Raiza Nice E.",9/6/2018,9/17/2018,went to Iloilo,Returned
+"Miclat, Raiza Nice E.",9/7/2018,9/17/2018,went to Iloilo,Returned
+"Miclat, Raiza Nice E.",9/10/2018,9/17/2018,went to Iloilo,Returned
+"Miclat, Raiza Nice E.",9/11/2018,9/17/2018,went to Iloilo,Returned
+"Miclat, Raiza Nice E.",9/12/2018,9/17/2018,went to Iloilo,Returned
+"Miclat, Raiza Nice E.",9/18/2018,9/19/2018,Entrance Exam ,
+"Miclat, Raiza Nice E.",10/11/2018,10/12/2018,BULSU,RD Returned
+"Nono, Michelle Ann R.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Nono, Michelle Ann R.",8/9/2018,8/10/2018,UPCAT,Returned
+"Nono, Michelle Ann R.",8/16/2018,8/20/2018,Flood,returned
+"Nono, Michelle Ann R.",8/17/2018,8/20/2018,Flood,returned
+"Nono, Michelle Ann R.",9/6/2018,9/7/2018,DOST,returned
+"Nono, Michelle Ann R.",9/18/2018,9/19/2018,Entrance Exam ,
+"Nono, Michelle Ann R.",10/11/2018,10/12/2018,BULSU,RD Returned
+"Ole, Bernard B.",7/20/2018,7/24/2018,Fever and severe Headache,Returned
+"Ole, Bernard B.",8/8/2018,8/9/2018,UPCAT,Returned
+"Ole, Bernard B.",9/28/2018,10/1/2018,not feeling well,returned
+"Ole, Bernard B.",10/18/2018,10/19/2018,Fever and Headache,RD
+"Pabustan, Carl Jemuel S.",8/16-17/2018,8/20/2018,Flood,Returned
+"Pabustan, Carl Jemuel S.",8/16-17/2018,8/20/2018,Flood,Returned
+"Pabustan, Carl Jemuel S.",9/6/2018,9/7/2018,Fever and Flu,Returned
+"Pabustan, Carl Jemuel S.",10/11/2018,10/12/2018,Application for college,returned
+"Palabasan, Leane Jane N.",,6/25/2018,,Returned
+"Palabasan, Leane Jane N.",7/12/2018,7/13/2018,Dysmenorhea,Returned
+"Palabasan, Leane Jane N.",1/8/2018,2/8/2018,Emergency,Returned
+"Palabasan, Leane Jane N.",10/11/2018,10/17/2018,BULSU,RD Returned
+"Palabasan, Leane Jane N.",10/12/2018,10/17/2018,BULSU,RD Returned
+"Palabasan, Leane Jane N.",9/27/2018,,Family Matter ,returned
+"Palabasan, Leane Jane N.",9/28/2018,,Family Matter ,returned
+"Palabasan, Leane Jane N.",9/18/2018,,Flu,returned
+"Palabasan, Leane Jane N.",9/19/2018,,Flu,returned
+"Palabasan, Leane Jane N.",9/20/2018,,Flu,returned
+"Palabasan, Leane Jane N.",9/21/2018,,Flu,returned
+"Palabasan, Leane Jane N.",10/24/2018,10/25/2018,No Uniform ,returned
+"Palabasan, Leane Jane N.",11/9/2018,11/14/2018,Fever and Cough,RD Returned
+"Palabasan, Leane Jane N.",11/12/2018,11/14/2018,Fever and Cough,RD Returned
+"Palabasan, Leane Jane N.",11/13/2018,11/14/2018,Fever and Cough,RD Returned
+"Pamintuan, Jethro Y.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Pangan, Beverly P.",,6/21/2018,,
+"Pangan, Beverly P.",7/5/2018,7/9/2018,stomachache and breathing difficulty,Returned
+"Pangan, Beverly P.",7/16/2018,7/17/2018,Fever,Returned
+"Pangan, Beverly P.",7/25/2018,7/26/2018,masakit dibdib,returned
+"Pangan, Beverly P.",7/8/2018,8/8/2018,Masakit dibdib(Checkup),
+"Pangan, Beverly P.",9/6/2018,9/7/2018,Checkup,returned
+"Pangan, Beverly P.",9/10/2018,9/11/2018,Chest pain,returned
+"Pangan, Beverly P.",9/27/2018,9/28/2018,Headache,Returned
+"Pangan, Beverly P.",10/1/2018,10/26/2018,pananakit ng dibdib,Returned
+"Pangan, Beverly P.",10/12/2018,10/17/2018,Asthma,RD Returned
+"Pangan, Beverly P.",10/11/2018,10/17/2018,Asthma,RD Returned
+"Pangan, Beverly P.",10/12/2018,10/17/2018,Asthma,RD Returned
+"Royo, Alliana Alyssa S.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Royo, Alliana Alyssa S.",8/16/2018,8/20/2018,Flood,Returned
+"Royo, Alliana Alyssa S.",8/17/2018,8/20/2018,Flood,Returned
+"Royo, Alliana Alyssa S.",9/18/2018,9/19/2018,Entrance Exam ,Returned
+"Royo, Alliana Alyssa S.",10/11/2018,10/12/2018,BULSU,RD Returned
+"Royo, Alliana Alyssa S.",10/24/2018,10/25/2018,No School Uniform,returned
+"Sabiles, Jhonmar Eli G.",8/23/2018,8/24/2018,Migrane,Returned
+"Sabiles, Jhonmar Eli G.",10/18/2018,10/19/2018,Flu and Asthma,returned
+"Sagolili, Reynald V.",6/25/2018,6/26/2018,not feeling well,Returned
+"Sagolili, Reynald V.",9/3/2018,9/4/2018,not feeling well,Returned
+"Salvid, Kaycelyn Y.",7/13/2018,7/16/2018,Checkup,Returned
+"Salvid, Kaycelyn Y.",8/9/2018,8/10/2018,UPCAT,Returned
+"Salvid, Kaycelyn Y.",8/17/2018,8/20/2018,Flood,Returned
+"Salvid, Kaycelyn Y.",10/11/2018,10/12/2018,BULSU,RD Returned
+"Salvid, Kaycelyn Y.",10/23/2018,10/24/2018,Checkup,RD
+"Serrano, Jonna Mae V.",9/11/2018,9/12/2018,walang tubig,Returned
+"Serrano, Jonna Mae V.",10/11/2018,10/17/2018,College Application,RD Returned
+"Serrano, Jonna Mae V.",10/12/2018,10/17/2018,Diarrhea,RD Returned
+"Serrano, Jonna Mae V.",9/25/2018,9/26/2018,Bugoy Concert,returned
+"Serrano, Jonna Mae V.",10/24/2018,10/25/2018,No Uniform ,returned
+"Serrano, Jonna Mae V.",11/9/2018,11/14/2018,Sick and Flu,returned
+"Serrano, Jonna Mae V.",11/12/2018,11/14/2018,Sick and Flu,returned
+"Serrano, Jonna Mae V.",11/13/2018,11/14/2018,Sick and Flu,returned
+"Serrano, Jonna Mae V.",11/19/2018,11/20/2018,Diarrhea,returned
+"Viray, Ellaine Marie U.",7/20/2018,7/24/2018,Fever,Returned
+"Viray, Ellaine Marie U.",9/18/2018,9/19/2018,Entrance Examination,Returned
+"Viray, Ellaine Marie U.",10/11/2018,10/12/2018,BULSU,RD Returned
+"Yambao, Trina Ricci G.",8/9/2018,8/10/2018,Attending a debut,Returned
+"Yambao, Trina Ricci G.",8/16/2018,8/20/2018,Flood,returned
+"Yambao, Trina Ricci G.",8/17/2018,8/20/2018,Flood,returned
+"Yambao, Trina Ricci G.",9/17/2018,9/19/2018,Toothache and Entrance Exam,Returned
+"Yambao, Trina Ricci G.",9/18/2018,9/19/2018,Toothache and Entrance Exam,Returned
+"Yambao, Trina Ricci G.",10/11/2018,10/12/2018,College Application,RD Returned
+"Yambao, Trina Ricci G.",11/9/2018,11/12/2018,Fever,returned
+"Alfonso, Mellorraine Ann M.",7/12/2018,7/13/2018,Fever,Returned
+"Alfonso, Mellorraine Ann M.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Alfonso, Mellorraine Ann M.",9/10/2018,9/11/2018,LBM,Returned
+"Alfonso, Mellorraine Ann M.",9/21/2018,9/24/2018,BSU,returned
+"Alfonso, Mellorraine Ann M.",10/19/2018,10/22/2018,College Application,returned
+"Atienza, Arlene Q.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Atienza, Arlene Q.",8/23/2018,8/24/2018,LBM ,Returned
+"Atienza, Arlene Q.",9/18/2018,9/19/2018,College Requirements,Returned
+"Atienza, Arlene Q.",10/11/2018,10/17/2018,College Application,returned
+"Atienza, Arlene Q.",10/12/2018,10/17/2018,College Application,returned
+"Atienza, Arlene Q.",11/5/2018,11/6/2018,REquirements for OJT,Returned
+"Balingit, Cyber John R.",,6/19/2018, ,
+"Balingit, Cyber John R.",7/4/2018,7/5/2018,groin pain,Returned
+"Balingit, Cyber John R.",7/10/2018,7/11/2018,Check up,Returned
+"Balingit, Cyber John R.",7/26/2018,7/27/2018,sinumpong ng sakit,returned
+"Balingit, Cyber John R.",8/16/2018,8/20/2018,,
+"Balingit, Cyber John R.",8/17/2018,8/20/2018,,
+"Balingit, Cyber John R.",8/24/2018,8/25/2018,sumpong ng sakit,returned
+"Balingit, Cyber John R.",8/30/2018,8/31/2018,Baptism ,returned
+"Balingit, Cyber John R.",7/18/2018,,,returned
+"Balingit, Cyber John R.",7/20/2018,,,NO EL
+"Balingit, Cyber John R.",9/18/2018,9/19/2018,College Requirements,returned
+"Balingit, Cyber John R.",10/3/2018,10/4/2018,Wedding,returned
+"Balingit, Cyber John R.",10/8/2018,10/9/2018,Sumpong ng sakit,RD
+"Balingit, Cyber John R.",10/11/2018,10/12/2018,BULSU,returned
+"Balingit, Cyber John R.",11/26/2018,11/27/2018,Sumpong ng sakit,
+"Batoctoy, Mary Joy C.",9/11/2018,9/12/2018,Stomachache,Returned
+"Batoctoy, Mary Joy C.",9/19/2018,9/21/2018,Stomachache,Returned
+"Batoctoy, Mary Joy C.",9/20/2018,9/21/2018,Stomachache,Returned
+"Batoctoy, Mary Joy C.",10/4/2018,10/8/2018,Headache,RD Returned
+"Cabiltes, Xavier Daniel A.",7/5/2018,7/10/2018,fever,Returned
+"Cabiltes, Xavier Daniel A.",7/20/2018,,,NO EL
+"Cabiltes, Xavier Daniel A.",9/19/2018,9/20/2018,Wishcovery Volunteer,Returned
+"Cabiltes, Xavier Daniel A.",9/21/2018,9/24/2018,BSU,returned
+"Cabiltes, Xavier Daniel A.",10/19/2018,10/22/2018,College Application,returned
+"Cruz, Eunice A.",9/21/2018,9/24/2018,BSU,Returned
+"De Jesus, Paula Grace Q.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"De Jesus, Paula Grace Q.",8/16/2018,8/20/2018,Flood,Returned
+"De Jesus, Paula Grace Q.",8/17/2018,8/20/2018,Flood,Returned
+"De Jesus, Paula Grace Q.",9/20/2018,9/21/2018,Entrance Exam ,Returned
+"De Jesus, Paula Grace Q.",10/18/2018,10/19/2018,College Application(Halfday),returned
+"Flores, Lhora Jane B.",7/20/2018,7/24/2018,Floods,Returned
+"Flores, Lhora Jane B.",9/20/2018,9/24/2018,BSU and LBM,Returned
+"Flores, Lhora Jane B.",9/21/2018,9/24/2018,BSU and LBM,Returned
+"Flores, Lhora Jane B.",10/18/2018,10/19/2018,College Application,Returned
+"Flores, Lhora Jane B.",11/15/2018,11/16/2018,umattend ng kasal ,returned
+"Gatbonton, Jhersey O.",9/21/2018,9/24/2018,BSU,Returned
+"Gatbonton, Jhersey O.",10/24/2018,10/25/2018,no uniform,returned
+"Gonzales, Nico P.",9/18/2018,9/19/2018,College Application,Returned
+"Gonzales, Nico P.",10/11/2018,10/12/2018,College Application,RD Returned
+"Gonzales, Nico P.",11/16/2018,11/19/2018,Personal reason,Returned
+"Habana, Erica O.",9/21/2018,9/24/2018,not feeling well,Returned
+"Habana, Erica O.",10/18/2018,10/22/82018,Tooth Extraction,returned
+"Habana, Erica O.",10/19/2018,10/22/82018,Tooth Extraction,returned
+"Habana, Erica O.",11/6/2018,11/8/2018,went to Manila,Returned
+"Habana, Erica O.",11/7/2018,11/8/2018,went to Manila,Returned
+"Hagoot, Cindy P.",6/8/2018,8/7/2018,UTI,Returned
+"Hagoot, Cindy P.",8/28/2018,8/29/2018,UTI,Returned
+"Hagoot, Cindy P.",9/17/2018,9/19/2018,LBM,Returned
+"Hagoot, Cindy P.",9/18/2018,9/19/2018,LBM,Returned
+"Hagoot, Cindy P.",9/26/2018,9/27/2018,inappropriate uniform,returned
+"Hagoot, Cindy P.",10/1/2018,10/2/2018,Family Problem,RD
+"Hagoot, Cindy P.",10/11/2018,10/12/2018,LBM,RD Returned
+"Hagoot, Cindy P.",11/8/2018,11/13/2018,Funeral,returned
+"Hagoot, Cindy P.",11/9/2018,11/13/2018,Funeral,returned
+"Hagoot, Cindy P.",11/12/2018,11/13/2018,Funeral,returned
+"Hagoot, Cindy P.",11/16/2018,11/19/2018,Work Imerssion process,Returned
+"Hamili, Eliezer B.",7/11/2018,7/12/2018,Masama pakiramdam,Returned
+"Hamili, Eliezer B.",8/29/2018,8/30/2018,masanama pakiramdam,
+"Hamili, Eliezer B.",10/4/2018,10/8/2018,Fever,returned
+"Hamili, Eliezer B.",10/24/2018,10/25/2018,No Uniform ,returned
+"Hamili, Eliezer B.",11/20/2018,11/21/2018,not feeling well,
+"Mamaril, Junie Maevin D.",7/11/2018,7/12/2018,Fever,Returned
+"Mamaril, Junie Maevin D.",7/20/2018,7/24/2018,May sakit ang nanay,returned
+"Mamaril, Junie Maevin D.",9/21/2018,9/24/2018,BSU,Returned
+"Mamaril, Junie Maevin D.",9/26/2018,9/27/2018,My mom is sick,returned
+"Mamaril, Junie Maevin D.",10/19/2018,10/22/2018,College Application,returned
+"Mamaril, Junie Maevin D.",10/22/2018,10/23/2018,Dysmenorrhea,RD Returned
+"Manalang, Czharlyz Nicole D.",7/20/2018,7/24/2018,heavy rain and not feeling well,Returned
+"Manalang, Czharlyz Nicole D.",7/8/2018,8/8/2018,Hyperacidity,Returned
+"Manalang, Czharlyz Nicole D.",9/21/2018,9/24/2018,BSU,Returned
+"Manalang, Czharlyz Nicole D.",10/19/2018,10/22/2018,College Application,returned
+"Manansala, Eimyan N.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Manansala, Eimyan N.",8/9/2018,8/16/2018,Went to Cavite (funeral),Returned
+"Manansala, Eimyan N.",8/10/2018,8/16/2018,Went to Cavite (funeral),Returned
+"Manansala, Eimyan N.",8/25/2018,8/28/2018,Heavy rain,Returned
+"Manansala, Eimyan N.",8/31/2018,9/3/2018,Lola's Birthday,returned
+"Manansala, Eimyan N.",9/6/2018,9/7/2018,Fever,
+"Manansala, Eimyan N.",10/4/2018,10/8/2018,Checkup,returned
+"Manansala, Eimyan N.",10/12/2018,10/17/2018,Family Problem,returned
+"Manansala, Eimyan N.",10/24/2018,10/25/2018,No School uniform,returned
+"Manansala, Eimyan N.",11/9/2018,11/12/2018,Accompany my brother for checkup,returned
+"Medina, Allen P.",9/21/2018,9/24/2018,BSU,Returned
+"Navajas, Angel Nicole C.",11/5/2018,11/6/2018,Reuirements for OJT,Returned
+"Puno, Angelica M.",8/16/2018,8/17/2018,Flood,Returned
+"Puno, Angelica M.",9/20/2018,9/21/2018,BULSU,Returned
+"Puno, Angelica M.",11/26/2018,11/27/2018,Dysmenorrhea,
+"Reyes, Chin Mae P.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Reyes, Chin Mae P.",2/7/2018,3/7/2018,masakit tenga,returned
+"Reyes, Chin Mae P.",9/3/2018,9/4/2018,Fever,Returned
+"Reyes, Chin Mae P.",9/24/2018,9/25/2018,LBM,returned
+"Reyes, Chin Mae P.",10/19/2018,10/22/2018,College Application,returned
+"Reyes, Chin Mae P.",11/14/2018,11/15/2018,not feeling well,returned
+"Rosales, Crystal Jane A.",7/17/2018,7/24/2018,Fever,Returned
+"Rosales, Crystal Jane A.",7/20/2018,7/24/2018,Fever,Returned
+"Rosales, Crystal Jane A.",8/17/2018,8/22/2018,Fever,Returned
+"Rosales, Crystal Jane A.",9/3/2018,9/5/2018,Injury,Returned
+"Rosales, Crystal Jane A.",9/4/2018,9/5/2018,Injury,Returned
+"Rosales, Crystal Jane A.",8/20/2018,,,NO EL
+"Rosales, Crystal Jane A.",9/19/2018,9/20/2018,Headache,
+"Rosales, Crystal Jane A.",9/21/2018,9/24/2018,Check-up,returned
+"Rosales, Crystal Jane A.",10/2/2018,10/3/2018,Migraine ,returned
+"Rosales, Crystal Jane A.",10/12/2018,10/17/2018,High Fever,Returned
+"Rosales, Crystal Jane A.",10/18/2018,10/23/2018,Hyperventilate,returned
+"Rosales, Crystal Jane A.",10/22/2018,10/23/2018,Hyperventilate,returned
+"Salvador, Noimie B.",7/20/2018,7/24/2018,LBM,Returned
+"Salvador, Noimie B.",8/31/2018,9/3/2018,Stomachache,Returned
+"Salvador, Noimie B.",10/4/2018,10/8/2018,namatay ang pamangkin,returned
+"Salvador, Noimie B.",10/11/2018,10/12/2018,,RD Returned
+"Serrano, Kaycee M.",7/5/2018,7/9/2018,fever,Returned
+"Serrano, Kaycee M.",7/20/2018,7/24/2018,Flood,Returned
+"Serrano, Kaycee M.",7/30/2018,7/31/2018,Flood,Returned
+"Serrano, Kaycee M.",7/31/2018,7/31/2018,Flood,Returned
+"Serrano, Kaycee M.",8/17/2018,8/22/2018,Reunion,returned
+"Serrano, Kaycee M.",8/16/2018,8/20/2018,Flood,
+"Serrano, Kaycee M.",8/17/2018,8/20/2018,Flood,
+"Serrano, Kaycee M.",9/7/2018,9/10/2018,masikip ang dibdib,returned
+"Serrano, Kaycee M.",9/17/2018,9/21/2018,Flood,returned
+"Serrano, Kaycee M.",9/18/2018,9/21/2018,Flood,returned
+"Serrano, Kaycee M.",9/19/2018,9/21/2018,Flood,returned
+"Serrano, Kaycee M.",9/20/2018,9/21/2018,Flood,returned
+"Serrano, Kaycee M.",10/1/2018,10/4/2018,Flu,returned
+"Serrano, Kaycee M.",10/2/2018,10/4/2018,Flu,returned
+"Serrano, Kaycee M.",10/3/2018,10/4/2018,Flu,returned
+"Serrano, Kaycee M.",10/18/2018,10/19/2018,College Application(Halfday),returned
+"Serrano, Kaycee M.",10/24/2018,10/25/2018,Fever,returned
+"Serrano, Kaycee M.",11/52018,11/12/2018,Fever,Returned
+"Serrano, Kaycee M.",11/6/2018,11/12/2018,Fever,Returned
+"Serrano, Kaycee M.",11/7/2018,11/12/2018,Fever,Returned
+"Serrano, Kaycee M.",11/8/2018,11/12/2018,Fever,Returned
+"Serrano, Kaycee M.",11/9/2018,11/12/2018,Fever,Returned
+"Serrano, Kaycee M.",11/19/2018,11/20/2018,Visited our sister,RD
+"Soriano, Niel Clinton A.",7/20/2018,7/24/2018,Fever,Returned
+"Soriano, Niel Clinton A.",8/31/2018,9/3/2018,Fever,Returned
+"Soriano, Niel Clinton A.",9/20/2018,9/21/2018,BULSU,Returned
+"Soriano, Niel Clinton A.",10/18/2018,10/19/2018,College Application(Half Day),returned
+"Soriano, Niel Clinton A.",11/5/2018,11/6/2018,Requirements for OJT,RD 
+"Sunga, Remnold P.",7/20/2018,7/24/2018,walang baon,Returned
+"Sunga, Remnold P.",9/21/2018,9/24/2018,BSU,Returned
+"Sunga, Remnold P.",10/12/2018,10/17/2018,Back Pain ,RD Returned
+"Sunga, Remnold P.",10/19/2018,10/22/2018,College Application,returned
+"Sunga, Remnold P.",10/24/2018,10/25/2018,No School Uniform ,returned
+"Sunga, Remnold P.",11/15/2018,11/16/2018,Checkup,
+"Tanqueco Jr., Aquiles R.",7/2/2018,7/9/2018,fever and urine infection,Returned
+"Tanqueco Jr., Aquiles R.",7/3/2018,7/9/2018,fever and urine infection,Returned
+"Tanqueco Jr., Aquiles R.",7/4/2018,7/9/2018,fever and urine infection,Returned
+"Tanqueco Jr., Aquiles R.",7/5/2018,7/9/2018,fever and urine infection,Returned
+"Tanqueco Jr., Aquiles R.",8/8/2018,8/9/2018,Funeral,Returned
+"Tanqueco Jr., Aquiles R.",8/17/2018,8/20/2018,LBM,Returned
+"Tanqueco Jr., Aquiles R.",9/3/2018,9/4/2018,power interuption,returned
+"Tanqueco Jr., Aquiles R.",7/20/2018,,,
+"Tanqueco Jr., Aquiles R.",9/21/2018,9/24/2018,BSU,returned
+"Tanqueco Jr., Aquiles R.",10/19/2018,10/22/2018,College Application,returned
+"Valencia, Camille G.",7/20/2018,7/24/2018,heavy rain and floods,Returned
+"Valencia, Camille G.",8/16/2018,8/20/2018,Fever,Returned
+"Valencia, Camille G.",8/17/2018,8/20/2018,Fever,Returned
+"Valencia, Camille G.",9/18/2018,9/19/2018,Entrance Exam ,Returned
+"Valencia, Camille G.",9/21/2018,9/24/2018,Wedding,returned
+"Valencia, Camille G.",10/11/2018,10/12/2018,College Application,returned
+"Valencia, Camille G.",10/12/2018,10/12/2018,Personal Matter (HALFDAY),returned
+"Valencia, Camille G.",11/8/2018,11/9/2018,Family Problem ,returned
+"Viray, Justine Aimee R.",9/21/2018,9/24/2018,BSU,Returned
+"Viray, Justine Aimee R.",10/19/2018,10/22/2018,College Application ,returned
+"Zorilla, Hyena C.",8/8/2018,8/9/2018,UPCAT,Returned
+"Zorilla, Hyena C.",9/20/2018,9/21/2018,BULSU,Returned
+"Zorilla, Hyena C.",10/18/2018,10/19/2018,College Application Halfday,returned
+"Peña, Clariza C.",9/21/2018,9/24/2018,BSU,Returned
+"Peña, Clariza C.",10/19/2018,10/23/2018,"College Application, Ulcer",Returned
+"Peña, Clariza C.",10/22/2018,10/23/2018,"College Application, Ulcer",Returned
+"Peña, Clariza C.",10/24/2018,10/25/2018,no school Uniform ,returned
+"Peña, Clariza C.",11/5/2018,11/6/2018,Requirements for OJT,returned
+"Atienza, Mika A.",6/21/2018,6/25/2018,,Returned
+"Atienza, Mika A.",7/24/2018,7/25/2018,Family Matter,returned
+"Atienza, Mika A.",7/31/2018,,,NO EL
+"Atienza, Mika A.",8/1/2018,,Suspension,NO EL
+"Atienza, Mika A.",8/2/2018,,Suspension,NO EL
+"Atienza, Mika A.",8/17/2018,,,
+"Atienza, Mika A.",8/21/2018,,,
+"Atienza, Mika A.",10/1/2018,10/2/2018,Stranded,RD
+"Balingit, Drandreb Joseph G.",7/9/2018,7/10/2018,Visit his father in Bulacan,Returned
+"Balingit, Drandreb Joseph G.",7/24/2018,7/25/2018,Flood,
+"Balingit, Drandreb Joseph G.",8/16/2018,8/20/2018,Flood,Returned
+"Balingit, Drandreb Joseph G.",8/17/2018,8/20/2018,Flood,Returned
+"Balingit, Drandreb Joseph G.",8/25/2018,8/28/2018,Family Gathering,returned
+"Balingit, Drandreb Joseph G.",6/14/2018,,,
+"Balingit, Drandreb Joseph G.",7/20/2018,,,NO EL
+"Cunanan, Louie Gie T.",7/2/2018,7/3/2018,fever,Returned
+"Cunanan, Louie Gie T.",7/20/2018,7/24/2018,Flooded,Returned
+"Cunanan, Louie Gie T.",7/25/2018,7/26/2018,Headache ant toothache,Returned
+"Cunanan, Louie Gie T.",8/16/2018,8/20/2018,Flood,returned
+"Cunanan, Louie Gie T.",8/17/2018,8/20/2018,Flood,returned
+"Cunanan, Louie Gie T.",9/7/2018,9/10/2018,Fever,
+"Cunanan, Louie Gie T.",9/20/2018,9/21/2018,BULSU,returned
+"De Guzman, Andrea Maurice M.",7/11/2018,7/16/2018,"Fever, cough and colds",Returned
+"De Guzman, Andrea Maurice M.",7/12/2018,7/16/2018,"Fever, cough and colds",Returned
+"De Guzman, Andrea Maurice M.",7/13/2018,7/16/2018,"Fever, cough and colds",Returned
+"De Guzman, Andrea Maurice M.",9/27/2018,9/28/2018,Dysmenorrhea,returned
+"De Guzman, Andrea Maurice M.",10/17/2018,10/18/2018,Bodypain and Toothache,returned
+"De Guzman, Andrea Maurice M.",11/5/2018,11/14/2018,Chickenpox,returned
+"De Guzman, Andrea Maurice M.",11/6/2018,11/14/2018,Chickenpox,returned
+"De Guzman, Andrea Maurice M.",11/7/2018,11/14/2018,Chickenpox,returned
+"De Guzman, Andrea Maurice M.",11/8/2018,11/14/2018,Chickenpox,returned
+"De Guzman, Andrea Maurice M.",11/9/2018,11/14/2018,Chickenpox,returned
+"De Guzman, Andrea Maurice M.",11/12/2018,11/14/2018,Chickenpox,returned
+"De Guzman, Andrea Maurice M.",11/13/2018,11/14/2018,Chickenpox,returned
+"De Mesa, Andrei Sebastian T.",8/28/2018,8/29/2018,Fever,Returned
+"De Mesa, Andrei Sebastian T.",10/4/2018,,Hair Cut,returned
+"Digman, Luisito R.",8/20/2018,8/22/2018,LBM ,
+"Digman, Luisito R.",6/14/2018,,,NO EL
+"Digman, Luisito R.",6/18/2018,,,NO EL
+"Digman, Luisito R.",8/17/2018,,,NO EL
+"Digman, Luisito R.",9/17/2018,9/19/2018,Flu,
+"Digman, Luisito R.",9/18/2018,9/19/2018,Flu,
+"Digman, Luisito R.",10/1/2018,10/2/2018,Stomachache,RD
+"Digman, Luisito R.",11/12/2018,11/14/2018,Pigsa,RD
+"Digman, Luisito R.",11/13/2018,11/14/2018,Pigsa,RD
+"Digman, Luisito R.",11/15/2018,11/20/2018,,RD
+"Digman, Luisito R.",11/19/2018,11/20/2018,,RD
+"Encelan, Karl David V.",8/8/2018,8/9/2018,UPCAT,Returned
+"Encelan, Karl David V.","8/20,22/2018",8/23/2018,LBM,Returned
+"Encelan, Karl David V.","8/20,22/2018",8/23/2018,LBM,Returned
+"Encelan, Karl David V.",9/17/2018,9/18/2018,wasn’t able to travel back in pampanga,Returned
+"Gutierrez, Kenneth Christian B.",8/17/2018,8/20/2018,Flood,Returned
+"Gutierrez, Kenneth Christian B.",9/17/2018,9/18/2018,Entrance Exam,returned
+"Jacla, Czyril Roi Izzacar D.",6/14/2018,,,NO EL
+"Jacla, Czyril Roi Izzacar D.",9/17/2018,9/18/2018,Family Problem,
+"Jacla, Czyril Roi Izzacar D.",9/25/2018,10/4/2018,Father's Death,RD
+"Jacla, Czyril Roi Izzacar D.",10/3/2018,10/4/2018,Father's Death,RD
+"Jacla, Czyril Roi Izzacar D.",11/20/2018,11/21/2018,i ran some errands of my parents,RD
+"Maglangit, Shane Francis D.C.",10/17/2018,10/18/2018,College Application,returned
+"Yumul, Orlando I.",7/31/2018,2/8/2018,Fever,Returned
+"Yumul, Orlando I.",8/1/2018,2/8/2018,Fever,Returned
+"Yumul, Orlando I.",9/20/2018,9/21/2018,Headache,returned
 "Yamson, Lemuel Lance C.",7/20/2018,7/24/2018,heavy rain and floods,Returned,
 "Yamson, Lemuel Lance C.",8/16/2018,8/17/2018,Flood,,
 "Yambao, Denice Erich A.",9/25/2018,9/26/2018,Fever and Headache,returned,
@@ -196,7 +2041,7 @@ full_name,date_absent,date_returned,excuse,remarks,
 "Bagtas, Rica Mae Mallari",07/12/2018,7/16/2018,Suspension,Returned,
 "Bagtas, Rica Mae Mallari",7/13/2018,7/16/2018,Suspension,Returned,
 "Bagtas, Rica Mae Mallari",09/11/2018,09/12/2018,Sick and Flu,,
-"Aguilar, Shain Kelly T.",10/19/2018/,10/22/2018,Sick,returned,
+"Aguilar, Shain Kelly T.",10/19/2018,10/22/2018,Sick,returned,
 "Aguilar, Shain Kelly T.",09/03/2018,,,NO EL ,
 "Varon, Menavic L.",09/11/2018,9/17/2018,Fever and German Measles,Returned,
 "Varon, Menavic L.",09/12/2018,9/17/2018,Fever and German Measles,Returned,
@@ -306,7 +2151,7 @@ full_name,date_absent,date_returned,excuse,remarks,
 "Eco, Eliza Febe O.",10/17/2018,10/19/2018,grandfather's death,RD,
 "Eco, Eliza Febe O.",10/18/2018,10/19/2018,grandfather's death,RD,
 "Eco, Eliza Febe O.",11/05/2018,11/06/2018,not Feeling well,RD,
-"Del Rosario, Jamie G.",11/23/2018,11/26/,Fever and Colds,,
+"Del Rosario, Jamie G.",11/23/2018,11/26/2018,Fever and Colds,,
 "De Ramon, Justine Mae A.",8/30/2018,8/31/2018,Mass Baptism ,Returned,
 "De Ramon, Justine Mae A.",9/17/2018,9/18/2018',Medical Appointments,returned,
 "De Ramon, Justine Mae A.",10/10/2018,10/11/2018,not in good Condition,returned,
@@ -1920,7 +3765,7 @@ full_name,date_absent,date_returned,excuse,remarks,
 "Hernandez, Nathaniel L.",8/8/2018,8/9/2018,UPCAT,Returned,
 "Hernandez, Nathaniel L.",8/16/2018,8/17/2018,Flood,Returned,
 "Hernandez, Nathaniel L.",8/28/2018,8/29/2018,Fever,returned,
-"Hernandez, Nathaniel L.",9/5/2018/,9/6/2018,DOST,,
+"Hernandez, Nathaniel L.",9/5/2018,9/6/2018,DOST,,
 "Hernandez, Nathaniel L.",10/8/2018,10/10/2018,Fever and dizziness,RD Returned,
 "Hernandez, Nathaniel L.",10/9/2018,10/10/2018,Fever and dizziness,RD Returned,
 "Guevara, Ira Denise A.",8/8/2018,8/9/2018,UPCAT,Returned,
