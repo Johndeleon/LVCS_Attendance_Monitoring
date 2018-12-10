@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Students Tardiness</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = stylesheet type = text/css href="{{ url_for('static', filename='bootstrap.css') }}">
+    <link rel="stylesheet" href="/static/fontawesome-free-5.0.10/web-fonts-with-css/css/fa-brands.min.css">
+    <link rel="stylesheet" href="/static/fontawesome-free-5.0.10/web-fonts-with-css/css/fa-regular.min.css">
+    <link rel="stylesheet" href="/static/fontawesome-free-5.0.10/web-fonts-with-css/css/fa-solid.min.css">
+    <link rel="stylesheet" href="/static/fontawesome-free-5.0.10/web-fonts-with-css/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/static/fontawesome-free-5.0.10/web-fonts-with-css/css/fontawesome.min.css">
+   
+    
+</head>
+<body class="body container">
+    <div class="bg-primary">
+            <div class=" display-3 text-white text-center container-fluid margin-left:mx-auto">LVCS Tardiness & Absences Record</div>
+    </div>
+    
+    <!-- search bar -->
+    <div class="container">
+            <form method = "POST" action = "search">
+                    <div class="container">
+                        <div class="input-group mx-auto col-md-8">
+            
+                            <input type="text" name="search" class="form-control" id="search" style="margin-top:2%" placeholder="Search">
+            
+                            <div class="input-group-append">
+                                <button class="btn btn-info" type="submit"><i class="fas fa-search fa-lg text-white" style="margin-top:2%"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+           <!-- Sidebar -->
+    <div class=" nav position-relative">
+            <ul>
+                <li class="nav-brand bg-dark text-white text-center">
+                    Student Groups
+                </li>
+                <li class="nav nav-link bg-dark">
+                    <a href="elementary">Elementary</a>
+                </li>
+                <li class="nav nav-link bg-dark">
+                    <a href="#">High School</a>
+                </li>
+                <li class="nav nav-link bg-dark">
+                    <a href="#">Senior High School</a>
+                </li>
+            </ul>
+        </div>
+
+<!-- general reports -->
+    <div style="margin-top:-70px; margin-left: 100px">
+        <div class="form-control-lg"><div><h1>General Reports</h1></div>
+          <div style="margin-left:30px;font-size: 18px;">
+             <div class="form-group">Total number of students with absences: {{ totalAbsentees }}</div> 
+             <div class="form-group">Total  number of students with tardiness: {{ totalTardiness }}</div>
+             <div class="form-group">Student with most number of absences: {{mostAbsences}} with {{absencesCount}} absences</div>
+             <div class="form-group">Student with most number of tardiness: {{mostTardiness}} with {{tardinessCount}} tardiness</div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
