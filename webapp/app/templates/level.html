@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/static/fontawesome-free-5.0.10/web-fonts-with-css/css/fontawesome.min.css">
    
 
-    <title>Elementary</title>
+    <title>{{level}}</title>
 </head>
 <!-- title part -->
 <body class="body container">
@@ -22,7 +22,7 @@
         </div>
 <!-- sub title -->
         <div class="bg-light">
-                <div class=" display-4 container-fluid margin-left:mx-auto">Elementary</div>
+                <div class=" display-4 container-fluid margin-left:mx-auto">{{level}}</div>
         </div>
 
 <!-- search -->
@@ -49,10 +49,10 @@
                                     Grade Levels
                                 </th>
                             </thead>
-                            {%for level in yearLevels %}
+                            {%for year in yearLevels %}
                             <tr>
                                 <td>
-                                    <a href="elementary/{{level[0]}}">Grade {{level[0]}}</a>
+                                    <a href="{{level}}/{{year[0]}}">Grade {{year[0]}}</a>
                                 </td>
                             </tr>
                             {%endfor%}

@@ -290,7 +290,7 @@ def Tardiness():
 
 #main menu
 def main():
-    section = 'JOB'
+    section = 'SAMUEL'
     cnx = amarissedb.connect()
     cursor = cnx.cursor()
 
@@ -301,15 +301,18 @@ def main():
     students = cursor.fetchall()
     absents=[]
     studentList = []
-    dct = ()
+    absencesCount = ()
+    tardyList = []
     for student in students:
         cursor.execute('SELECT student_id, COUNT(*) AS qty FROM students_absences WHERE student_id = %s GROUP BY student_id ORDER BY qty DESC LIMIT 1',(student[0],))
         absences = cursor.fetchone()
-        absents.append(absences[1])
+        if absences != None:
+            absents.append(absences[1])
+        else:
+            absents.append(0)
         studentList.append(student[1])
-    dct = dict(zip (studentList,absents))
-
-    print(dct)
+    absencesCount = dict(zip (studentList,absents))
+    print(absencesCount)
     # os.system('cls')
 
     # print('''

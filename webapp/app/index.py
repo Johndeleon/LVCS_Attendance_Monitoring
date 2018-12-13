@@ -14,7 +14,7 @@ def home():
                     ORDER BY qty DESC 
                     LIMIT 1;''')
     mode = cursor.fetchone()
-    cursor.execute('SELECT full_name FROM absentee_students WHERE id = %s',(mode[0],))
+    cursor.execute('SELECT full_name FROM students WHERE id = %s',(mode[0],))
     fullName = cursor.fetchone();
     cursor.execute('SELECT COUNT(student_id) FROM students_absences WHERE student_id = %s',(mode[0],))
     absences = cursor.fetchone();
@@ -40,30 +40,39 @@ def home():
     totalTardiness = tardinessPop[0]
     mostTardiness = fullName[0]
 
+    levels = ['elementary','highschool','seniorhigh']
+
     if request.method == 'GET':
-        return render_template('home.html',totalAbsentees=totalAbsentees,mostAbsences = mostAbsences,absencesCount = absencesCount,totalTardiness = totalTardiness, tardinessCount = tardinessCount, mostTardiness = mostTardiness)
+        return render_template('home.html',totalAbsentees=totalAbsentees,mostAbsences = mostAbsences,absencesCount = absencesCount,totalTardiness = totalTardiness, tardinessCount = tardinessCount, mostTardiness = mostTardiness,levels = levels)
 
-@app.route('/elementary')
+@app.route('/<level>')
     
-def showElementary():
+def showLevels(level):
     cnx = amarissedb.connect()
     cursor = cnx.cursor()
 
-    cursor.execute('SELECT DISTINCT(year_level) FROM students WHERE year_level <= 6')
-    yearLevels = cursor.fetchall()
+    if level == 'elementary':
+        cursor.execute('SELECT DISTINCT(year_level) FROM students WHERE year_level <= 6')
+        yearLevels = cursor.fetchall()
+    elif level == 'highschool':
+        cursor.execute('SELECT DISTINCT(year_level) FROM students WHERE year_level > 6 AND year_level < 11')
+        yearLevels = cursor.fetchall()
+    elif level == 'seniorhigh':
+        cursor.execute('SELECT DISTINCT(year_level) FROM students WHERE year_level = 11 OR year_level = 12')
+        yearLevels = cursor.fetchall()
 
-
-    return render_template('elementary.html',yearLevels = yearLevels)
+    return render_template('level.html',yearLevels = yearLevels,level = level)
     
-@app.route('/elementary/<level>')
+@app.route('/<level>/<year>')
 
-def showGradeSection(level):
+def showGradeSection(year,level):
     cnx = amarissedb.connect()
     cursor = cnx.cursor()
 
-    cursor.execute('SELECT DISTINCT(section) FROM students WHERE year_level = %s',(level,))
+    cursor.execute('SELECT DISTINCT(section) FROM students WHERE year_level = %s',(year,))
     sections = cursor.fetchall()
-    return render_template('gradesection.html',sections = sections)
+    return render_template('gradesection.html',sections = sections,level = level)
+
 
 @app.route('/<section>')
 
@@ -74,16 +83,8 @@ def showSection(section):
     cursor.execute('SELECT DISTINCT(year_level) FROM students WHERE section = %s',(section,))
     level = cursor.fetchone()
 
-    cursor.execute('SELECT id,full_name FROM students WHERE section = %s',(section,))
-    students = cursor.fetchall()
-    absents=[]
-    studentList = []
-    absencesCount = ()
-    for student in students:
-        cursor.execute('SELECT student_id, COUNT(*) AS qty FROM students_absences WHERE student_id = %s GROUP BY student_id ORDER BY qty DESC LIMIT 1',(student[0],))
-        absences = cursor.fetchone()
-        absents.append(absences[1])
-        studentList.append(student[1])
-    absencesCount = dict(zip (studentList,absents))
+    cursor.execute('SELECT s.id,s.full_name,s.year_level,s.section,(SELECT COUNT(student_id) FROM students_absences AS a WHERE s.id = a.student_id) AS absences,(SELECT COUNT(t.student_id) FROM students_tardiness as t WHERE s.id = t.student_id) AS tardiness FROM students AS s WHERE s.section = %s',(section,))
+    offensesCount = cursor.fetchall();
 
-    return render_template('sectionreports.html', level = level, section = section, absencesCount = absencesCount)
+    return render_template('sectionreports.html', level = level, section = section, offensesCount = offensesCount)
+

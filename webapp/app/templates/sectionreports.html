@@ -47,14 +47,21 @@
 
                     <table class="table">
                         <thead>
+                            <th>Student Id</th>
                             <th>Student</th>
+                            <th>Grade/Year Level</th>
+                            <th>Section</th>
                             <th>Absences</th>
                             <th>Tardiness</th>
                         </thead>
-                            {%for student,absent in absencesCount.items()%}
+                            {%for offense in offensesCount%}
                             <tr>
-                                <td>{{student}}</td>
-                                <td>{{absent}}</td>
+                                <td>{{offense[0]}}</td>
+                                <td>{{offense[1]}}</td>
+                                <td>{{offense[2]}}</td>
+                                <td>{{offense[3]}}</td>
+                                <td>{{offense[4]}}</td>
+                                <td>{{offense[5]}}</td>
                             </tr>
                             {%endfor%}
                     </table>

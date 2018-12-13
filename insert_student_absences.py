@@ -15,7 +15,7 @@ with open('files/students_absences.csv', 'r') as csvfile:
     cursor = cnx.cursor()
     for row in csvreader:
         full_name = row['full_name']
-        cursor.execute("SELECT id FROM absent_students WHERE full_name = '%s'" %full_name)
+        cursor.execute("SELECT id FROM students WHERE full_name = '%s'" %full_name)
         student = cursor.fetchone()
         try:
             dateAbsent =datetime.datetime.strptime(row["date_absent"],'%m/%d/%Y').strftime('%Y-%m-%d')
@@ -31,6 +31,7 @@ with open('files/students_absences.csv', 'r') as csvfile:
         data_student_absences = (student[0], dateAbsent, dateReturned, row["excuse"], row["remarks"],now.strftime("%Y-%m-%d"),now.strftime("%Y-%m-%d"))
         print("Adding record")
         print(data_student_absences)
+        print(student[0])
         cursor.execute(add_student_absences, data_student_absences)
         print("Added record #", student[0])
         cnx.commit()

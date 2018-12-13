@@ -141,9 +141,9 @@ full_name,date_absent,date_returned,excuse,remarks,
 "Malapitan, Axcel Angelo L.",10/4/2018,10/8/2018,Checkup,RD
 "Malapitan, Axcel Angelo L.",10/29/2018,11/5/2018,Nakipaglibing ,RD
 "Malapitan, Axcel Angelo L.",11/26/2018,11/27/2018,Checkup,
-"Mamaril, Zara Mae D",10/17/2018,10/18/2018,My mom is sick,returned
-"Mamaril, Zara Mae D",11/12/2018,11/13/2018,not feeling well,returned
-"Mamaril, Zara Mae D",9/25/2018,,,NO EL 
+"Mamaril, Zara Mae D.",10/17/2018,10/18/2018,My mom is sick,returned
+"Mamaril, Zara Mae D.",11/12/2018,11/13/2018,not feeling well,returned
+"Mamaril, Zara Mae D.",9/25/2018,,,NO EL 
 "Pangan, Raiza Mae R.",8/20/2018,,Bad Weather ,
 "Pangan, Raiza Mae R.",10/18/2018,10/19/2018,Cough and Colds,returned
 "Pangan, Raiza Mae R.",9/3/2018,,,NO EL
@@ -176,10 +176,10 @@ full_name,date_absent,date_returned,excuse,remarks,
 "Urbe, John Lerry A.",8/16/2018,8/17/2018,Flood,Returned
 "Urbe, John Lerry A.",10/12/2018,10/17/2018,Headache,returned
 "Vinculado, Virna Mae Elizbeth A.",9/3/2018,9/4/2018,no uniform no sleep,Returned
-"Alfonso, Ryan Christian  M.",7/27/2018,7/30/2018,Fever,
-"Alfonso, Ryan Christian  M.",9/12/2018,9/17/2018,LBM ,Returned
-"Alfonso, Ryan Christian  M.",10/12/2018,10/17/2018,Injured,RD
-"Alfonso, Ryan Christian  M.",11/9/2018,11/12/2018,went to airport,returned
+"Alfonso, Ryan Christian M.",7/27/2018,7/30/2018,Fever,
+"Alfonso, Ryan Christian M.",9/12/2018,9/17/2018,LBM ,Returned
+"Alfonso, Ryan Christian M.",10/12/2018,10/17/2018,Injured,RD
+"Alfonso, Ryan Christian M.",11/9/2018,11/12/2018,went to airport,returned
 "Batac, Yasmeena Almir B.",10/8/2018,10/12/2018,Grandfather's death,returned
 "Batac, Yasmeena Almir B.",10/9/2018,10/12/2018,Grandfather's death,returned
 "Batac, Yasmeena Almir B.",10/10/2018,10/12/2018,Grandfather's death,returned
@@ -355,8 +355,8 @@ full_name,date_absent,date_returned,excuse,remarks,
 "Tudio, Mary Kirsten Jane Pril Ann S.",8/29/2018,8/30/2018,Headache,Returned
 "Tulod, Kelvin Gio M.",7/20/2018,7/24/2018,Bad weather,Returned
 "Yumul, Rizalyn A.",11/21/2018,11/22/2018,Inquiring SHS,Returned
-"Andaman, Angelica Faith",8/20/2018,8/22/2018,Checkup,Returned
-"Andaman, Angelica Faith",9/3/2018,9/4/2018,Checkup,returned
+"Andaman, Angelica Faith G.",8/20/2018,8/22/2018,Checkup,Returned
+"Andaman, Angelica Faith G.",9/3/2018,9/4/2018,Checkup,returned
 "Bonifacio, Mary Denielle Castro",7/24/2018,7/25/2018,heavy rain and floods,Returned
 "Cabrera, Judith Santos",8/28/2018,8/29/2018,Dysmenorrhea,Returned
 "Celestial, Christine Geguinto",11/26/2018,11/27/2018,Dysmenorrhea,
@@ -512,10 +512,10 @@ full_name,date_absent,date_returned,excuse,remarks,
 "Guevarra, Kathleen S.",9/28/2018,9/28/2018,Fequesting of F137(HALFDAY),returned
 "Guevarra, Kathleen S.",11/21/2018,11/23/2018,vomitting (21 Halfday)(22wholeday),returned
 "Guevarra, Kathleen S.",11/22/2018,11/23/2018,vomitting (21 Halfday)(22wholeday),returned
-"Law, Khaihou James D.",8/28/2018,8/29/2018,Toothache,
-"Law, Khaihou James D.",9/5/2018,9/6/2018,Toothache,returned
-"Law, Khaihou James D.",9/25/2018,9/26/2018,Diarrhea,returned
-"Law, Khaihou James D.",11/19/2018,11/20/2018,Sick,Returned
+"Law, Khai Hou James D.",8/28/2018,8/29/2018,Toothache,
+"Law, Khai Hou James D.",9/5/2018,9/6/2018,Toothache,returned
+"Law, Khai Hou James D.",9/25/2018,9/26/2018,Diarrhea,returned
+"Law, Khai Hou James D.",11/19/2018,11/20/2018,Sick,Returned
 "Moises, Vanessa Mae Urbano",9/17/2018,9/18/2018,Stranded,Returned
 "Odo, Shaira Mae R.",8/6/2018,8/8/2018,Grandfather's Death,Returned
 "Odo, Shaira Mae R.",8/7/2018,8/8/2018,Grandfather's Death,Returned
@@ -3351,7 +3351,7 @@ full_name,date_absent,date_returned,excuse,remarks,
 "Ibarreta, Shiecka Kharmhel D.",8/7/2018,8/16/2018,Confined,Returned ,
 "Ibarreta, Shiecka Kharmhel D.",8/8/2018,8/16/2018,Confined,Returned ,
 "Ibarreta, Shiecka Kharmhel D.",8/9/2018,8/16/2018,Confined,Returned ,
-"Dungo III, Noel B.",8/25/2018,8/28/2018,headache and Fever,,
+"Dungo, Noel III B.",8/25/2018,8/28/2018,headache and Fever,,
 "Doria, Christian Jazz Y.",08/09/2018,8/16/2018,Confined,Returned ,
 "Doria, Christian Jazz Y.",08/10/2018,8/16/2018,Confined,Returned ,
 "Cabiedes, Chivas Kent M.",8/24/2018,8/28/2018,Fever and Muscle pain,7/20/2018,

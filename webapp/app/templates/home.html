@@ -41,15 +41,11 @@
                 <li class="nav-brand bg-dark text-white text-center">
                     Student Groups
                 </li>
+                {%for level in levels%}
                 <li class="nav nav-link bg-dark">
-                    <a href="elementary">Elementary</a>
+                    <a href="{{level}}">{{level}}</a>
                 </li>
-                <li class="nav nav-link bg-dark">
-                    <a href="#">High School</a>
-                </li>
-                <li class="nav nav-link bg-dark">
-                    <a href="#">Senior High School</a>
-                </li>
+                {%endfor%}
             </ul>
         </div>
 
