@@ -40,26 +40,19 @@ def home():
     totalTardiness = tardinessPop[0]
     mostTardiness = fullName[0]
 
-    levels = ['elementary','highschool','seniorhigh']
 
     if request.method == 'GET':
-        return render_template('home.html',totalAbsentees=totalAbsentees,mostAbsences = mostAbsences,absencesCount = absencesCount,totalTardiness = totalTardiness, tardinessCount = tardinessCount, mostTardiness = mostTardiness,levels = levels)
+        return render_template('home.html',totalAbsentees=totalAbsentees,mostAbsences = mostAbsences,absencesCount = absencesCount,totalTardiness = totalTardiness, tardinessCount = tardinessCount, mostTardiness = mostTardiness)
 
-@app.route('/<level>')
+@app.route('/elementary')
     
-def showLevels(level):
+def showLevels():
     cnx = amarissedb.connect()
     cursor = cnx.cursor()
 
-    if level == 'elementary':
-        cursor.execute('SELECT DISTINCT(year_level) FROM students WHERE year_level <= 6')
-        yearLevels = cursor.fetchall()
-    elif level == 'highschool':
-        cursor.execute('SELECT DISTINCT(year_level) FROM students WHERE year_level > 6 AND year_level < 11')
-        yearLevels = cursor.fetchall()
-    elif level == 'seniorhigh':
-        cursor.execute('SELECT DISTINCT(year_level) FROM students WHERE year_level = 11 OR year_level = 12')
-        yearLevels = cursor.fetchall()
+    level = 'elementary'
+    cursor.execute('SELECT DISTINCT(year_level) FROM students WHERE year_level <= 6')
+    yearLevels = cursor.fetchall()
 
     return render_template('level.html',yearLevels = yearLevels,level = level)
     
