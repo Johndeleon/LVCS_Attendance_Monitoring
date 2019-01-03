@@ -293,66 +293,33 @@ def main():
     section = 'SAMUEL'
     cnx = amarissedb.connect()
     cursor = cnx.cursor()
-
-    cursor.execute('SELECT DISTINCT(year_level) FROM students WHERE section = %s',(section,))
-    level = cursor.fetchone()
-
-    cursor.execute('SELECT id,full_name FROM students WHERE section = %s',(section,))
-    students = cursor.fetchall()
-    absents=[]
-    studentList = []
-    absencesCount = ()
-    tardyList = []
-    for student in students:
-        cursor.execute('SELECT student_id, COUNT(*) AS qty FROM students_absences WHERE student_id = %s GROUP BY student_id ORDER BY qty DESC LIMIT 1',(student[0],))
-        absences = cursor.fetchone()
-        if absences != None:
-            absents.append(absences[1])
-        else:
-            absents.append(0)
-        studentList.append(student[1])
-    absencesCount = dict(zip (studentList,absents))
-    print(absencesCount)
-    # os.system('cls')
-
-    # print('''
-    #     sssssss   tttttttttttttt  uu       uu  ddddddd    eeeeeeeeee  nn        nn  tttttttttttttt
-    #    sss   sss  tttttttttttttt  uu       uu  dd    dd   eeeeeeeeee  nnnn      nn  tttttttttttttt
-    #   sss               tt        uu       uu  dd     dd  ee          nn nn     nn        tt
-    #   sss               tt        uu       uu  dd     dd  ee          nn  nn    nn        tt
-    #    ssssssss         tt        uu       uu  dd     dd  eeeeeeeeee  nn   nn   nn        tt
-    #          sss        tt        uu       uu  dd     dd  ee          nn    nn  nn        tt
-    #          sss        tt        uu       uu  dd     dd  ee          nn     nn nn        tt
-    #   sss   sss         tt        uu       uu  dd    dd   eeeeeeeeee  nn      nnnn        tt
-    #    sssssss          tt        uuuuuuuuuuu  ddddddd    eeeeeeeeee  nn       nnn        tt
     
-    #             rrrrrrrr     eeeeeeeeee  cccccccccc  oooooooooo rrrrrrrr     ddddddd
-    #             rr     rr    eeeeeeeeee  cccccccccc  oo      oo rr     rr    dd    dd
-    #             rr      rr   ee          cc          oo      oo rr      rr   dd     dd
-    #             rr     rr    ee          cc          oo      oo rr     rr    dd     dd
-    #             rrrrrrr      eeeeeeeeee  cc          oo      oo rrrrrrr      dd     dd
-    #             rr    rr     ee          cc          oo      oo rr    rr     dd     dd
-    #             rr     rr    ee          cc          oo      oo rr     rr    dd     dd
-    #             rr      rr   eeeeeeeeee  cccccccccc  oo      oo rr      rr   dd    dd
-    #             rr       rr  eeeeeeeeee  cccccccccc  oooooooooo rr       rr  ddddddd
-    # ''')
+    levels = [1,2,3,4,5,6,7,8,9,10,11,12]
+    cursor.execute('SELECT DISTINCT(section) FROM students WHERE year_level = 1')
+    grade1 = cursor.fetchall()
+    cursor.execute('SELECT DISTINCT(section) FROM students WHERE year_level = 2')
+    grade2 = cursor.fetchall()
+    cursor.execute('SELECT DISTINCT(section) FROM students WHERE year_level = 3')
+    grade3 = cursor.fetchall()
+    cursor.execute('SELECT DISTINCT(section) FROM students WHERE year_level = 4')
+    grade4 = cursor.fetchall()
+    cursor.execute('SELECT DISTINCT(section) FROM students WHERE year_level = 5')
+    grade5 = cursor.fetchall()
+    cursor.execute('SELECT DISTINCT(section) FROM students WHERE year_level = 6')
+    grade6 = cursor.fetchall()
+    cursor.execute('SELECT DISTINCT(section) FROM students WHERE year_level = 7')
+    grade7 = cursor.fetchall()
+    cursor.execute('SELECT DISTINCT(section) FROM students WHERE year_level = 8')
+    grade8 = cursor.fetchall()
+    cursor.execute('SELECT DISTINCT(section) FROM students WHERE year_level = 9')
+    grade9 = cursor.fetchall()
+    cursor.execute('SELECT DISTINCT(section) FROM students WHERE year_level = 10')
+    grade10 = cursor.fetchall()
+    cursor.execute('SELECT DISTINCT(section) FROM students WHERE year_level = 11')
+    grade11 = cursor.fetchall()
+    cursor.execute('SELECT DISTINCT(section) FROM students WHERE year_level = 12')
+    grade12 = cursor.fetchall()
+ 
 
-    # while True:
-    #     i=1
-    #     for item in mainmenu:
-    #         print('[',i,']',item)
-    #         i+=1
-    #     choice = input('Enter Number of Choice >> ')
-    #     if choice == '1':
-    #         Absences()
-    #         break
-    #     if choice == '2':
-    #         Tardiness()
-    #         break
-    #     elif choice == '3':
-    #         exit()
-    #     else:
-    #         os.system('cls')
-    #         print('not a valid input')   
-                
+    print(grade1)                
 main()
