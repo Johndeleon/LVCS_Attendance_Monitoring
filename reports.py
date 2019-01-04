@@ -290,36 +290,13 @@ def Tardiness():
 
 #main menu
 def main():
-    section = 'SAMUEL'
     cnx = amarissedb.connect()
     cursor = cnx.cursor()
-    
-    levels = [1,2,3,4,5,6,7,8,9,10,11,12]
-    cursor.execute('SELECT DISTINCT(section) FROM students WHERE year_level = 1')
-    grade1 = cursor.fetchall()
-    cursor.execute('SELECT DISTINCT(section) FROM students WHERE year_level = 2')
-    grade2 = cursor.fetchall()
-    cursor.execute('SELECT DISTINCT(section) FROM students WHERE year_level = 3')
-    grade3 = cursor.fetchall()
-    cursor.execute('SELECT DISTINCT(section) FROM students WHERE year_level = 4')
-    grade4 = cursor.fetchall()
-    cursor.execute('SELECT DISTINCT(section) FROM students WHERE year_level = 5')
-    grade5 = cursor.fetchall()
-    cursor.execute('SELECT DISTINCT(section) FROM students WHERE year_level = 6')
-    grade6 = cursor.fetchall()
-    cursor.execute('SELECT DISTINCT(section) FROM students WHERE year_level = 7')
-    grade7 = cursor.fetchall()
-    cursor.execute('SELECT DISTINCT(section) FROM students WHERE year_level = 8')
-    grade8 = cursor.fetchall()
-    cursor.execute('SELECT DISTINCT(section) FROM students WHERE year_level = 9')
-    grade9 = cursor.fetchall()
-    cursor.execute('SELECT DISTINCT(section) FROM students WHERE year_level = 10')
-    grade10 = cursor.fetchall()
-    cursor.execute('SELECT DISTINCT(section) FROM students WHERE year_level = 11')
-    grade11 = cursor.fetchall()
-    cursor.execute('SELECT DISTINCT(section) FROM students WHERE year_level = 12')
-    grade12 = cursor.fetchall()
- 
 
-    print(grade1)                
+    months = [1,2,3,4,5,6,7,8,9,10,11,12]
+    tardinessPerMonth = []
+    for month in months:
+        cursor.execute('SELECT COUNT(*) FROM students_absences WHERE MONTH(date_absent) = %s',(str(month[0],))
+        tardinessPerMonth[] = cursor.fetchone()    
+    print(tardinessPerMonth)    
 main()

@@ -1,167 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel = stylesheet type = text/css href="/static/bootstrap-3.3.7/dist/css/bootstrap.css">
-    <script  src="/static/bootstrap-3.3.7/dist/js/bootstrap.js"></script>
-    <script  src="/static/jquery-3.3.1.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
-    <link rel="stylesheet" href="/static/fontawesome-free-5.0.10/web-fonts-with-css/css/fa-brands.min.css">
-    <link rel="stylesheet" href="/static/fontawesome-free-5.0.10/web-fonts-with-css/css/fa-regular.min.css">
-    <link rel="stylesheet" href="/static/fontawesome-free-5.0.10/web-fonts-with-css/css/fa-solid.min.css">
-    <link rel="stylesheet" href="/static/fontawesome-free-5.0.10/web-fonts-with-css/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="/static/fontawesome-free-5.0.10/web-fonts-with-css/css/fontawesome.min.css">
-   
+{%extends 'layout.html'%}
 
-    <title>{{section[]}}</title>
-</head>
-<!-- title part -->
-<body class="body">
-        <nav class="navbar navbar-inverse">
-                <div class="container-fluid">
-                  <div class="navbar-header">
-                    <a class="navbar-brand" href="/">LVCS Tardiness & Absences Record</a>
-                  </div>
-                  <ul class="nav navbar-nav">
-                    <li class="active"><a href="/">Home</a></li>
-                    <li class="dropdown">
-                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Elementary
-                      <span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                            <li class="dropdown-submenu">
-                                <a class="test" href="#">Grade 1<span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
-                                        {%for section in grade1%}
-                                            <li><a href="/1/{{section[0]}}">{{section[0]}}</a></li>
-                                        {%endfor%}
-                                    </ul>
-                            </li>
-                            <li class="dropdown-submenu">
-                                    <a class="test" href="#">Grade 2<span class="caret"></span></a>
-                                        <ul class="dropdown-menu">
-                                            {%for section in grade2%}
-                                                <li><a href="/2/{{section[0]}}">{{section[0]}}</a></li>
-                                            {%endfor%}
-                                        </ul>
-                            </li>
-                            <li class="dropdown-submenu">
-                                    <a class="test" href="#">Grade 3<span class="caret"></span></a>
-                                        <ul class="dropdown-menu">
-                                            {%for section in grade3%}
-                                                <li><a href="/3/{{section[0]}}">{{section[0]}}</a></li>
-                                            {%endfor%}
-                                        </ul>
-                            </li>
-                            <li class="dropdown-submenu">
-                                    <a class="test" href="#">Grade 4<span class="caret"></span></a>
-                                        <ul class="dropdown-menu">
-                                            {%for section in grade4%}
-                                                <li><a href="/4/{{section[0]}}">{{section[0]}}</a></li>
-                                            {%endfor%}
-                                    </ul>
-                            </li>
-                            <li class="dropdown-submenu">
-                                <a class="test" href="#">Grade 5<span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
-                                        {%for section in grade5%}
-                                            <li><a href="/5/{{section[0]}}">{{section[0]}}</a></li>
-                                        {%endfor%}
-                                    </ul>
-                            </li>
-                            <li class="dropdown-submenu">
-                                <a class="test" href="#">Grade 6<span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
-                                        {%for section in grade6%}
-                                            <li><a href="/6/{{section[0]}}">{{section[0]}}</a></li>
-                                        {%endfor%}
-                                    </ul>
-                            </li>
-                        </ul>
-                        </li>
-                    <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">High School
-                            <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                    <li class="dropdown-submenu">
-                                            <a class="test" href="#">Grade 7<span class="caret"></span></a>
-                                                <ul class="dropdown-menu">
-                                                    {%for section in grade7%}
-                                                        <li><a href="/7/{{section[0]}}">{{section[0]}}</a></li>
-                                                    {%endfor%}
-                                                </ul>
-                                        </li>
-                                        <li class="dropdown-submenu">
-                                                <a class="test" href="#">Grade 8<span class="caret"></span></a>
-                                                    <ul class="dropdown-menu">
-                                                        {%for section in grade8%}
-                                                            <li><a href="/8/{{section[0]}}">{{section[0]}}</a></li>
-                                                        {%endfor%}
-                                                    </ul>
-                                            </li>
-                                            <li class="dropdown-submenu">
-                                                    <a class="test" href="#">Grade 9<span class="caret"></span></a>
-                                                        <ul class="dropdown-menu">
-                                                            {%for section in grade9%}
-                                                                <li><a href="/9/{{section[0]}}">{{section[0]}}</a></li>
-                                                            {%endfor%}
-                                                        </ul>
-                                                </li>
-                                                <li class="dropdown-submenu">
-                                                        <a class="test" href="#">Grade 10<span class="caret"></span></a>
-                                                            <ul class="dropdown-menu">
-                                                                {%for section in grade10%}
-                                                                    <li><a href="/10/{{section[0]}}">{{section[0]}}</a></li>
-                                                                {%endfor%}
-                                                            </ul>
-                                                    </li>
-                            </ul>
-                    </li>
-                    <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Senior High
-                            <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                    <li class="dropdown-submenu">
-                                            <a class="test" href="#">Grade 11<span class="caret"></span></a>
-                                                <ul class="dropdown-menu">
-                                                    {%for section in grade11%}
-                                                        <li><a href="/11/{{section[0]}}">{{section[0]}}</a></li>
-                                                    {%endfor%}
-                                                </ul>
-                                        </li>
-                                        <li class="dropdown-submenu">
-                                                <a class="test" href="#">Grade 12<span class="caret"></span></a>
-                                                    <ul class="dropdown-menu">
-                                                        {%for section in grade12%}
-                                                            <li><a href="/12/{{section[0]}}">{{section[0]}}</a></li>
-                                                        {%endfor%}
-                                                    </ul>
-                                            </li>
-                            </ul>
-                    </li>
-                  </ul>
-                  <form class="navbar-form navbar-left" action="/action_page.php">
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Search">
-                    </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
-                  </form>
-                </div>
-              </nav>
+{%block content%}
                 <div class="container">
                 <div class="h3">{{level[0]}} {{section}}</div>
-                    <table class="table">
+                    <table class="container table table-striped table-responsive">
                         <thead>
-                            <th>Student Id</th>
-                            <th>Student</th>
-                            <th>Grade/Year Level</th>
-                            <th>Section</th>
-                            <th>Absences</th>
-                            <th>Tardiness</th>
+                            <th class="bg-primary">Student Id</th>
+                            <th class="bg-primary">Student</th>
+                            <th class="bg-primary">Grade/Year Level</th>
+                            <th class="bg-primary">Section</th>
+                            <th class="bg-primary">Absences</th>
+                            <th class="bg-primary">Tardiness</th>
+                            <th class="bg-primary col-md-1">Record Absence</th>
+                            <th class="bg-primary col-md-1">Record Tardines</th>
                         </thead>
                             {%for offense in offensesCount%}
                             <tr>
@@ -169,14 +20,103 @@
                                 <td>{{offense[1]}}</td>
                                 <td>{{offense[2]}}</td>
                                 <td>{{offense[3]}}</td>
-                                <td>{{offense[4]}}</td>
-                                <td>{{offense[5]}}</td>
+                                {% if offense[4] == 0%}
+                                <td class="absences">-</td>
+                                {% else %}
+                                <td class="absences">{{offense[4]}}</td>
+                                {% endif %}
+                                {% if offense[5] == 0%}
+                                <td class="tardines ">-</td>
+                                {% else %}
+                                <td class="tardines">{{offense[5]}}</td>
+                                {% endif %}
+                                <td><button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#recordAbsence{{offense[0]}}">
+                                        +
+                                      </button>
+                                </td>
+                                <td><button type="button" class="btn btn-primary btn-lg center-block">+</button></td>
                             </tr>
+
+
+
+
+                                  
+      <!-- Modal -->
+
+      <div class="modal fade" id="recordAbsence{{offense[0]}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <form method="post" action="/recordAbsence">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Record Absence</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                      <div class="md-form mb-4">
+                        <input type="text" name = "studentId" value="{{offense[0]}}" required hidden>
+                        <div class="form-control"><label>{{offense[1]}}</label></div>
+                        <label>Student Name</label>
+                      </div>
+                    </div>
+                    <div class="modal-body">
+                      <div class="md-form mb-4">
+                        <input type="text" name = "excuse" class="form-control" required>
+                        <label>Excuse</label>
+                      </div>
+                    </div>
+    
+                    <div class="modal-body">
+                      <div class="md-form mb-4">
+                        <input type="date" name = "date_absent" class="form-control" required>
+                        <label>Date Absent</label>
+                      </div>
+                    </div>
+    
+                    <div class="modal-body">
+                      <div class="md-form mb-4">
+                        <input type="date" name = "date_returned" class="form-control" required>
+                        <label>Date Returned</label>
+                      </div>
+                    </div>
+    
+                    <div class="modal-body">
+                      <div class="md-form mb-4">
+                        <input type="text" name = "remarks" class="form-control" required>
+                        <label>Remarks</label>
+                      </div>
+                    </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-info">Create</button>                </div>
+                </div>
+              </div>
+            </div>
+          </form>
+      
                             {%endfor%}
                     </table>
 
                     </div>
 
-</body>
+                    <script>
+                    
+                                $('.absences').each(function() {
+                                if ($(this).text() > 2) {
+                                    $(this).addClass('bg-danger');                                }
+                                });
+                                $('.tardines').each(function() {
+                                if ($(this).text() > 2) {
+                                    $(this).addClass('bg-danger');                                }
+                                });
+                                $('.records').each(function() {
+                                if ($(this).text() == 0) {
+                                    $(this).value = '-';                                }
+                                });
+                    
+                        </script>  
 
-</html>
+                    {%endblock%}
+
+
