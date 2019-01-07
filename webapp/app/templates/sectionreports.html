@@ -17,7 +17,7 @@
                             {%for offense in offensesCount%}
                             <tr>
                                 <td>{{offense[0]}}</td>
-                                <td>{{offense[1]}}</td>
+                                <td class="btn-primary"data-toggle="modal" data-target="#studentRecords{{offense[0]}}">{{offense[1]}}</td>
                                 <td>{{offense[2]}}</td>
                                 <td>{{offense[3]}}</td>
                                 {% if offense[4] == 0%}
@@ -34,14 +34,16 @@
                                         +
                                       </button>
                                 </td>
-                                <td><button type="button" class="btn btn-primary btn-lg center-block">+</button></td>
+                                <td><button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#recordTardines{{offense[0]}}">
+                                  +
+                                </button></td>
                             </tr>
 
 
 
 
                                   
-      <!-- Modal -->
+      <!--Record Absence Modal -->
 
       <div class="modal fade" id="recordAbsence{{offense[0]}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -55,36 +57,36 @@
                   </div>
                   <div class="modal-body">
                       <div class="md-form mb-4">
+                          <label>Student Name</label>
                         <input type="text" name = "studentId" value="{{offense[0]}}" required hidden>
                         <div class="form-control"><label>{{offense[1]}}</label></div>
-                        <label>Student Name</label>
                       </div>
                     </div>
                     <div class="modal-body">
                       <div class="md-form mb-4">
-                        <input type="text" name = "excuse" class="form-control" required>
-                        <label>Excuse</label>
-                      </div>
-                    </div>
-    
-                    <div class="modal-body">
-                      <div class="md-form mb-4">
-                        <input type="date" name = "date_absent" class="form-control" required>
-                        <label>Date Absent</label>
+                          <label>Excuse</label>
+                        <input type="text" name = "excuse" class="form-control" >
                       </div>
                     </div>
     
                     <div class="modal-body">
                       <div class="md-form mb-4">
-                        <input type="date" name = "date_returned" class="form-control" required>
-                        <label>Date Returned</label>
+                          <label>Date Absent</label>
+                        <input type="date" name = "date_absent" class="form-control" >
                       </div>
                     </div>
     
                     <div class="modal-body">
                       <div class="md-form mb-4">
-                        <input type="text" name = "remarks" class="form-control" required>
-                        <label>Remarks</label>
+                          <label>Date Returned</label>
+                        <input type="date" name = "date_returned" class="form-control" >
+                      </div>
+                    </div>
+    
+                    <div class="modal-body">
+                      <div class="md-form mb-4">
+                          <label>Remarks</label>
+                        <input type="text" name = "remarks" class="form-control" >
                       </div>
                     </div>
                   <div class="modal-footer">
@@ -94,6 +96,80 @@
               </div>
             </div>
           </form>
+          
+           <!--Record Tardiness Modal -->
+
+      <div class="modal fade" id="recordTardines{{offense[0]}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <form method="post" action="/recordTardines">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Record Tardiness</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                  <div class="md-form mb-4">
+                      <label>Student Name</label>
+                    <input type="text" name = "studentId" value="{{offense[0]}}" required hidden>
+                    <div class="form-control"><label>{{offense[1]}}</label></div>
+                  </div>
+                </div>
+
+                <div class="modal-body">
+                  <div class="md-form mb-4">
+                      <label>Date Tardy</label>
+                    <input type="date" name = "tardines_date" class="form-control" required>
+                  </div>
+                </div>
+
+                <div class="modal-body">
+                  <div class="md-form mb-4">
+                      <label>Tardiness Code</label>
+                    <select name="tardines_type" class="form-control" required>
+                   {%for type in tardinesTypes%}
+                   <option value="{{type[0]}}">{{type[1]}}</option>
+                   {%endfor%}
+                  </select>
+                  </div>
+                </div>
+                
+                <div class="modal-body">
+                  <div class="md-form mb-4">
+                      <label>Remarks</label>
+                    <input type="text" name = "remarks" class="form-control" >
+                  </div>
+                </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-info">Create</button>                </div>
+            </div>
+          </div>
+        </div>
+      </form>
+
+
+      <!--Show Student Records -->
+
+      <div class="modal fade" id="studentRecords{{offense[0]}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">{{offense[1]}}'s Record</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+
+
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-info">Create</button>                </div>
+            </div>
+          </div>
+        </div>
       
                             {%endfor%}
                     </table>

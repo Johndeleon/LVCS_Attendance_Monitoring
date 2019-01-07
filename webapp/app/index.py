@@ -1,6 +1,6 @@
 import amarissedb
 from datetime import datetime
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
 from graph import build_graph
 app = Flask(__name__)
 
@@ -84,9 +84,12 @@ def showSection(year,section):
     level = cursor.fetchone()
 
     cursor.execute('SELECT s.id,s.full_name,s.year_level,s.section,(SELECT COUNT(student_id) FROM students_absences AS a WHERE s.id = a.student_id) AS absences,(SELECT COUNT(t.student_id) FROM students_tardiness as t WHERE s.id = t.student_id) AS tardiness FROM students AS s WHERE s.section = %s AND s.year_level = %s',(section,year,))
-    offensesCount = cursor.fetchall();
+    offensesCount = cursor.fetchall()
 
-    return render_template('sectionreports.html', level = level, section = section, offensesCount = offensesCount,grade1 = grade1,grade2 = grade2,grade3 = grade3,grade4 = grade4,grade5 = grade5,grade6 = grade6,grade7 = grade7,grade8 = grade8,grade9 = grade9,grade10 = grade10,grade11 = grade11,grade12 = grade12)
+    cursor.execute('SELECT code,title FROM tardiness_types')
+    tardinesTypes = cursor.fetchall()
+
+    return render_template('sectionreports.html', level = level, section = section, offensesCount = offensesCount,grade1 = grade1,grade2 = grade2,grade3 = grade3,grade4 = grade4,grade5 = grade5,grade6 = grade6,grade7 = grade7,grade8 = grade8,grade9 = grade9,grade10 = grade10,grade11 = grade11,grade12 = grade12, tardinesTypes = tardinesTypes)
 
 @app.route('/recordAbsence',methods=['POST'])
 
@@ -107,6 +110,36 @@ def recordAbsence():
     cursor.execute(recordAbsence, data)
     cnx.commit()
 
-    cursor.execute("")
+    cursor.execute("SELECT year_level,section FROM students WHERE id = %s",(studentId,))
+    yearSection = cursor.fetchone()
+    year  = yearSection[0]
+    section = yearSection[1]
+    link = '/'+year+'/'+section
+    return redirect(link,302)
 
-    return redirect('/')
+@app.route('/recordTardines',methods=['POST'])
+
+def recordTardines():
+    cnx = amarissedb.connect()
+    cursor = cnx.cursor()
+
+    studentId = request.form['studentId']
+    tardinesType = request.form['tardines_type']
+    tardinesDate = request.form['tardines_date']
+    remarks = request.form['remarks']
+    now = datetime.now()
+    formatted_date = now.strftime('%Y-%m-%d')
+
+    recordTardines = ("INSERT INTO students_tardiness SET student_id=%s, tardiness_date=%s, tardiness_code=%s, remarks=%s,created_at=%s")
+    data = (studentId,tardinesDate,tardinesType,remarks,formatted_date)
+    cursor.execute(recordTardines, data)
+    cnx.commit()
+
+    cursor.execute("SELECT year_level,section FROM students WHERE id = %s",(studentId,))
+    yearSection = cursor.fetchone()
+    year  = yearSection[0]
+    section = yearSection[1]
+    link = '/'+year+'/'+section
+    return redirect(link,302)
+
+
