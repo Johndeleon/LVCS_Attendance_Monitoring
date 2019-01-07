@@ -1,0 +1,45 @@
+{%extends 'layout.html'%}
+
+{%block content%}
+      <!-- header -->
+      <div class="page-header container">
+            <div class="text-center h3">{{student[0]}}</div>
+    </div>
+    
+    <div class="container">
+          <h1>Absences</h1>
+      <table class="table table-striped">
+            <thead>
+                  <th>Date Absent</th>
+                  <th>Excuse</th>
+                  <th>Date Returned</th>
+                  <th>Remarks</th>
+            </thead>
+            {%for absence in absences%}
+                  <tr>
+                        <td>{{absence[0]}}</td>
+                        <td>{{absence[1]}}</td>
+                        <td>{{absence[2]}}</td>
+                        <td>{{absence[3]}}</td>
+                  </tr>
+            {%endfor%}
+      </table>
+
+      <h1>Tardines</h1>
+      <table class="table table-striped">
+            <thead>
+                  <th>Tardines Date</th>
+                  <th>Tardines Code</th>
+                  <th>Remarks</th>
+            </thead>
+            {%for tardy in tardiness%}
+                  <tr>
+                        <td>{{tardy[0]}}</td>
+                        <td>{{tardy[1]}}</td>
+                        <td>{{tardy[2]}}</td>
+                  </tr>
+            {%endfor%}
+      </table>
+    </div>
+
+{%endblock%}

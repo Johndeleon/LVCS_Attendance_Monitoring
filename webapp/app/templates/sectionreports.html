@@ -12,12 +12,12 @@
                             <th class="bg-primary">Absences</th>
                             <th class="bg-primary">Tardiness</th>
                             <th class="bg-primary col-md-1">Record Absence</th>
-                            <th class="bg-primary col-md-1">Record Tardines</th>
+                            <th class="bg-primary col-md-1">Record Tardiness</th>
                         </thead>
                             {%for offense in offensesCount%}
                             <tr>
                                 <td>{{offense[0]}}</td>
-                                <td class="btn-primary"data-toggle="modal" data-target="#studentRecords{{offense[0]}}">{{offense[1]}}</td>
+                                <td><a href="/{{level[0]}}/{{section}}/{{offense[0]}}">{{offense[1]}}</a></td>
                                 <td>{{offense[2]}}</td>
                                 <td>{{offense[3]}}</td>
                                 {% if offense[4] == 0%}
@@ -26,15 +26,15 @@
                                 <td class="absences">{{offense[4]}}</td>
                                 {% endif %}
                                 {% if offense[5] == 0%}
-                                <td class="tardines ">-</td>
+                                <td class="tardiness ">-</td>
                                 {% else %}
-                                <td class="tardines">{{offense[5]}}</td>
+                                <td class="tardiness">{{offense[5]}}</td>
                                 {% endif %}
                                 <td><button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#recordAbsence{{offense[0]}}">
                                         +
                                       </button>
                                 </td>
-                                <td><button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#recordTardines{{offense[0]}}">
+                                <td><button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#recordTardiness{{offense[0]}}">
                                   +
                                 </button></td>
                             </tr>
@@ -99,9 +99,9 @@
           
            <!--Record Tardiness Modal -->
 
-      <div class="modal fade" id="recordTardines{{offense[0]}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="recordTardiness{{offense[0]}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-            <form method="post" action="/recordTardines">
+            <form method="post" action="/recordTardiness">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Record Tardiness</h5>
@@ -120,15 +120,15 @@
                 <div class="modal-body">
                   <div class="md-form mb-4">
                       <label>Date Tardy</label>
-                    <input type="date" name = "tardines_date" class="form-control" required>
+                    <input type="date" name = "tardiness_date" class="form-control" required>
                   </div>
                 </div>
 
                 <div class="modal-body">
                   <div class="md-form mb-4">
                       <label>Tardiness Code</label>
-                    <select name="tardines_type" class="form-control" required>
-                   {%for type in tardinesTypes%}
+                    <select name="tardiness_type" class="form-control" required>
+                   {%for type in tardinessTypes%}
                    <option value="{{type[0]}}">{{type[1]}}</option>
                    {%endfor%}
                   </select>
@@ -148,30 +148,7 @@
           </div>
         </div>
       </form>
-
-
-      <!--Show Student Records -->
-
-      <div class="modal fade" id="studentRecords{{offense[0]}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">{{offense[1]}}'s Record</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-
-
-
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-info">Create</button>                </div>
-            </div>
-          </div>
-        </div>
-      
-                            {%endfor%}
+                    {%endfor%}
                     </table>
 
                     </div>
@@ -182,7 +159,7 @@
                                 if ($(this).text() > 2) {
                                     $(this).addClass('bg-danger');                                }
                                 });
-                                $('.tardines').each(function() {
+                                $('.tardiness').each(function() {
                                 if ($(this).text() > 2) {
                                     $(this).addClass('bg-danger');                                }
                                 });

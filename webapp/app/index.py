@@ -142,4 +142,15 @@ def recordTardines():
     link = '/'+year+'/'+section
     return redirect(link,302)
 
+@app.route('/<level>/<section>/<offense>')
 
+def studentRecord(level,section,offense):
+    cursor.execute('SELECT date_absent,excuse,date_returned,remarks FROM students_absences WHERE student_id = %s',(offense,))
+    absences = cursor.fetchall();
+
+    cursor.execute('SELECT tardiness_date,tardiness_code,remarks FROM students_tardiness WHERE student_id = %s',(offense,))
+    tardiness = cursor.fetchall();
+
+    cursor.execute('SELECT full_name FROM students WHERE id = %s',(offense,))
+    student = cursor.fetchone()
+    return render_template('/studentreports.html',absences = absences, tardiness = tardiness,student = student)
