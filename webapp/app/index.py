@@ -70,8 +70,59 @@ def home():
     totalTardiness = tardinessPop[0]
     mostTardiness = fullName[0]
 
+
+    cursor.execute('SELECT date_absent,excuse,date_returned,remarks FROM students_absences')
+    totalAbsences = cursor.fetchall()
+
+    
+    cursor.execute('SELECT tardiness_date,tardiness_code,remarks FROM students_tardiness')
+    totaltardiness = cursor.fetchall();
+
+    months = [1,2,3,4,5,6,7,8,9,10,11,12]
+    monthlyAbsences = []
+    monthlyTardiness = []
+
+    for absence in totalAbsences:
+        if absence[0] == None:
+            for month in months:
+                cursor.execute('SELECT COUNT(*) FROM students_absences WHERE MONTH(date_absent) = %s',(month,))
+                output = cursor.fetchone()
+                if output == None:
+                    monthlyAbsences.append(0)
+                else:
+                    monthlyAbsences.append(output[0])
+        else:
+            for month in months:
+                cursor.execute('SELECT COUNT(*) FROM students_absences WHERE MONTH(date_returned) = %s',(month,))
+                output = cursor.fetchone()
+                if output == None:
+                    monthlyAbsences.append(0)
+                else:
+                    monthlyAbsences.append(output[0])
+
+
+    for tardi in totaltardiness:
+        for month in months:
+            cursor.execute('SELECT COUNT(*) FROM students_tardiness WHERE MONTH(tardiness_date) = %s',(month,))
+            output = cursor.fetchone()
+            if output == None:
+                monthlyTardiness.append(0)
+            else:
+                monthlyTardiness.append(output[0])
+
+
+
+
+
+
+
+
+
+
+
+
     if request.method == 'GET':
-        return render_template('home.html',totalAbsentees=totalAbsentees,mostAbsences = mostAbsences,absencesCount = absencesCount,totalTardiness = totalTardiness, tardinessCount = tardinessCount, mostTardiness = mostTardiness,grade1 = grade1,grade2 = grade2,grade3 = grade3,grade4 = grade4,grade5 = grade5,grade6 = grade6,grade7 = grade7,grade8 = grade8,grade9 = grade9,grade10 = grade10,grade11 = grade11,grade12 = grade12)
+        return render_template('home.html',totalAbsentees=totalAbsentees,monthlyAbsences = monthlyAbsences,monthlyTardiness = monthlyTardiness,mostAbsences = mostAbsences,absencesCount = absencesCount,totalTardiness = totalTardiness, tardinessCount = tardinessCount, mostTardiness = mostTardiness,grade1 = grade1,grade2 = grade2,grade3 = grade3,grade4 = grade4,grade5 = grade5,grade6 = grade6,grade7 = grade7,grade8 = grade8,grade9 = grade9,grade10 = grade10,grade11 = grade11,grade12 = grade12)
 
    
 @app.route('/<year>/<section>')
@@ -161,7 +212,7 @@ def studentRecord(level,section,offense):
     for absence in absences:
         if absence[0] == None:
             for month in months:
-                cursor.execute('SELECT COUNT(*) FROM students_absences WHERE student_id = %s AND MONTH(date_returned) = %s',(offense,month,))
+                cursor.execute('SELECT COUNT(*) FROM students_absences WHERE student_id = %s AND MONTH(date_absent) = %s',(offense,month,))
                 output = cursor.fetchone()
                 if output == None:
                     monthlyAbsences.append(0)
