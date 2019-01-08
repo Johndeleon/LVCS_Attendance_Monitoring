@@ -293,10 +293,16 @@ def main():
     cnx = amarissedb.connect()
     cursor = cnx.cursor()
 
+    offense = 1
     months = [1,2,3,4,5,6,7,8,9,10,11,12]
-    tardinessPerMonth = []
+    monthlyAbsences = []
     for month in months:
-        cursor.execute('SELECT COUNT(*) FROM students_absences WHERE MONTH(date_absent) = %s',(str(month[0],))
-        tardinessPerMonth[] = cursor.fetchone()    
-    print(tardinessPerMonth)    
+        cursor.execute('SELECT COUNT(*) FROM students_absences WHERE student_id = %s AND MONTH(date_absent) = %s',(offense,month,))
+        output = cursor.fetchone()
+        if output == None:
+            monthlyAbsences.append(0)
+        else:
+            monthlyAbsences.append(output[0])
+    
+    print(monthlyAbsences)
 main()

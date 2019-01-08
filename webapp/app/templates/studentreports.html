@@ -3,7 +3,7 @@
 {%block content%}
       <!-- header -->
       <div class="page-header container">
-            <div class="text-center h3">{{student[0]}}</div>
+            <div class="text-center h3">{{student[1]}}</div>
     </div>
     
     <div class="container">
@@ -40,6 +40,34 @@
                   </tr>
             {%endfor%}
       </table>
+
+
+      <!-- charts -->
+      <div><canvas id="myChart"></canvas></div>
+
+
+      <script>
+ 
+      var ctx = document.getElementById("myChart").getContext('2d');
+      var myChart = new Chart(ctx, {
+          type: 'bar',
+          data: {
+              labels: ["January", "Febuary", "March", "April", "May", "June","July","August","September","October","November","December"],
+              datasets: [{
+                  label: '# of Absences',
+                  data: [{% for count in monthlyAbsences %}
+                              {{count}},
+                        {% endfor %}],                  
+                  borderWidth: 1
+              }]
+          },
+ 
+      });
+      </script>
+
+      
     </div>
+
+
 
 {%endblock%}

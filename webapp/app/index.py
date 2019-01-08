@@ -151,6 +151,28 @@ def studentRecord(level,section,offense):
     cursor.execute('SELECT tardiness_date,tardiness_code,remarks FROM students_tardiness WHERE student_id = %s',(offense,))
     tardiness = cursor.fetchall();
 
-    cursor.execute('SELECT full_name FROM students WHERE id = %s',(offense,))
+    cursor.execute('SELECT id,full_name FROM students WHERE id = %s',(offense,))
     student = cursor.fetchone()
-    return render_template('/studentreports.html',absences = absences, tardiness = tardiness,student = student)
+
+    months = [1,2,3,4,5,6,7,8,9,10,11,12]
+    monthlyAbsences = []
+
+    for absence in absences:
+        if absence[0] == None:
+            for month in months:
+                cursor.execute('SELECT COUNT(*) FROM students_absences WHERE student_id = %s AND MONTH(date_returned) = %s',(offense,month,))
+                output = cursor.fetchone()
+                if output == None:
+                    monthlyAbsences.append(0)
+                else:
+                    monthlyAbsences.append(output[0])
+        else:
+            for month in months:
+                cursor.execute('SELECT COUNT(*) FROM students_absences WHERE student_id = %s AND MONTH(date_returned) = %s',(offense,month,))
+                output = cursor.fetchone()
+                if output == None:
+                    monthlyAbsences.append(0)
+                else:
+                    monthlyAbsences.append(output[0])
+
+    return render_template('/studentreports.html',absences = absences, tardiness = tardiness,student = student, monthlyAbsences = monthlyAbsences,grade1 = grade1,grade2 = grade2,grade3 = grade3,grade4 = grade4,grade5 = grade5,grade6 = grade6,grade7 = grade7,grade8 = grade8,grade9 = grade9,grade10 = grade10,grade11 = grade11,grade12 = grade12)
