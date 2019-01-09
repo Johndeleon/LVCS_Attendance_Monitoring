@@ -110,7 +110,16 @@ def home():
             else:
                 monthlyTardiness.append(output[0])
 
+    # yearLevels = [1,2,3,4,5,6,7,8,9,10,11,12]
+    # studentsPerLevel = []
+    # absencesPerLevel = []
+    # tardinessPerLevel = []
 
+    # for yearLevel in yearLevels:
+    #     cursor.execute('SELECT COUNT(*) FROM students_absences WHERE students.id = %s AND students.year_level= %s',(yearLevel,))
+    #     output = cursor.fetchall();
+    #     studentsPerLevel.append(output)
+    
 
 
 

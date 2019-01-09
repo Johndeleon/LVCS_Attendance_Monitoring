@@ -22,14 +22,18 @@
 
 
 
-    <div id="chartContainer"><canvas id="bar"></canvas></div>
+    <div id="chartContainer">
+          <h3>All Levels</h3>
+          <canvas id="generalChart" width="200" height="200"></canvas></div>
 <button class="btn btn-light absences">Absences</button>
 <button class="btn btn-light tardiness">Tardiness</button>
 
+
+
     <script>
 
-    var bar = document.getElementById("bar").getContext('2d');
-    var myChart = new Chart(bar, {
+    var generalChart = document.getElementById("generalChart").getContext('2d');
+    var myChart = new Chart(generalChart, {
         type: 'bar',
         data: {
             labels:["January", "Febuary", "March", "April", "May", "June","July","August","September","October","November","December"],
@@ -56,16 +60,16 @@
     });
 
     $(".absences").click(function(){
-      var canvas = document.getElementById('bar')
+      var canvas = document.getElementById('generalChart')
       canvas.remove()
 
       var p = document.getElementById("chartContainer")
       var element = document.createElement("canvas")
-      element.setAttribute('id','bar')
+      element.setAttribute('id','generalChart')
       p.appendChild(element)
 
-    var bar = document.getElementById("bar").getContext('2d');
-    var myChart = new Chart(bar, {
+    var generalChart = document.getElementById("generalChart").getContext('2d');
+    var myChart = new Chart(generalChart, {
         type: 'bar',
         data: {
             labels:["January", "Febuary", "March", "April", "May", "June","July","August","September","October","November","December"],
@@ -93,16 +97,16 @@
     })
 
     $(".tardiness").click(function(){
-      var canvas = document.getElementById('bar')
+      var canvas = document.getElementById('generalChart')
       canvas.remove()
 
       var p = document.getElementById("chartContainer")
       var element = document.createElement("canvas")
-      element.setAttribute('id','bar')
+      element.setAttribute('id','generalChart')
       p.appendChild(element)
 
-    var bar = document.getElementById("bar").getContext('2d');
-    var myChart = new Chart(bar, {
+    var generalChart = document.getElementById("generalChart").getContext('2d');
+    var myChart = new Chart(generalChart, {
         type: 'bar',
         data: {
             labels:["January", "Febuary", "March", "April", "May", "June","July","August","September","October","November","December"],
@@ -131,5 +135,5 @@
 
 </script>
 
-</div>
+
 {%endblock%}
