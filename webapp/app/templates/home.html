@@ -22,7 +22,7 @@
 
 
 
-    <div><canvas id="bar"></canvas></div>
+    <div id="chartContainer"><canvas id="bar"></canvas></div>
 <button class="btn btn-light absences">Absences</button>
 <button class="btn btn-light tardiness">Tardiness</button>
 
@@ -56,10 +56,13 @@
     });
 
     $(".absences").click(function(){
-    if(myChart)
-    {
-        myChart.destroy()
-    }
+      var canvas = document.getElementById('bar')
+      canvas.remove()
+
+      var p = document.getElementById("chartContainer")
+      var element = document.createElement("canvas")
+      element.setAttribute('id','bar')
+      p.appendChild(element)
 
     var bar = document.getElementById("bar").getContext('2d');
     var myChart = new Chart(bar, {
@@ -90,10 +93,13 @@
     })
 
     $(".tardiness").click(function(){
-    if(myChart)
-    {
-        myChart.destroy()
-    }
+      var canvas = document.getElementById('bar')
+      canvas.remove()
+
+      var p = document.getElementById("chartContainer")
+      var element = document.createElement("canvas")
+      element.setAttribute('id','bar')
+      p.appendChild(element)
 
     var bar = document.getElementById("bar").getContext('2d');
     var myChart = new Chart(bar, {
