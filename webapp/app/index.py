@@ -110,28 +110,44 @@ def home():
             else:
                 monthlyTardiness.append(output[0])
 
-    # yearLevels = [1,2,3,4,5,6,7,8,9,10,11,12]
-    # studentsPerLevel = []
-    # absencesPerLevel = []
-    # tardinessPerLevel = []
+    yearLevels = [1,2,3,4,5,6,7,8,9,10,11,12]
+    studentsPerLevel = []
+    perStudent = []
+    totalPerLevelAbsences = []
+    totalPerLevelTardiness = []
 
-    # for yearLevel in yearLevels:
-    #     cursor.execute('SELECT COUNT(*) FROM students_absences WHERE students.id = %s AND students.year_level= %s',(yearLevel,))
-    #     output = cursor.fetchall();
-    #     studentsPerLevel.append(output)
-    
+    for yearLevel in yearLevels:
+        cursor.execute('SELECT * FROM students WHERE year_level = %s',(yearLevel,))
+        outputs = cursor.fetchall();
+        temp = []
+        for output in outputs:
+            temp.append(output[0])
+        studentsPerLevel.append(temp)
+    for ids in studentsPerLevel:
+        total = 0
+        for iden in ids:
+            cursor.execute('SELECT COUNT(*) FROM students_absences WHERE student_id = %s',(iden,))
+            perStudent = cursor.fetchone()
+            total = perStudent[0] + total
+        totalPerLevelAbsences.append(total)
 
-
-
-
-
-
-
-
-
+    for yearLevel in yearLevels:
+        cursor.execute('SELECT * FROM students WHERE year_level = %s',(yearLevel,))
+        outputs = cursor.fetchall();
+        temp = []
+        for output in outputs:
+            temp.append(output[0])
+        studentsPerLevel.append(temp)
+    for ids in studentsPerLevel:
+        total = 0
+        for iden in ids:
+            cursor.execute('SELECT COUNT(*) FROM students_tardiness WHERE student_id = %s',(iden,))
+            perStudent = cursor.fetchone()
+            total = perStudent[0] + total
+        totalPerLevelTardiness.append(total)
 
     if request.method == 'GET':
-        return render_template('home.html',totalAbsentees=totalAbsentees,monthlyAbsences = monthlyAbsences,monthlyTardiness = monthlyTardiness,mostAbsences = mostAbsences,absencesCount = absencesCount,totalTardiness = totalTardiness, tardinessCount = tardinessCount, mostTardiness = mostTardiness,grade1 = grade1,grade2 = grade2,grade3 = grade3,grade4 = grade4,grade5 = grade5,grade6 = grade6,grade7 = grade7,grade8 = grade8,grade9 = grade9,grade10 = grade10,grade11 = grade11,grade12 = grade12)
+        return render_template('home.html',totalAbsentees=totalAbsentees,monthlyAbsences = monthlyAbsences,monthlyTardiness = monthlyTardiness,mostAbsences = mostAbsences,totalPerLevelAbsences = totalPerLevelAbsences,totalPerLevelTardiness = totalPerLevelTardiness,absencesCount = absencesCount,totalTardiness = totalTardiness, tardinessCount = tardinessCount, mostTardiness = mostTardiness,grade1 = grade1,grade2 = grade2,grade3 = grade3,grade4 = grade4,grade5 = grade5,grade6 = grade6,grade7 = grade7,grade8 = grade8,grade9 = grade9,grade10 = grade10,grade11 = grade11,grade12 = grade12)
 
    
 @app.route('/<year>/<section>')

@@ -48,113 +48,61 @@
       <br>
 
  
-    <div id="chartContainer"><canvas id="bar"></canvas></div>
+    <div id="chartContainer"><canvas id="generalChart"></canvas></div>
 <button class="btn btn-light absences">Absences</button>
 <button class="btn btn-light tardiness">Tardiness</button>
 
     <script>
 
-    var bar = document.getElementById("bar").getContext('2d');
-    var myChart = new Chart(bar, {
-        type: 'bar',
-        data: {
-            labels:["January", "Febuary", "March", "April", "May", "June","July","August","September","October","November","December"],
-            datasets: [{
-                label: "Total Number of Absences Per Month",
-                data: [{% for count in monthlyAbsences %}
-                            {{count}},
-                      {% endfor %}],                  
-                borderWidth: 1
+      var generalChart = document.getElementById("generalChart").getContext('2d');
+      var myChart = new Chart.Bar(generalChart, {
+      data: {
+      labels:["January", "Febuary", "March", "April", "May", "June","July","August","September","October","November","December"],
+      datasets: [{
+            label: "Total Number of Absences Per Month",
+            data: [{% for count in monthlyAbsences %}
+                        {{count}},
+                  {% endfor %}],                  
+            borderWidth: 1
             }]
         },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          scales: {
-                yAxes: [{
-                ticks: {
-          beginAtZero:true
-                      }
-                      }]
-                }
-          }
+      options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+            yAxes: [{
+            ticks: {
+      beginAtZero:true
+                  }
+                  }]
+            }
+      }
 
-    });
+    })
+
 
     $(".absences").click(function(){
-      var canvas = document.getElementById('bar')
-      canvas.remove()
-
-      var p = document.getElementById("chartContainer")
-      var element = document.createElement("canvas")
-      element.setAttribute('id','bar')
-      p.appendChild(element)
-
-    var bar = document.getElementById("bar").getContext('2d');
-    var myChart = new Chart(bar, {
-        type: 'bar',
-        data: {
-            labels:["January", "Febuary", "March", "April", "May", "June","July","August","September","October","November","December"],
-            datasets: [{
-                label: "Total Number of Absences Per Month",
-                data: [{% for count in monthlyAbsences %}
-                            {{count}},
-                      {% endfor %}],                  
-                borderWidth: 1
+            myChart.data.datasets = [{
+            label: "Total Number of Absences Per Month",
+            data: [{% for count in monthlyAbsences %}
+                        {{count}},
+                  {% endfor %}],                  
+            borderWidth: 1
             }]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          scales: {
-                yAxes: [{
-                ticks: {
-          beginAtZero:true
-                      }
-                      }]
-                }
-          }
+            myChart.update()
 
     });
-    })
 
     $(".tardiness").click(function(){
-      var canvas = document.getElementById('bar')
-      canvas.remove()
-
-      var p = document.getElementById("chartContainer")
-      var element = document.createElement("canvas")
-      element.setAttribute('id','bar')
-      p.appendChild(element)
-
-    var bar = document.getElementById("bar").getContext('2d');
-    var myChart = new Chart(bar, {
-        type: 'bar',
-        data: {
-            labels:["January", "Febuary", "March", "April", "May", "June","July","August","September","October","November","December"],
-            datasets: [{
-                label: "Total Number of Tardiness Per Month",
-                data: [{% for count in monthlyTardiness %}
-                            {{count}},
-                      {% endfor %}],                  
-                borderWidth: 1
+            myChart.data.datasets = [{
+            label: "Total Number of Tardiness Per Month",
+            data: [{% for count in monthlyTardiness %}
+                        {{count}},
+                  {% endfor %}],                  
+            borderWidth: 1
             }]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          scales: {
-                yAxes: [{
-                ticks: {
-          beginAtZero:true
-                      }
-                      }]
-                }
-          }
-
-    });
+            myChart.update()
     })
-
 </script>
 
       

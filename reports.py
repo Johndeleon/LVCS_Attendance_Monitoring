@@ -297,10 +297,22 @@ def main():
     studentsPerLevel = []
     absencesPerLevel = []
     tardinessPerLevel = []
+    perStudent = []
+    totalPerLevel = []
 
     for yearLevel in yearLevels:
-        cursor.execute('SELECT id FROM students WHERE year_level = %s',(yearLevel,))
-        output = cursor.fetchall();
-        studentsPerLevel.append(output)
-    print(studentsPerLevel[11][11])
+        cursor.execute('SELECT * FROM students WHERE year_level = %s',(yearLevel,))
+        outputs = cursor.fetchall();
+        temp = []
+        for output in outputs:
+            temp.append(output[0])
+        studentsPerLevel.append(temp)
+    for ids in studentsPerLevel:
+        total = 0
+        for iden in ids:
+            cursor.execute('SELECT COUNT(*) FROM students_absences WHERE student_id = %s',(iden,))
+            perStudent = cursor.fetchone()
+            total = perStudent[0] + total
+        totalPerLevel.append(total)
+    print(totalPerLevel)
 main()

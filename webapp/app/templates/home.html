@@ -23,117 +23,124 @@
 
 
     <div id="chartContainer">
-          <h3>All Levels</h3>
-          <canvas id="generalChart" width="200" height="200"></canvas></div>
-<button class="btn btn-light absences">Absences</button>
-<button class="btn btn-light tardiness">Tardiness</button>
+          <h3>Per Month</h3>
+          <div id="chartContainer"><canvas id="generalChart"></canvas></div>
+          <button class="btn btn-light perMonthAbsences">Absences</button>
+          <button class="btn btn-light perMonthTardiness">Tardiness</button>
 
-
-
-    <script>
-
-    var generalChart = document.getElementById("generalChart").getContext('2d');
-    var myChart = new Chart(generalChart, {
-        type: 'bar',
-        data: {
-            labels:["January", "Febuary", "March", "April", "May", "June","July","August","September","October","November","December"],
-            datasets: [{
-                label: "Total Number of Absences Per Month",
-                data: [{% for count in monthlyAbsences %}
-                            {{count}},
-                      {% endfor %}],                  
-                borderWidth: 1
-            }]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          scales: {
-                yAxes: [{
-                ticks: {
-          beginAtZero:true
-                      }
+          <h3>Per Level</h3>
+          <div id="chartContainer"><canvas id="perLevelChart"></canvas></div>
+          <button class="btn btn-light perLevelAbsences">Absences</button>
+          <button class="btn btn-light perLevelTardiness">Tardiness</button>
+          
+      <script>
+      $(document).ready(function(){
+                        // per month chart controller
+                        var generalChart = document.getElementById("generalChart").getContext('2d');
+                var perMonth = new Chart.Bar(generalChart, {
+                data: {
+                labels:["January", "Febuary", "March", "April", "May", "June","July","August","September","October","November","December"],
+                datasets: [{
+                      label: "Total Number of Absences Per Month",
+                      data: [{% for count in monthlyAbsences %}
+                                  {{count}},
+                            {% endfor %}],                  
+                      borderWidth: 1
                       }]
-                }
-          }
-
-    });
-
-    $(".absences").click(function(){
-      var canvas = document.getElementById('generalChart')
-      canvas.remove()
-
-      var p = document.getElementById("chartContainer")
-      var element = document.createElement("canvas")
-      element.setAttribute('id','generalChart')
-      p.appendChild(element)
-
-    var generalChart = document.getElementById("generalChart").getContext('2d');
-    var myChart = new Chart(generalChart, {
-        type: 'bar',
-        data: {
-            labels:["January", "Febuary", "March", "April", "May", "June","July","August","September","October","November","December"],
-            datasets: [{
-                label: "Total Number of Absences Per Month",
-                data: [{% for count in monthlyAbsences %}
-                            {{count}},
-                      {% endfor %}],                  
-                borderWidth: 1
-            }]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          scales: {
-                yAxes: [{
-                ticks: {
-          beginAtZero:true
+                  },
+                options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                      yAxes: [{
+                      ticks: {
+                beginAtZero:true
+                            }
+                            }]
                       }
-                      }]
                 }
-          }
+          
+              })
+          
+          
+              $(".perMonthAbsences").click(function(){
+                      perMonth.data.datasets = [{
+                      label: "Total Number of Absences Per Month",
+                      data: [{% for count in monthlyAbsences %}
+                                  {{count}},
+                            {% endfor %}],                  
+                      borderWidth: 1
+                      }]
+                      perMonth.update()
+          
+              });
+          
+              $(".perMonthTardiness").click(function(){
+                      perMonth.data.datasets = [{
+                      label: "Total Number of Tardiness Per Month",
+                      data: [{% for count in monthlyTardiness %}
+                                  {{count}},
+                            {% endfor %}],                  
+                      borderWidth: 1
+                      }]
+                      perMonth.update()
+              })
 
-    });
-    })
 
-    $(".tardiness").click(function(){
-      var canvas = document.getElementById('generalChart')
-      canvas.remove()
+      // per year level chart controller
 
-      var p = document.getElementById("chartContainer")
-      var element = document.createElement("canvas")
-      element.setAttribute('id','generalChart')
-      p.appendChild(element)
-
-    var generalChart = document.getElementById("generalChart").getContext('2d');
-    var myChart = new Chart(generalChart, {
-        type: 'bar',
-        data: {
-            labels:["January", "Febuary", "March", "April", "May", "June","July","August","September","October","November","December"],
-            datasets: [{
-                label: "Total Number of Tardiness Per Month",
-                data: [{% for count in monthlyTardiness %}
-                            {{count}},
-                      {% endfor %}],                  
-                borderWidth: 1
-            }]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          scales: {
-                yAxes: [{
-                ticks: {
-          beginAtZero:true
+      var perLevelChart = document.getElementById("perLevelChart").getContext('2d');
+                var perLevel = new Chart.Bar(perLevelChart, {
+                data: {
+                labels:['Grade 1','Grade 2','Grade 3','Grade 4','Grade 5','Grade 6','Grade 7 ','Grade 8','Grade 9','Grade 10','Grade 11','Grade 12'],
+                datasets: [{
+                      label: "Total Number of Absences Per Level",
+                      data: [{% for count in totalPerLevelAbsences %}
+                                  {{count}},
+                            {% endfor %}],                  
+                      borderWidth: 1
+                      }]
+                  },
+                options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                      yAxes: [{
+                      ticks: {
+                beginAtZero:true
+                            }
+                            }]
                       }
-                      }]
                 }
-          }
+          
+              })
+          
+          
+              $(".perLevelAbsences").click(function(){
+                      perLevel.data.datasets = [{
+                      label: "Total Number of Absences Per Level",
+                      data: [{% for count in totalPerLevelAbsences %}
+                                  {{count}},
+                            {% endfor %}],                  
+                      borderWidth: 1
+                      }]
+                      perLevel.update()
+          
+              });
+          
+              $(".perLevelTardiness").click(function(){
+                      perLevel.data.datasets = [{
+                      label: "Total Number of Tardiness Per Level",
+                      data: [{% for count in totalPerLevelTardiness %}
+                                  {{count}},
+                            {% endfor %}],                  
+                      borderWidth: 1
+                      }]
+                      perLevel.update()
+              })
+      }) 
 
-    });
-    })
-
-</script>
+      </script>
 
 
 {%endblock%}
