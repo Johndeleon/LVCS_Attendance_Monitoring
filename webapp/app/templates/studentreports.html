@@ -8,12 +8,12 @@
     
     <div class="container">
           <h1>Absences</h1>
-      <table class="table table-striped">
+      <table class="table table-striped table-hover">
             <thead>
-                  <th>Date Absent</th>
-                  <th>Excuse</th>
-                  <th>Date Returned</th>
-                  <th>Remarks</th>
+                  <th class="bg-primary">Date Absent</th>
+                  <th class="bg-primary">Excuse</th>
+                  <th class="bg-primary">Date Returned</th>
+                  <th class="bg-primary">Remarks</th>
             </thead>
             {%for absence in absences%}
                   <tr>
@@ -28,9 +28,9 @@
       <h1>Tardines</h1>
       <table class="table table-striped">
             <thead>
-                  <th>Tardines Date</th>
-                  <th>Tardines Code</th>
-                  <th>Remarks</th>
+                  <th class="bg-primary">Tardines Date</th>
+                  <th class="bg-primary">Tardines Code</th>
+                  <th class="bg-primary">Remarks</th>
             </thead>
             {%for tardy in tardiness%}
                   <tr>
@@ -62,7 +62,9 @@
             label: "Total Number of Absences Per Month",
             data: [{% for count in monthlyAbsences %}
                         {{count}},
-                  {% endfor %}],                  
+                  {% endfor %}],   
+            backgroundColor : ["#1d2951","#111e6c", "#000080","#1034a6","#0f52ba","#008ecc","#0080ff","#73c2fb","3fe0d0","#7ef9ff","#89cff0","#80dfes"],                
+               
             borderWidth: 1
             }]
         },
@@ -86,7 +88,9 @@
             label: "Total Number of Absences Per Month",
             data: [{% for count in monthlyAbsences %}
                         {{count}},
-                  {% endfor %}],                  
+                  {% endfor %}], 
+                  backgroundColor : ["#1d2951","#111e6c", "#000080","#1034a6","#0f52ba","#008ecc","#0080ff","#73c2fb","3fe0d0","#7ef9ff","#89cff0","#80dfes"],                
+                 
             borderWidth: 1
             }]
             myChart.update()
@@ -98,7 +102,9 @@
             label: "Total Number of Tardiness Per Month",
             data: [{% for count in monthlyTardiness %}
                         {{count}},
-                  {% endfor %}],                  
+                  {% endfor %}],    
+                  backgroundColor : ["#1d2951","#111e6c", "#000080","#1034a6","#0f52ba","#008ecc","#0080ff","#73c2fb","3fe0d0","#7ef9ff","#89cff0","#80dfes"],                
+              
             borderWidth: 1
             }]
             myChart.update()

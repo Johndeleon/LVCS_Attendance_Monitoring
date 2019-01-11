@@ -163,9 +163,9 @@ def showSection(year,section):
     offensesCount = cursor.fetchall()
 
     cursor.execute('SELECT code,title FROM tardiness_types')
-    tardinesTypes = cursor.fetchall()
+    tardinessTypes = cursor.fetchall()
 
-    return render_template('sectionreports.html', level = level, section = section, offensesCount = offensesCount,grade1 = grade1,grade2 = grade2,grade3 = grade3,grade4 = grade4,grade5 = grade5,grade6 = grade6,grade7 = grade7,grade8 = grade8,grade9 = grade9,grade10 = grade10,grade11 = grade11,grade12 = grade12, tardinesTypes = tardinesTypes)
+    return render_template('sectionreports.html', level = level, section = section, offensesCount = offensesCount,grade1 = grade1,grade2 = grade2,grade3 = grade3,grade4 = grade4,grade5 = grade5,grade6 = grade6,grade7 = grade7,grade8 = grade8,grade9 = grade9,grade10 = grade10,grade11 = grade11,grade12 = grade12, tardinessTypes = tardinessTypes)
 
 @app.route('/recordAbsence',methods=['POST'])
 
@@ -193,15 +193,15 @@ def recordAbsence():
     link = '/'+year+'/'+section
     return redirect(link,302)
 
-@app.route('/recordTardines',methods=['POST'])
+@app.route('/recordTardiness',methods=['POST'])
 
-def recordTardines():
+def recordTardiness():
     cnx = amarissedb.connect()
     cursor = cnx.cursor()
 
     studentId = request.form['studentId']
-    tardinesType = request.form['tardines_type']
-    tardinesDate = request.form['tardines_date']
+    tardinesType = request.form['tardiness_type']
+    tardinesDate = request.form['tardiness_date']
     remarks = request.form['remarks']
     now = datetime.now()
     formatted_date = now.strftime('%Y-%m-%d')

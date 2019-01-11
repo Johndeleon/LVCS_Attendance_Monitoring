@@ -23,15 +23,16 @@
 
 
     <div id="chartContainer">
-          <h3>Per Month</h3>
+          <h3>Absences And Tardiness Records Per Month</h3>
           <div id="chartContainer"><canvas id="generalChart"></canvas></div>
           <button class="btn btn-light perMonthAbsences">Absences</button>
           <button class="btn btn-light perMonthTardiness">Tardiness</button>
 
-          <h3>Per Level</h3>
+          <h3>Absences And Tardiness Records Per Level</h3>
           <div id="chartContainer"><canvas id="perLevelChart"></canvas></div>
           <button class="btn btn-light perLevelAbsences">Absences</button>
           <button class="btn btn-light perLevelTardiness">Tardiness</button>
+
           
       <script>
       $(document).ready(function(){
@@ -44,7 +45,8 @@
                       label: "Total Number of Absences Per Month",
                       data: [{% for count in monthlyAbsences %}
                                   {{count}},
-                            {% endfor %}],                  
+                            {% endfor %}],  
+                      backgroundColor : ["#1d2951","#111e6c", "#000080","#1034a6","#0f52ba","#008ecc","#0080ff","#73c2fb","3fe0d0","#7ef9ff","#89cff0","#80dfes"],                
                       borderWidth: 1
                       }]
                   },
@@ -68,7 +70,9 @@
                       label: "Total Number of Absences Per Month",
                       data: [{% for count in monthlyAbsences %}
                                   {{count}},
-                            {% endfor %}],                  
+                            {% endfor %}], 
+                            backgroundColor : ["#1d2951","#111e6c", "#000080","#1034a6","#0f52ba","#008ecc","#0080ff","#73c2fb","#3fe0d0","#7ef9ff","#89cff0","#80dfes"],                
+                 
                       borderWidth: 1
                       }]
                       perMonth.update()
@@ -80,7 +84,9 @@
                       label: "Total Number of Tardiness Per Month",
                       data: [{% for count in monthlyTardiness %}
                                   {{count}},
-                            {% endfor %}],                  
+                            {% endfor %}], 
+                            backgroundColor : ["#1d2951","#111e6c", "#000080","#1034a6","#0f52ba","#008ecc","#0080ff","#73c2fb","#3fe0d0","#7ef9ff","#89cff0","#80dfes"],                
+                 
                       borderWidth: 1
                       }]
                       perMonth.update()
@@ -97,7 +103,8 @@
                       label: "Total Number of Absences Per Level",
                       data: [{% for count in totalPerLevelAbsences %}
                                   {{count}},
-                            {% endfor %}],                  
+                            {% endfor %}], 
+                      backgroundColor : ["#1d2951","#111e6c", "#000080","#1034a6","#0f52ba","#008ecc","#0080ff","#73c2fb","#3fe0d0","#7ef9ff","#89cff0","#80dfes"],                
                       borderWidth: 1
                       }]
                   },
@@ -121,7 +128,9 @@
                       label: "Total Number of Absences Per Level",
                       data: [{% for count in totalPerLevelAbsences %}
                                   {{count}},
-                            {% endfor %}],                  
+                            {% endfor %}],   
+                  backgroundColor : ["#1d2951","#111e6c", "#000080","#1034a6","#0f52ba","#008ecc","#0080ff","#73c2fb","#3fe0d0","#7ef9ff","#89cff0","#80dfes"],                
+               
                       borderWidth: 1
                       }]
                       perLevel.update()
@@ -133,7 +142,8 @@
                       label: "Total Number of Tardiness Per Level",
                       data: [{% for count in totalPerLevelTardiness %}
                                   {{count}},
-                            {% endfor %}],                  
+                            {% endfor %}],
+                      backgroundColor : ["#1d2951","#111e6c", "#000080","#1034a6","#0f52ba","#008ecc","#0080ff","#73c2fb","#3fe0d0","#7ef9ff","#89cff0","#80dfes"],                
                       borderWidth: 1
                       }]
                       perLevel.update()
