@@ -3,10 +3,13 @@
 {%block content%}
       <!-- header -->
       <div class="page-header container">
+            <div class="text-center h3">Grade {{level}}-{{section}}</div>
             <div class="text-center h3">{{student[1]}}</div>
     </div>
-    
-    <div class="container">
+
+    <div class="container">    
+          <div class="btn btn-warning" onclick="history.back(-1)" />Back</div>
+
           <h1>Absences</h1>
       <table class="table table-striped table-hover">
             <thead>
