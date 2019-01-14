@@ -2,37 +2,37 @@
 
 {%block content%}
       <!-- header -->
-      <div class="page-header container">
-            <div class="text-center h1">LVCS Tardiness & Absences Record</div>
-    </div>
-    
-
-<!-- general reports -->
-<div class="container center-block pull-right">
-    <div><div><h1>General Reports</h1></div>
-
-         <div class="h4">Total number of students with absences: {{ totalAbsentees }}</div> 
-         <div class="h4">Total  number of students with tardiness: {{ totalTardiness }}</div>
-         <div class="h4">Student with most number of absences: {{mostAbsences}} with {{absencesCount}} absences</div>
-         <div class="h4">Student with most number of tardiness: {{mostTardiness}} with {{tardinessCount}} tardiness</div>
-
-    </div>
 
 
-
-
-    <div id="chartContainer">
-          <h3>Absences And Tardiness Records Per Month</h3>
-          <div id="chartContainer"><canvas id="generalChart" width="600" height="300"></canvas></div>
-          <button class="btn btn-light perMonthAbsences">Absences</button>
-          <button class="btn btn-light perMonthTardiness">Tardiness</button>
-
-          <h3>Absences And Tardiness Records Per Level</h3>
-          <div id="chartContainer"><canvas id="perLevelChart" width="600" height="300"></canvas></div>
-          <button class="btn btn-light perLevelAbsences">Absences</button>
-          <button class="btn btn-light perLevelTardiness">Tardiness</button>
-
-          
+            <div class="page-header container">
+                        <div class="text-center h1">LVCS Tardiness & Absences Record</div>
+                </div>
+            
+            <!-- general reports -->
+            <div class="container center-block pull-right">
+                <div><div><h1>General Reports</h1></div>
+            
+                     <div class="h4">Total number of students with absences: {{ totalAbsentees }}</div> 
+                     <div class="h4">Total  number of students with tardiness: {{ totalTardiness }}</div>
+                     <div class="h4">Student with most number of absences: {{mostAbsences}} with {{absencesCount}} absences</div>
+                     <div class="h4">Student with most number of tardiness: {{mostTardiness}} with {{tardinessCount}} tardiness</div>
+            
+                </div>
+            
+            
+                <div id="chartContainer">
+                      <h3>Absences And Tardiness Records Per Month</h3>
+                      <div id="chartContainer"><canvas id="generalChart" width="600" height="300"></canvas></div>
+                      <button class="btn btn-light perMonthAbsences">Absences</button>
+                      <button class="btn btn-light perMonthTardiness">Tardiness</button>
+            
+                      <h3>Absences And Tardiness Records Per Level</h3>
+                      <div id="chartContainer"><canvas id="perLevelChart" width="600" height="300"></canvas></div>
+                      <button class="btn btn-light perLevelAbsences">Absences</button>
+                      <button class="btn btn-light perLevelTardiness">Tardiness</button>
+            </div>
+ </div>
+       
       <script>
       $(document).ready(function(){
                         // per month chart controller
