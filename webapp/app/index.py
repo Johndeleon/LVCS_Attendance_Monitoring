@@ -1,7 +1,6 @@
 import amarissedb
 from datetime import datetime
 from flask import Flask, render_template, request, redirect
-from graph import build_graph
 app = Flask(__name__)
 
 cnx = amarissedb.connect()
