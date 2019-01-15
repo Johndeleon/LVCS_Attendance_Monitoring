@@ -133,9 +133,28 @@ def home():
             perStudent = cursor.fetchone()
             total = perStudent[0] + total
         totalPerLevelTardiness.append(total)
+    
+    mostAbsencesPerLevel = 0
+    mostAbsencesName = 'Grade'
+    mostTardinessPerLevel = 0
+    mostTardinessName = 'Grade'
+    c = 1
+    for absence in totalPerLevelAbsences:
+        if mostAbsencesPerLevel < absence:
+            mostAbsencesPerLevel = absence
+            mostAbsencesName = 'Grade '+str(c)
+        c=c+1
+    d = 1
+    for tardy in totalPerLevelTardiness:
+        if mostTardinessPerLevel < tardy:
+            mostTardinessPerLevel = tardy
+            mostTardinessName = 'Grade '+str(d)
+        d=d+1
+
+    
 
     if request.method == 'GET':
-        return render_template('home.html',totalAbsentees=totalAbsentees,monthlyAbsences = monthlyAbsences,monthlyTardiness = monthlyTardiness,mostAbsences = mostAbsences,totalPerLevelAbsences = totalPerLevelAbsences,totalPerLevelTardiness = totalPerLevelTardiness,absencesCount = absencesCount,totalTardiness = totalTardiness, tardinessCount = tardinessCount, mostTardiness = mostTardiness,grade1 = grade1,grade2 = grade2,grade3 = grade3,grade4 = grade4,grade5 = grade5,grade6 = grade6,grade7 = grade7,grade8 = grade8,grade9 = grade9,grade10 = grade10,grade11 = grade11,grade12 = grade12)
+        return render_template('home.html',mostAbsencesName = mostAbsencesName,mostTardinessName = mostTardinessName,totalAbsentees=totalAbsentees,monthlyAbsences = monthlyAbsences,monthlyTardiness = monthlyTardiness,mostAbsences = mostAbsences,totalPerLevelAbsences = totalPerLevelAbsences,totalPerLevelTardiness = totalPerLevelTardiness,absencesCount = absencesCount,totalTardiness = totalTardiness, tardinessCount = tardinessCount, mostTardiness = mostTardiness,grade1 = grade1,grade2 = grade2,grade3 = grade3,grade4 = grade4,grade5 = grade5,grade6 = grade6,grade7 = grade7,grade8 = grade8,grade9 = grade9,grade10 = grade10,grade11 = grade11,grade12 = grade12)
 
    
 @app.route('/<year>/<section>')
