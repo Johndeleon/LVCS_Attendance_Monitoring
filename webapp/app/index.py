@@ -45,7 +45,7 @@ def home():
     row = []
     mostAbsence = ''
 
-    if absenteePop == 0: 
+    if absenteePop[0] != 0: 
         cursor.execute('''SELECT DISTINCT(student_id) FROM students_absences''')
         students = cursor.fetchall()
         for student in students:
@@ -123,20 +123,24 @@ def home():
     totalPerLevelAbsences = []
     totalPerLevelTardiness = []
 
-    for yearLevel in yearLevels:
-        cursor.execute('SELECT * FROM students WHERE year_level = %s',(yearLevel,))
-        outputs = cursor.fetchall();
-        temp = []
-        for output in outputs:
-            temp.append(output[0])
-        studentsPerLevel.append(temp)
-    for ids in studentsPerLevel:
-        total = 0
-        for iden in ids:
-            cursor.execute('SELECT COUNT(*) FROM students_absences WHERE student_id = %s',(iden,))
-            perStudent = cursor.fetchone()
-            total = perStudent[0] + total
-        totalPerLevelAbsences.append(total)
+    if absenteePop[0] != 0:
+        for yearLevel in yearLevels:
+            cursor.execute('SELECT * FROM students WHERE year_level = %s',(yearLevel,))
+            outputs = cursor.fetchall();
+            temp = []
+            for output in outputs:
+                temp.append(output[0])
+            studentsPerLevel.append(temp)
+        for ids in studentsPerLevel:
+            total = 0
+            for iden in ids:
+                cursor.execute('SELECT days_absent FROM students_absences WHERE student_id = %s',(iden,))
+                daysAbsent = cursor.fetchall()
+                for day in daysAbsent:
+                    total = day[0]
+                    totalPerLevelAbsences.append(total)
+    else:
+        totalPerLevelAbsences = [0,0,0,0,0,0,0,0,0,0,0,0]
 
     for yearLevel in yearLevels:
         cursor.execute('SELECT * FROM students WHERE year_level = %s',(yearLevel,))
