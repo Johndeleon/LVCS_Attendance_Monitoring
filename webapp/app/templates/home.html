@@ -2,6 +2,17 @@
 
 {%block content%}
       <!-- header -->
+    {%if data != None%}
+              {%for result in data%}
+              <div>{{result[0]}}</div>
+              <div>{{result[1]}}</div>
+              <div>{{result[2]}}</div>
+              {%endfor%}  
+    {%endif%}
+
+
+
+
 
 
             <div class="page-header container">
@@ -17,7 +28,7 @@
                      <div class="h4">Student with most number of absences: {{mostAbsences}} with {{absencesCount}} absences</div>
                      <div class="h4">Student with most number of tardiness: {{mostTardiness}} with {{tardinessCount}} tardiness</div>
                      <div class="h4">Year Level with most number of Absences: {{ mostAbsencesName }}</div> 
-                     <div class="h4">Year Level with most number of Absences: {{ mostTardinessName }}</div> 
+                     <div class="h4">Year Level with most number of Tardiness: {{ mostTardinessName }}</div> 
 
                 </div>
             
@@ -149,6 +160,8 @@
                       }]
                       perLevel.update()
               })
+
+
       }) 
 
       </script>

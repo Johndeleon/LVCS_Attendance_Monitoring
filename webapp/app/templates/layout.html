@@ -21,6 +21,7 @@
     
 </head>
 <body>
+
 <nav class="navbar navbar-inverse"">
         <div class="container-fluid">
           <div class="navbar-header">
@@ -28,6 +29,7 @@
           </div>
           <ul class="nav navbar-nav">
             <li class="active"><a href="/">Home</a></li>
+            <li class="active"><a href="/notifications">Notifications</a></li>
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">Elementary
               <span class="caret"></span></a>
@@ -143,14 +145,16 @@
                     </ul>
             </li>
           </ul>
-          <form class="navbar-form navbar-left" action="/action_page.php">
+          <form action= "/search" method= "POST"class="navbar-form navbar-left" action="/action_page.php">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
+              <input type="text" class="form-control" name="search" placeholder="Search" value="">
             </div>
             <button type="submit" class="btn btn-default">Submit</button>
           </form>
         </div>
       </nav>
+
+
 
       {% block content %}
       {% endblock %}

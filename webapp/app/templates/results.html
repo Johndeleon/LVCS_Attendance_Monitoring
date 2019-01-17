@@ -1,0 +1,28 @@
+{%extends 'layout.html'%}
+
+{%block content%}
+
+<div>
+        {%if data != 'No Results Found'%}
+
+        <table class="table table-striped">
+            <thead>
+                <th>Student Name</th>
+                <th>Year Level</th>
+                <th>Section</th>
+            </thead>
+            {%for result in data%}
+            <tr>
+                    <td><a href="/{{result[2]}}/{{result[3]}}/{{result[0]}}">{{result[1]}}</a></td>
+                    <td>{{result[2]}}</td>
+                    <td>{{result[3]}}</td>
+            </tr>
+            {%endfor%}  
+        </table>
+        {%endif%}
+        {%if data == 'No Results Found'%}
+        <h1>No Results Found</h1>
+        {%endif%}
+        
+</div>
+{%endblock%}

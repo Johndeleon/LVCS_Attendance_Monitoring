@@ -2,6 +2,8 @@ import amarissedb
 from datetime import datetime
 from flask import Flask, render_template, request, redirect
 app = Flask(__name__)
+app.config['DEBUG'] = True
+app.config['TEMPLATES_AUTO_RELOAD'] = True
 
 cnx = amarissedb.connect()
 cursor = cnx.cursor()
@@ -37,20 +39,37 @@ def home():
     cursor = cnx.cursor()
     cursor.execute('SELECT COUNT(DISTINCT student_id)FROM students_absences')
     absenteePop = cursor.fetchone()
-    cursor.execute('''SELECT student_id, count(*) AS qty 
-                    FROM students_absences 
-                    GROUP BY student_id 
-                    ORDER BY qty DESC 
-                    LIMIT 1;''')
-    mode = cursor.fetchone()
-    cursor.execute('SELECT full_name FROM students WHERE id = %s',(mode[0],))
-    fullName = cursor.fetchone();
-    cursor.execute('SELECT COUNT(student_id) FROM students_absences WHERE student_id = %s',(mode[0],))
-    absences = cursor.fetchone();
-    absencesCount = absences[0]
-    totalAbsentees = absenteePop[0]
-    mostAbsences = fullName[0]
+    students_record = []
+    maxAbsence = 0
+    absencesCount = 0
+    row = []
+    mostAbsence = ''
+
+    if absenteePop == 0: 
+        cursor.execute('''SELECT DISTINCT(student_id) FROM students_absences''')
+        students = cursor.fetchall()
+        for student in students:
+            cursor.execute('SELECT days_absent FROM students_absences WHERE student_id = %s',(student[0],))
+            students_record.append(cursor.fetchall())
+            for rows in students_record:
+                total = 0;
+                for day in rows:
+                    total = total + day[0]
+                    if total > maxAbsence:
+                        mostAbsence = student[0]
+                        absencesCount = total
+
+        cursor.execute('SELECT full_name FROM students WHERE id = %s',(mostAbsence,))
+        fullName = cursor.fetchone();
+        totalAbsentees = absenteePop[0]
+        mostAbsences = fullName[0]
+    else:
+        totalAbsentees = 0
+        mostAbsences = 'No one'
+        absencesCount = 0
+
     
+
     cnx = amarissedb.connect()
     cursor = cnx.cursor()
     cursor.execute('SELECT COUNT(DISTINCT student_id)FROM students_tardiness')
@@ -174,6 +193,48 @@ def showSection(year,section):
 
     return render_template('sectionreports.html', level = level, section = section, offensesCount = offensesCount,grade1 = grade1,grade2 = grade2,grade3 = grade3,grade4 = grade4,grade5 = grade5,grade6 = grade6,grade7 = grade7,grade8 = grade8,grade9 = grade9,grade10 = grade10,grade11 = grade11,grade12 = grade12, tardinessTypes = tardinessTypes)
 
+
+@app.route('/<level>/<section>/<offense>')
+
+def studentRecord(level,section,offense):
+    cnx = amarissedb.connect()
+    cursor = cnx.cursor()
+
+    cursor.execute('SELECT date_absent,excuse,date_returned,days_absent,remarks FROM students_absences WHERE student_id = %s',(offense,))
+    absences = cursor.fetchall();
+
+    cursor.execute('SELECT tardiness_date,tardiness_code,remarks FROM students_tardiness WHERE student_id = %s',(offense,))
+    tardiness = cursor.fetchall();
+
+    cursor.execute('SELECT id,full_name FROM students WHERE id = %s',(offense,))
+    student = cursor.fetchone()
+
+    months = [1,2,3,4,5,6,7,8,9,10,11,12]
+    monthlyAbsences = []
+    monthlyTardiness = []
+
+    for month in months:
+        temp=0;
+        cursor.execute('SELECT * FROM students_absences WHERE student_id = %s AND (MONTH(date_absent) = %s OR MONTH(date_returned) = %s)',(offense,month,month,))
+        output = cursor.fetchall()
+        for data in output:
+           temp = temp + data[5]
+        monthlyAbsences.append(temp)
+
+    for month in months:
+        cursor.execute('SELECT COUNT(*) FROM students_tardiness WHERE student_id = %s AND MONTH(tardiness_date) = %s',(offense,month,))
+        output = cursor.fetchone()
+        if output == None:
+            monthlyTardiness.append(0)
+        else:
+            monthlyTardiness.append(output[0])
+    
+    cursor.execute('SELECT code,title FROM tardiness_types')
+    tardinessTypes = cursor.fetchall()
+
+    return render_template('/studentreports.html',tardinessTypes = tardinessTypes,level = level,section = section,absences = absences, tardiness = tardiness,student = student, monthlyAbsences = monthlyAbsences,monthlyTardiness = monthlyTardiness,grade1 = grade1,grade2 = grade2,grade3 = grade3,grade4 = grade4,grade5 = grade5,grade6 = grade6,grade7 = grade7,grade8 = grade8,grade9 = grade9,grade10 = grade10,grade11 = grade11,grade12 = grade12)
+
+
 @app.route('/recordAbsence',methods=['POST'])
 
 def recordAbsence():
@@ -184,12 +245,13 @@ def recordAbsence():
     excuse = request.form['excuse']
     dateAbsent = request.form['date_absent']
     dateReturned = request.form['date_returned']
+    daysAbsent = request.form['days_absent']
     remarks = request.form['remarks']
     now = datetime.now()
     formatted_date = now.strftime('%Y-%m-%d')
 
-    recordAbsence = ("INSERT INTO students_absences SET student_id=%s, excuse=%s, date_absent=%s, date_returned=%s, remarks=%s,created_at=%s")
-    data = (studentId,excuse,dateAbsent,dateReturned,remarks,formatted_date)
+    recordAbsence = ("INSERT INTO students_absences SET student_id=%s, excuse=%s, date_absent=%s, date_returned=%s, days_absent=%s, remarks=%s,created_at=%s")
+    data = (studentId,excuse,dateAbsent,dateReturned,daysAbsent,remarks,formatted_date)
     cursor.execute(recordAbsence, data)
     cnx.commit()
 
@@ -197,7 +259,8 @@ def recordAbsence():
     yearSection = cursor.fetchone()
     year  = yearSection[0]
     section = yearSection[1]
-    link = '/'+year+'/'+section
+    offense = studentId
+    link = '/'+year+'/'+section+'/'+offense
     return redirect(link,302)
 
 @app.route('/recordTardiness',methods=['POST'])
@@ -222,41 +285,31 @@ def recordTardiness():
     yearSection = cursor.fetchone()
     year  = yearSection[0]
     section = yearSection[1]
-    link = '/'+year+'/'+section
+    offense = studentId
+    link = '/'+year+'/'+section+'/'+offense
     return redirect(link,302)
 
-@app.route('/<level>/<section>/<offense>')
+@app.route('/search',methods=['POST'])
+def search():
+    cnx = amarissedb.connect()
+    cursor = cnx.cursor()
+       
+    data = request.form['search']
 
-def studentRecord(level,section,offense):
-    cursor.execute('SELECT date_absent,excuse,date_returned,remarks FROM students_absences WHERE student_id = %s',(offense,))
-    absences = cursor.fetchall();
+    if data == '':
+        result = 'No Results Found'
+    else:
+        cursor.execute('SELECT * FROM students WHERE full_name LIKE "%"%s"%" LIMIT 10 ',(data,))
+        result = cursor.fetchall()
+    return render_template('results.html',data = result)
 
-    cursor.execute('SELECT tardiness_date,tardiness_code,remarks FROM students_tardiness WHERE student_id = %s',(offense,))
-    tardiness = cursor.fetchall();
-
-    cursor.execute('SELECT id,full_name FROM students WHERE id = %s',(offense,))
-    student = cursor.fetchone()
-
-    months = [1,2,3,4,5,6,7,8,9,10,11,12]
-    monthlyAbsences = []
-    monthlyTardiness = []
-
-
-    for month in months:
-        cursor.execute('SELECT COUNT(*) FROM students_absences WHERE student_id = %s AND (MONTH(date_absent) = %s OR MONTH(date_returned) = %s)',(offense,month,month,))
-        output = cursor.fetchone()
-        if output == None:
-            monthlyAbsences.append(0)
-        else:
-            monthlyAbsences.append(output[0])
-
-    for month in months:
-        cursor.execute('SELECT COUNT(*) FROM students_tardiness WHERE student_id = %s AND MONTH(tardiness_date) = %s',(offense,month,))
-        output = cursor.fetchone()
-        if output == None:
-            monthlyTardiness.append(0)
-        else:
-            monthlyTardiness.append(output[0])
     
+@app.route('/notifications')
+def notifications():
+    cnx = amarissedb.connect()
+    cursor = cnx.cursor()
 
-    return render_template('/studentreports.html',level = level,section = section,absences = absences, tardiness = tardiness,student = student, monthlyAbsences = monthlyAbsences,monthlyTardiness = monthlyTardiness,grade1 = grade1,grade2 = grade2,grade3 = grade3,grade4 = grade4,grade5 = grade5,grade6 = grade6,grade7 = grade7,grade8 = grade8,grade9 = grade9,grade10 = grade10,grade11 = grade11,grade12 = grade12)
+    return render_template('notifications.html')
+
+
+app.run()
