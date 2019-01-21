@@ -2,16 +2,6 @@
 
 {%block content%}
       <!-- header -->
-    {%if data != None%}
-              {%for result in data%}
-              <div>{{result[0]}}</div>
-              <div>{{result[1]}}</div>
-              <div>{{result[2]}}</div>
-              {%endfor%}  
-    {%endif%}
-
-
-
 
 
 
@@ -43,13 +33,18 @@
                       <div id="chartContainer"><canvas id="perLevelChart" width="600" height="300"></canvas></div>
                       <button class="btn btn-light perLevelAbsences">Absences</button>
                       <button class="btn btn-light perLevelTardiness">Tardiness</button>
+
+                      <h3>Absences And Tardiness Records Per Section</h3>
+                      <div id="chartContainer"><canvas id="perSectionChart" width="1000" height="300"></canvas></div>
+                      <button class="btn btn-light perSectionAbsences">Absences</button>
+                      <button class="btn btn-light perSectionTardiness">Tardiness</button>
             </div>
  </div>
        
       <script>
       $(document).ready(function(){
                         // per month chart controller
-                        var generalChart = document.getElementById("generalChart").getContext('2d');
+            var generalChart = document.getElementById("generalChart").getContext('2d');
                 var perMonth = new Chart.Bar(generalChart, {
                 data: {
                 labels:["January", "Febuary", "March", "April", "May", "June","July","August","September","October","November","December"],
@@ -159,6 +154,42 @@
                       borderWidth: 1
                       }]
                       perLevel.update()
+              })
+
+
+
+
+
+
+              
+
+              var perSectionChart = document.getElementById("perSectionChart").getContext('2d');
+                var perSection = new Chart.Bar(perSectionChart, {
+                data: {
+                labels:[{% for item in sections %}
+              "{{item}}",
+            {% endfor %}],
+                datasets: [{
+                      label: "Total Number of Absences Per Level",
+                      data: [{% for count in yearLevelSectionAbsences %}
+                                  {{count}},
+                            {% endfor %}], 
+                      backgroundColor : ["#1d2951","#111e6c", "#000080","#1034a6","#0f52ba","#008ecc","#0080ff","#73c2fb","#3fe0d0","#7ef9ff","#89cff0","#80dfes"],                
+                      borderWidth: 1
+                      }]
+                  },
+                options: {
+                responsive: false,
+                maintainAspectRatio: false,
+                scales: {
+                      yAxes: [{
+                      ticks: {
+                beginAtZero:true
+                            }
+                            }]
+                      }
+                }
+          
               })
 
 

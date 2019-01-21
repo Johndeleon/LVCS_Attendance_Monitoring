@@ -174,10 +174,29 @@ def home():
             mostTardinessName = 'Grade '+str(d)
         d=d+1
 
-    
+
+    sections = []
+    yearLevelSectionAbsences =[] 
+
+    cursor.execute('SELECT DISTINCT(year_level),section FROM students ')
+    levelsections = cursor.fetchall()
+
+    for row in levelsections:
+        studentsTotal = 0
+        sections.append(row[0]+row[1])
+        cursor.execute('SELECT id FROM students WHERE year_level = %s AND section = %s',(row[0],row[1],))
+        students = cursor.fetchall()
+        for student in students:
+            cursor.execute('SELECT days_absent FROM students_absences WHERE student_id = %s',(student[0],)) 
+            days = cursor.fetchall()   
+            total = 0
+            for day in days:
+                total = total + day[0]
+            studentsTotal = studentsTotal + total
+        yearLevelSectionAbsences.append(studentsTotal)
 
     if request.method == 'GET':
-        return render_template('home.html',mostAbsencesName = mostAbsencesName,mostTardinessName = mostTardinessName,totalAbsentees=totalAbsentees,monthlyAbsences = monthlyAbsences,monthlyTardiness = monthlyTardiness,mostAbsences = mostAbsences,totalPerLevelAbsences = totalPerLevelAbsences,totalPerLevelTardiness = totalPerLevelTardiness,absencesCount = absencesCount,totalTardiness = totalTardiness, tardinessCount = tardinessCount, mostTardiness = mostTardiness,grade1 = grade1,grade2 = grade2,grade3 = grade3,grade4 = grade4,grade5 = grade5,grade6 = grade6,grade7 = grade7,grade8 = grade8,grade9 = grade9,grade10 = grade10,grade11 = grade11,grade12 = grade12)
+        return render_template('home.html',sections = sections,yearLevelSectionAbsences = yearLevelSectionAbsences,mostAbsencesName = mostAbsencesName,mostTardinessName = mostTardinessName,totalAbsentees=totalAbsentees,monthlyAbsences = monthlyAbsences,monthlyTardiness = monthlyTardiness,mostAbsences = mostAbsences,totalPerLevelAbsences = totalPerLevelAbsences,totalPerLevelTardiness = totalPerLevelTardiness,absencesCount = absencesCount,totalTardiness = totalTardiness, tardinessCount = tardinessCount, mostTardiness = mostTardiness,grade1 = grade1,grade2 = grade2,grade3 = grade3,grade4 = grade4,grade5 = grade5,grade6 = grade6,grade7 = grade7,grade8 = grade8,grade9 = grade9,grade10 = grade10,grade11 = grade11,grade12 = grade12)
 
    
 @app.route('/<year>/<section>')
@@ -313,7 +332,37 @@ def notifications():
     cnx = amarissedb.connect()
     cursor = cnx.cursor()
 
-    return render_template('notifications.html')
+    now = datetime.now()
+    year = now.strftime('%Y')
+    month = now.strftime('%B')
+    day = now.strftime('%d')
+
+    cursor.execute('SELECT students_absences.student_id,students_absences.excuse,students_absences.date_absent,students_absences.date_returned,students.full_name,students_absences.remarks,students.year_level,students.section FROM students_absences JOIN students on students_absences.student_id = students.id WHERE remarks ="" ' )
+    unsubmitted = cursor.fetchall()
+
+
+    sections = []
+    yearLevelSection =[] 
+    studentsTardiness = []
+    tardinessPerStudent =[]
+    forReferral = []
+    referStudents = []
+
+    cursor.execute('SELECT DISTINCT(id) as student_id from students')
+    students = cursor.fetchall()
+
+    for student in students:
+        studentId = student[0]
+        cursor.execute('SELECT student_id,COUNT(student_id) FROM students_tardiness WHERE student_id = %s AND students_tardiness.tardiness_date BETWEEN (DATE("2018-11-15 10:30:30")-INTERVAL 13 DAY ) AND DATE("2018-11-15 10:30:30")' ,(studentId,))
+        studentsTardiness.append(cursor.fetchone())
+    for tardy in studentsTardiness:
+        if tardy[1] >= 3:
+            forReferral.append(tardy[0])
+    for student in forReferral:
+        cursor.execute('SELECT * from students WHERE id = %s',(student,))
+        referStudents.append(cursor.fetchone())
+    print(referStudents)
+    return render_template('notifications.html',referStudents=referStudents,year = year,month = month,day = day,unsubmitted = unsubmitted,grade1 = grade1,grade2 = grade2,grade3 = grade3,grade4 = grade4,grade5 = grade5,grade6 = grade6,grade7 = grade7,grade8 = grade8,grade9 = grade9,grade10 = grade10,grade11 = grade11,grade12 = grade12)
 
 
 app.run()
