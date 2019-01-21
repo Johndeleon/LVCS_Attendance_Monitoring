@@ -343,25 +343,27 @@ def notifications():
 
     sections = []
     yearLevelSection =[] 
-    studentsTardiness = []
+    twoWeeksTardyStudents = []
     tardinessPerStudent =[]
     forReferral = []
     referStudents = []
+    studentsTardiness = []
 
     cursor.execute('SELECT DISTINCT(id) as student_id from students')
     students = cursor.fetchall()
 
     for student in students:
-        studentId = student[0]
-        cursor.execute('SELECT student_id,COUNT(student_id) FROM students_tardiness WHERE student_id = %s AND students_tardiness.tardiness_date BETWEEN (DATE("2018-11-15 10:30:30")-INTERVAL 13 DAY ) AND DATE("2018-11-15 10:30:30")' ,(studentId,))
-        studentsTardiness.append(cursor.fetchone())
-    for tardy in studentsTardiness:
-        if tardy[1] >= 3:
-            forReferral.append(tardy[0])
+            studentId = student[0]
+            cursor.execute('SELECT student_id,COUNT(student_id) FROM students_tardiness WHERE student_id = %s AND students_tardiness.tardiness_date BETWEEN (DATE("2018-11-15 10:30:30")-INTERVAL 13 DAY ) AND DATE("2018-11-15 10:30:30")' ,(studentId,))
+            twoWeeksTardyStudents.append(cursor.fetchone())
+    for tardy in twoWeeksTardyStudents:
+            if tardy[1] >= 3:
+                    forReferral.append(tardy[0])
     for student in forReferral:
-        cursor.execute('SELECT * from students WHERE id = %s',(student,))
-        referStudents.append(cursor.fetchone())
-    print(referStudents)
+
+            cursor.execute('SELECT (SELECT students.full_name FROM students WHERE id = %s),(SELECT students.year_level FROM students WHERE id = %s),(SELECT students.section FROM students WHERE id = %s),students_tardiness.student_id,students_tardiness.tardiness_date FROM students_tardiness WHERE students_tardiness.student_id = %s AND students_tardiness.tardiness_date BETWEEN (DATE("2018-11-15 10:30:30")-INTERVAL 13 DAY ) AND DATE("2018-11-15 10:30:30") LIMIT 3',(student,student,student,student,))
+            referStudents.append(cursor.fetchall())
+    print(referStudents[0])
     return render_template('notifications.html',referStudents=referStudents,year = year,month = month,day = day,unsubmitted = unsubmitted,grade1 = grade1,grade2 = grade2,grade3 = grade3,grade4 = grade4,grade5 = grade5,grade6 = grade6,grade7 = grade7,grade8 = grade8,grade9 = grade9,grade10 = grade10,grade11 = grade11,grade12 = grade12)
 
 

@@ -30,21 +30,26 @@
         </table>
 
         <div><h2>For Referal to Advisor</h2>
-            <table class="table col-md-2 table-striped">
+            <table class="table col-md-2 ">
                 <thead>
     
                     <th>Student Name</th>
                     <th>Year Level</th>
                     <th>Section</th>
+                    <th>Tardiness Date</th>
+                    <th>Tardiness Date</th>
+                    <th>Tardiness Date</th>
 
-    
+
                 </thead>
                 {%for row in referStudents%}
                 <tr>
-                        <td><a href="/{{row[2]}}/{{row[3]}}/{{row[0]}}">{{row[1]}}</a></td>
-                        <td>{{row[2]}}</td>
-                        <td>{{row[3]}}</td>
-
+                        <td><a href='/{{row[0][1]}}/{{row[0][2]}}/{{row[0][3]}}'>{{row[0][0]}}</a></td>
+                        <td>{{row[0][1]}}</td>
+                        <td>{{row[0][2]}}</td>
+                    {%for record in row%}
+                        <td>{{record[4]}}</td>
+                    {%endfor%}
                 </tr>
                 {%endfor%}
             </table>
