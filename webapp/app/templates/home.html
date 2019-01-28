@@ -170,11 +170,10 @@
               "{{item}}",
             {% endfor %}],
                 datasets: [{
-                      label: "Total Number of Absences Per Level",
+                      label: "Total Number of Absences Per Section",
                       data: [{% for count in yearLevelSectionAbsences %}
                                   {{count}},
                             {% endfor %}], 
-                      backgroundColor : ["#1d2951","#111e6c", "#000080","#1034a6","#0f52ba","#008ecc","#0080ff","#73c2fb","#3fe0d0","#7ef9ff","#89cff0","#80dfes"],                
                       borderWidth: 1
                       }]
                   },
@@ -187,9 +186,34 @@
                 beginAtZero:true
                             }
                             }]
+
                       }
                 }
           
+              })
+
+
+              $(".perSectionAbsences").click(function(){
+                      perSection.data.datasets = [{
+                      label: "Total Number of Tardiness Per Section",
+                      data: [{% for count in yearLevelSectionAbsences %}
+                                  {{count}},
+                            {% endfor %}],
+                      backgroundColor : ["#1d2951","#111e6c", "#000080","#1034a6","#0f52ba","#008ecc","#0080ff","#73c2fb","#3fe0d0","#7ef9ff","#89cff0","#80dfes"],                
+                      borderWidth: 1
+                      }]
+                      perSection.update()
+              })
+
+              $(".perSectionTardiness").click(function(){
+                      perSection.data.datasets = [{
+                      label: "Total Number of Tardiness Per Section",
+                      data: [{% for count in yearLevelSectionTardiness %}
+                                  {{count}},
+                            {% endfor %}],
+                      borderWidth: 1
+                      }]
+                      perSection.update()
               })
 
 

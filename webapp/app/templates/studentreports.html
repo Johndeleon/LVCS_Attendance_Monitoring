@@ -30,16 +30,67 @@
                               <th class="bg-primary">Date Returned</th>
                               <th class="bg-primary">Days Absent</th>
                               <th class="bg-primary">Remarks</th>
+                              <th class="bg-primary">Remarks Updated At</th>
+                              <th class="bg-primary updateRemarks">Update Remarks</th>
                         </thead>
                         {%for absence in absences%}
                               <tr>
-                                    <td>{{absence[0]}}</td>
                                     <td>{{absence[1]}}</td>
                                     <td>{{absence[2]}}</td>
                                     <td>{{absence[3]}}</td>
                                     <td>{{absence[4]}}</td>
+                                    <td>{{absence[5]}}</td>
+                                    <td>{{absence[6]}}</td>
+                                      <td>
+                                          <button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#updateRemarks">Update Remarks</button>
+                                        </td>
+
                               </tr>
+
+
+
+                              <div class="modal fade" id="updateRemarks" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                  <div class="modal-dialog" role="document">
+                                      <form method="post" action="/updateRemarks">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="exampleModalLabel">Update Remarks</h5>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="md-form mb-4">
+                                                <label>Remarks</label>
+                                                <input type="text" name = "recordId" value="{{absence[0]}}" required hidden>
+                                              <input type="text" name = "updateRemarks" required>
+                                            </div>
+                                          </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          <button type="submit" class="btn btn-info">Update</button>                </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </form>
+                            
+
+
+
+
+
+
+
+
+
+
+
+
                         {%endfor%}
+                        <tr>
+                          <td>Total Absences: </td>
+                          <td>{{totalAbsences}}</td>
+                        </tr>
                   </table>
             
                   <h1>Tardines</h1>
@@ -56,10 +107,35 @@
                                     <td>{{tardy[2]}}</td>
                               </tr>
                         {%endfor%}
+                        <tr>
+                            <td>Total days Tardy:</td>
+                            <td>{{totalTardiness}}</td>
+                          </tr>
                   </table>
 
-            </div>
+                  <div>
+                      <h2>Referrals</h2>
+                      <table class="table table-striped">
+                        <thead>
+                          <th>Reason</th>
+                          <th>Date Referred</th>
+                          <th>Referral Count</th>
 
+                          </thead>
+                        {%for referral in referrals%}
+                        <tr>
+                          <td>{{referral[2]}}</td>
+                          <td>{{referral[3]}}</td>
+                          <td>{{referral[4]}} referral</td>
+                        </tr>
+                        {%endfor%}
+                      </table>
+                    </div>
+
+            </div>
+<br>
+<br>
+<br>
 
                                     
 <!--Record Absence Modal -->
@@ -183,7 +259,25 @@
 
       </div>
 </div>
+
+
+
+
+
+
+
     <script>
+
+
+
+      $(".updateRemarks").click(function(){
+
+      });
+
+
+
+
+
 
       var generalChart = document.getElementById("generalChart").getContext('2d');
       var myChart = new Chart.Bar(generalChart, {
@@ -212,7 +306,6 @@
       }
 
     })
-
 
     $(".absences").click(function(){
             myChart.data.datasets = [{
