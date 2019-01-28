@@ -292,6 +292,8 @@ def recordTardiness():
     cnx = amarissedb.connect()
     cursor = cnx.cursor()
 
+    twoWeeksTardiness = []
+
     studentId = request.form['studentId']
     tardinesType = request.form['tardiness_type']
     tardinesDate = request.form['tardiness_date']
@@ -304,6 +306,33 @@ def recordTardiness():
     cursor.execute(recordTardines, data)
     cnx.commit()
 
+    cursor.execute('SELECT COUNT(student_id) FROM students_tardiness WHERE student_id = %s AND students_tardiness.tardiness_date BETWEEN (DATE(%s)-INTERVAL 13 DAY ) AND DATE(%s)' ,(studentId,tardinesDate,tardinesDate,))
+    twoWeeksTardiness.append(cursor.fetchone())
+
+    print(tardinesType)
+    if tardinesType == 'X':
+        cursor.execute('SELECT COUNT(student_id) FROM referrals WHERE student_id = %s AND referral_type = "not going to the OSA" ',(studentId,))
+        referralCount = cursor.fetchone()
+        referralCount = int(referralCount[0])
+        cursor.execute('INSERT INTO referrals SET student_id = %s, referral_type = "not going to the OSA", referral_date = DATE(%s),referral_count = %s',(studentId,tardinesDate ,referralCount+1) )
+        cnx.commit()
+
+    if twoWeeksTardiness[0][0] == 3:
+        cursor.execute('SELECT COUNT(student_id) FROM referrals WHERE student_id = %s AND referral_type = "3 lates on 2 weeks"',(studentId,))
+        referralCount = cursor.fetchone()
+        referralCount = int(referralCount[0])
+        cursor.execute('INSERT INTO referrals SET student_id=%s, referral_type = "3 lates on 2 weeks", referral_date = DATE(NOW()), referral_count = %s',(studentId,referralCount+1,))
+        cnx.commit()
+        cursor.execute('UPDATE students_tardiness SET tardiness_code = "R "%s WHERE tardiness_date = %s',(tardinesType,tardinesDate))
+        cnx.commit()
+    if twoWeeksTardiness[0][0] == 6:
+        cursor.execute('SELECT COUNT(student_id) FROM referrals WHERE student_id = %s',(studentId,))
+        referralCount = cursor.fetchone()
+        referralCount = int(referralCount[0])
+        cursor.execute('INSERT INTO referrals SET student_id=%s, referral_type = "3 lates on 2 weeks", referral_date = DATE(%s), referral_count = %s',(studentId,tardinesDate,referralCount+1,))
+        cnx.commit()
+        cursor.execute('UPDATE students_tardiness SET tardiness_code = "R "%s WHERE tardiness_date = %s',(tardinesType,tardinesDate))
+        cnx.commit()
     cursor.execute("SELECT year_level,section FROM students WHERE id = %s",(studentId,))
     yearSection = cursor.fetchone()
     year  = yearSection[0]
@@ -345,26 +374,37 @@ def notifications():
     yearLevelSection =[] 
     twoWeeksTardyStudents = []
     tardinessPerStudent =[]
-    forReferral = []
-    referStudents = []
+    tooMuchLateReferral = []
+    tooTardyStudents = []
     studentsTardiness = []
+    bypassedOSA = []
+    bypassedOSAstudents = []
 
     cursor.execute('SELECT DISTINCT(id) as student_id from students')
     students = cursor.fetchall()
 
     for student in students:
             studentId = student[0]
-            cursor.execute('SELECT student_id,COUNT(student_id) FROM students_tardiness WHERE student_id = %s AND students_tardiness.tardiness_date BETWEEN (DATE("2018-11-15 10:30:30")-INTERVAL 13 DAY ) AND DATE("2018-11-15 10:30:30")' ,(studentId,))
+            cursor.execute('SELECT student_id,COUNT(student_id) FROM students_tardiness WHERE student_id = %s AND students_tardiness.tardiness_date BETWEEN (DATE(NOW())-INTERVAL 13 DAY ) AND DATE(NOW())' ,(studentId,))
             twoWeeksTardyStudents.append(cursor.fetchone())
     for tardy in twoWeeksTardyStudents:
             if tardy[1] >= 3:
-                    forReferral.append(tardy[0])
-    for student in forReferral:
+                    tooMuchLateReferral.append(tardy[0])
+    for student in tooMuchLateReferral:
+            cursor.execute('SELECT (SELECT students.full_name FROM students WHERE id = %s),(SELECT students.year_level FROM students WHERE id = %s),(SELECT students.section FROM students WHERE id = %s),(SELECT referrals.referral_count FROM referrals WHERE student_id = %s AND referral_type = "3 lates on 2 weeks" ORDER BY `referrals`.`referral_count` DESC LIMIT 1),students_tardiness.student_id,students_tardiness.tardiness_date FROM students_tardiness WHERE students_tardiness.student_id = %s AND students_tardiness.tardiness_date BETWEEN (DATE(NOW())-INTERVAL 13 DAY ) AND DATE(NOW()) ORDER BY `students_tardiness`.`tardiness_date` DESC LIMIT 3',(student,student,student,student,student,))
+            tooTardyStudents.append(cursor.fetchall())
 
-            cursor.execute('SELECT (SELECT students.full_name FROM students WHERE id = %s),(SELECT students.year_level FROM students WHERE id = %s),(SELECT students.section FROM students WHERE id = %s),students_tardiness.student_id,students_tardiness.tardiness_date FROM students_tardiness WHERE students_tardiness.student_id = %s AND students_tardiness.tardiness_date BETWEEN (DATE("2018-11-15 10:30:30")-INTERVAL 13 DAY ) AND DATE("2018-11-15 10:30:30") LIMIT 3',(student,student,student,student,))
-            referStudents.append(cursor.fetchall())
-    print(referStudents[0])
-    return render_template('notifications.html',referStudents=referStudents,year = year,month = month,day = day,unsubmitted = unsubmitted,grade1 = grade1,grade2 = grade2,grade3 = grade3,grade4 = grade4,grade5 = grade5,grade6 = grade6,grade7 = grade7,grade8 = grade8,grade9 = grade9,grade10 = grade10,grade11 = grade11,grade12 = grade12)
+    cursor.execute('SELECT DISTINCT(student_id) FROM referrals WHERE referral_type  = "not going to the OSA" ORDER BY referrals.referral_date DESC')
+    bypassedOSAstudents.append(cursor.fetchall())
+    for ids in bypassedOSAstudents:
+        print(ids)
+        for iden in ids:
+            cursor.execute('SELECT *,(SELECT students.full_name FROM students WHERE id = %s),(SELECT students.year_level FROM students WHERE id = %s),(SELECT students.section FROM students WHERE id = %s) from referrals WHERE referral_type  = "not going to the OSA" AND student_id = %s ORDER BY referrals.referral_date DESC LIMIT 1',(iden[0],iden[0],iden[0],iden[0],))
+            bypassedOSA.append(cursor.fetchall())
+    print(bypassedOSA)
+
+
+    return render_template('notifications.html',bypassedOSA = bypassedOSA,tooTardyStudents=tooTardyStudents,year = year,month = month,day = day,unsubmitted = unsubmitted,grade1 = grade1,grade2 = grade2,grade3 = grade3,grade4 = grade4,grade5 = grade5,grade6 = grade6,grade7 = grade7,grade8 = grade8,grade9 = grade9,grade10 = grade10,grade11 = grade11,grade12 = grade12)
 
 
 app.run()
