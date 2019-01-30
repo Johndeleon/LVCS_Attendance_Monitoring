@@ -35,13 +35,27 @@
                         {% else %}
                         <td class="tardiness">{{offense[5]}}</td>
                         {% endif %}
-                        <td><button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#recordAbsence{{offense[0]}}">
+                        <td>
+                          {%if disable == 'disabled'%}
+                          <button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#recordAbsence{{offense[0]}}"disabled>
                                 +
                               </button>
+                          {%else%}
+                          <button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#recordAbsence{{offense[0]}}">
+                              +
+                            </button>
+                          {%endif%}
                         </td>
-                        <td><button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#recordTardiness{{offense[0]}}">
+                        <td>
+                            {%if disable == 'disabled'%}
+                          <button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#recordTardiness{{offense[0]}}"disabled>
                           +
                         </button></td>
+                        {%else%}
+                        <button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#recordTardiness{{offense[0]}}">
+                            +
+                          </button></td>
+                          {%endif%}
                     </tr>
 
 

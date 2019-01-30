@@ -6,4 +6,4 @@ from datetime import datetime
 cnx = amarissedb.connect()
 cursor = cnx.cursor()
 
-print(time.strftime('%Y-%m-%d'))
+print(os.urandom(24))

@@ -2,6 +2,7 @@
 
 {%block content%}
       <!-- header -->
+
       <div class="container">
             <div class="btn btn-warning" onclick="history.back(-1)" />Back</div>
             <div class="btn btn-primary" id="print" onclick="print()">Print to PDF</div>
@@ -16,11 +17,19 @@
                       <table>
                             <tr>
                                   <td>
-                                        <button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#recordAbsence{{student[0]}}">Record Absence</button>
+                                    {%if disable == 'disabled'%}
+                                        <button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#recordAbsence{{student[0]}}" disabled>Record Absence</button>
+                                    {%else%}
+                                    <button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#recordAbsence{{student[0]}}">Record Absence</button>
+                                    {%endif%}
                                   </td>
                                   <td>
+                                      {%if disable == 'disabled'%}
+                                        <button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#recordTardiness{{student[0]}}" disabled>Record Tardiness</button>
+                                      {%else%}
                                         <button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#recordTardiness{{student[0]}}">Record Tardiness</button>
-                                  </td>
+                                      {%endif%}
+                                      </td>
                             </tr>
                       </table>
                   <table class="table table-striped table-hover">
@@ -42,7 +51,11 @@
                                     <td>{{absence[5]}}</td>
                                     <td>{{absence[6]}}</td>
                                       <td>
+                                        {%if disable == 'disabled'%}
+                                          <button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#updateRemarks" disabled>Update Remarks</button>
+                                        {%else%}
                                           <button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#updateRemarks">Update Remarks</button>
+                                        {%endif%}
                                         </td>
 
                               </tr>
@@ -74,16 +87,6 @@
                                   </div>
                                 </form>
                             
-
-
-
-
-
-
-
-
-
-
 
 
                         {%endfor%}

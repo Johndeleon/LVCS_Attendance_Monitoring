@@ -145,11 +145,13 @@
                     </ul>
             </li>
           </ul>
+          <div class="form-group">
           <form action= "/search" method= "POST"class="navbar-form navbar-left" action="/action_page.php">
-            <div class="form-group">
               <input type="text" class="form-control" name="search" placeholder="Search" value="">
-            </div>
             <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+          <form method="GET" action="/logout" class="form-group">
+                <button type="submit" class="btn btn-default form-control">Logout</button>
           </form>
         </div>
       </nav>
