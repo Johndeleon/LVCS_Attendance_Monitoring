@@ -14,17 +14,17 @@
         <table class="table">
             <tr>
                 <td>
-                    Username: <input type="text" placeholder="Username" name="username">
+                    Username: <input type="text" placeholder="Username" name="username" required>
                 </td>
             </tr>
             <tr>
                 <td>
-                        First Name: <input type="text" placeholder="First name" name="first_name">
+                        First Name: <input type="text" placeholder="First name" name="first_name" required>
                 </td>
             </tr>
             <tr>
                 <td>
-                        Last Name: <input type="text" placeholder="Last name" name="last_name">
+                        Last Name: <input type="text" placeholder="Last name" name="last_name" required>
                 </td>
             </tr>
             <tr>
@@ -37,7 +37,7 @@
             </tr>
             <tr>
                 <td>
-                        Password: <input type="password" placeholder="Password" name="password">
+                        Password: <input type="password" placeholder="Password" name="password" required>
                 </td>
             </tr>
         </table>
@@ -45,6 +45,7 @@
 
         <input class="btn btn-default" type="submit">
       </form>
+      <div><a href="/login">Login</a></div>
     </div>
       {% if error %}
         <p class="error"><strong>Error:</strong> {{ error }}

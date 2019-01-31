@@ -6,4 +6,8 @@ from datetime import datetime
 cnx = amarissedb.connect()
 cursor = cnx.cursor()
 
-print(os.urandom(24))
+cursor.execute('SELECT username,password FROM users WHERE username = "lenny"')
+result = cursor.fetchone()
+
+if result == None:
+    print(result)

@@ -7,7 +7,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 
 
 app = Flask(__name__)
-app.config['DEBUG'] = False
+app.config['DEBUG'] = True
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 app.secret_key = os.urandom(24)
 
@@ -498,9 +498,17 @@ def login():
 
             cursor.execute('SELECT username,password FROM users WHERE username = %s',(username,))
             result = cursor.fetchone()
-            if check_password_hash(result[1],password) == True:
-                session['username'] = username
-                return redirect('/')
+
+            if result != None:
+                if check_password_hash(result[1],password) == True:
+                    session['username'] = username
+                    return redirect('/')
+                else:
+                    error = 'password is incorrect'
+                    return render_template('login.html', error=error)
+            else:
+                error = 'username was not found on the database'
+                return render_template('login.html', error=error)
     return render_template('login.html', error=error)
 
 @app.route('/register', methods=['GET','POST'])
