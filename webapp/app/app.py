@@ -540,4 +540,7 @@ def register():
 def logout():
     session.pop('username', None)
     return redirect('/login')
-app.run(host= '0.0.0.0')
+
+
+if __name__ == "__main__":
+    app.run()
