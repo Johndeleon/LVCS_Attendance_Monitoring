@@ -10,13 +10,38 @@
             <!-- general reports -->
             <div class="container center-block pull-right">
                 <div><div><h1>General Reports</h1></div>
-            
-                     <div class="h4">Total number of students with absences: {{ totalAbsentees }}</div> 
-                     <div class="h4">Total  number of students with tardiness: {{ totalTardiness }}</div>
-                     <div class="h4">Student with most number of absences: {{mostAbsences}} with {{absencesCount}} absences</div>
-                     <div class="h4">Student with most number of tardiness: {{mostTardiness}} with {{tardinessCount}} tardiness</div>
-                     <div class="h4">Year Level with most number of Absences: {{ mostAbsencesName }}</div> 
-                     <div class="h4">Year Level with most number of Tardiness: {{ mostTardinessName }}</div> 
+                  <table>
+                        <tr>
+                              <td>
+                                    <div class="h4">Total number of students with absences: {{ totalAbsentees }}</div>
+                              </td>
+                        </tr>
+                        <tr>
+                              <td>
+                                    <div class="h4">Total  number of students with tardiness: {{ totalTardiness }}</div>
+                              </td>
+                        </tr>
+                        <tr>
+                              <td>
+                                    <div class="h4">Student with most number of absences: {{mostAbsences}} with {{absencesCount}} absences</div>
+                              </td>
+                        </tr>
+                        <tr>
+                              <td>
+                                    <div class="h4">Student with most number of tardiness: {{mostTardiness}} with {{tardinessCount}} tardiness</div>
+                              </td>
+                        </tr>
+                        <tr>
+                              <td>
+                                    <div class="h4">Year Level with most number of Absences: {{ mostAbsencesName }}</div> 
+                              </td>
+                        </tr>
+                        <tr>
+                              <td>
+                                    <div class="h4">Year Level with most number of Tardiness: {{ mostTardinessName }}</div> 
+                              </td>
+                        </tr>
+                  </table> 
 
                 </div>
             
