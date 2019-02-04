@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>LVCS Absences & Tardiness Record</title>
+    <title>Attendance Monitoring</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script  src="/static/jquery-3.3.1.js"></script>
     <link rel = stylesheet type = text/css href="/static/bootstrap-3.3.7/dist/css/bootstrap.css">
@@ -22,14 +22,22 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse"">
+<nav class="navbar navbar-inverse navbar-fixed-top"">
         <div class="container-fluid">
           <div class="navbar-header">
-            <a class="navbar-brand" href="/">LVCS Absences & Tardiness Record</a>
+            <a class="navbar-brand" href="/">Attendance Monitoring</a>
           </div>
           <ul class="nav navbar-nav">
             <li class="active"><a href="/">Home</a></li>
-            <li class="active"><a href="/notifications">Notifications</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Notifications<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                            <li><a href="/unreturnedSlips">Unreturned Absence Slips</a></li>
+                            <li><a href="/absencesReferral">For Referral due to unreturned Absence Slip</a></li>
+                            <li><a href="/tardinessReferral">For Referral due to three lates within two weeks</a></li>
+                            <li><a href="/skippedOSAReferral">For Referral due to skipping OSA</a></li>
+                        </ul>
+                        </li>
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">Elementary
               <span class="caret"></span></a>
@@ -149,9 +157,6 @@
           <form action= "/search" method= "POST"class="navbar-form navbar-left" action="/action_page.php">
               <input type="text" class="form-control" name="search" placeholder="Search" value="">
             <button type="submit" class="btn btn-default btn-success">Submit</button>
-          </form>
-          <form method="GET" action="/logout">
-                <button type="submit" class="btn btn-default btn-warning" style=" margin-top:8px">Logout</button>
           </form>
         </div>
       </nav>

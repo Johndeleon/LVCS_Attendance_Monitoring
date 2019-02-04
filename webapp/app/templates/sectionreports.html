@@ -1,6 +1,11 @@
 {%extends 'layout.html'%}
 
 {%block content%}\
+<br>
+<br>
+<br>
+<br>
+<br>
 <div class="container">
     <div class="btn btn-warning" onclick="history.back(-1)" />Back</div>
 </div>
@@ -83,8 +88,8 @@
             </div>
             <div class="modal-body">
               <div class="md-form mb-4">
-                  <label>Excuse</label>
-                <input type="text" name = "excuse" class="form-control" >
+                  <label>Reason</label>
+                <input type="text" name = "reason" class="form-control" >
               </div>
             </div>
 
@@ -158,13 +163,6 @@
            <option value="{{type[0]}}">{{type[1]}}</option>
            {%endfor%}
           </select>
-          </div>
-        </div>
-        
-        <div class="modal-body">
-          <div class="md-form mb-4">
-              <label>Remarks</label>
-            <input type="text" name = "remarks" class="form-control" >
           </div>
         </div>
       <div class="modal-footer">

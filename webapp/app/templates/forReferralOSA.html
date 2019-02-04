@@ -1,0 +1,38 @@
+{%extends 'layout.html'%}
+
+{%block content%}
+<div class="container">
+    <div class="btn btn-warning" onclick="history.back(-1)" />Back</div>
+</div>
+
+<div class="container">
+    <div>
+            <h1>{{month}} {{day}} {{year}}</h1>
+    </div>
+
+    <div><h2>For Referral Due to Unsubmitted Absence Slips</h2>
+        <table class="table col-md-2 table-striped">
+            <thead>
+
+                <th>Student Name</th>
+                <th>Date Referred</th>
+                <th>Number of Times Referred</th>
+                <th>Clear</th>
+            </thead>
+            {%for referral in referrals%}
+            <tr>
+                    <td>{{referral[3]}}</td>
+                    <td>{{referral[1]}}</td>
+                    <td>{{referral[2]}}</td>
+                    <td>
+                    <form method="POST" action="/clearedReferral/{{referral[0]}}">
+                        <button>Referred</button>
+                    </form>
+                    </td>
+            </tr>
+            {%endfor%}
+        </table>
+
+</div>
+
+{%endblock%}

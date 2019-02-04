@@ -1,0 +1,45 @@
+{%extends 'layout.html'%}
+
+{%block content%}
+<div class="container">
+    <div class="btn btn-warning" onclick="history.back(-1)" />Back</div>
+</div>
+
+<div class="container">
+    <div>
+            <h1>{{month}} {{day}} {{year}}</h1>
+    </div>
+
+    <div><h2>Unsubmitted Absence Slips</h2>
+        <table class="table col-md-2 table-striped">
+            <thead>
+
+                <th>Student Name</th>
+                <th>Reason</th>
+                <th>Date Absent</th>
+                <th>Date Returned</th>
+                <th>Remarks</th>
+                <th>Slip is Submitted</th>
+            </thead>
+            {%for absence in unsubmitted%}
+            <tr>
+                    <td><a href="/{{absence[7]}}/{{absence[8]}}/{{absence[1]}}"></a>{{absence[5]}}</td>
+                    <td>{{absence[2]}}</td>
+                    <td>{{absence[3]}}</td>
+                    <td>{{absence[4]}}</td>
+                    <td>{{absence[6]}}</td>
+                    <td>
+                    <form method="POST" action="/returnedSlip/{{absence[0]}}">
+                        <button>Returned</button>
+                    </form>
+                    <form method="POST" action="/forReferral/{{absence[0]}}/{{absence[4]}}">
+                        <button>For Referral</button>
+                    </form>
+                    </td>
+            </tr>
+            {%endfor%}
+        </table>
+
+</div>
+
+{%endblock%}
