@@ -23,7 +23,7 @@
                         </tr>
                         <tr>
                               <td>
-                                    <div class="h4">Student with most number of days absen: {{mostAbsences}} with {{absencesCount}} absences</div>
+                                    <div class="h4">Student with most number of days absent: {{mostAbsences}} with {{absencesCount}} absences</div>
                               </td>
                         </tr>
                         <tr>
@@ -115,7 +115,7 @@
                       data: [{% for count in monthlyTardiness %}
                                   {{count}},
                             {% endfor %}], 
-                            backgroundColor : ["#1d2951","#111e6c", "#000080","#1034a6","#0f52ba","#008ecc","#0080ff","#73c2fb","#3fe0d0","#7ef9ff","#89cff0","#80dfes"],                
+                            backgroundColor : ["#00ff00","#00ff00", "#00ff00","#00ff00","#00ff00","#00ff00","#00ff00","#00ff00","#00ff00","#00ff00","#00ff00","#00ff00"],                
                  
                       borderWidth: 1
                       }]
@@ -173,18 +173,12 @@
                       data: [{% for count in totalPerLevelTardiness %}
                                   {{count}},
                             {% endfor %}],
-                      backgroundColor : ["#1d2951","#111e6c", "#000080","#1034a6","#0f52ba","#008ecc","#0080ff","#73c2fb","#3fe0d0","#7ef9ff","#89cff0","#80dfes"],                
+                      backgroundColor : ["#00ff00","#00ff00", "#00ff00","#00ff00","#00ff00","#00ff00","#00ff00","#00ff00","#00ff00","#00ff00","#00ff00","#00ff00"],                
                       borderWidth: 1
                       }]
                       perLevel.update()
               })
 
-
-
-
-
-
-              
 
               var perSectionChart = document.getElementById("perSectionChart").getContext('2d');
                 var perSection = new Chart.Bar(perSectionChart, {
@@ -221,8 +215,7 @@
                       label: "Total Number of Tardiness Per Section",
                       data: [{% for count in yearLevelSectionAbsences %}
                                   {{count}},
-                            {% endfor %}],
-                      backgroundColor : ["#1d2951","#111e6c", "#000080","#1034a6","#0f52ba","#008ecc","#0080ff","#73c2fb","#3fe0d0","#7ef9ff","#89cff0","#80dfes"],                
+                            {% endfor %}],                
                       borderWidth: 1
                       }]
                       perSection.update()

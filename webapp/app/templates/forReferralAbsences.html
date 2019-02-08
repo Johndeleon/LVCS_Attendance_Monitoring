@@ -1,6 +1,7 @@
 {%extends 'layout.html'%}
 
 {%block content%}
+<br><br><br><br>
 <div class="container">
     <div class="btn btn-warning" onclick="history.back(-1)" />Back</div>
 </div>
@@ -25,11 +26,9 @@
                     <td>{{referral[1]}}</td>
                     <td>{{referral[2]}}</td>
                     <td>
-                    {%for record in referrals%}
                     <form method="POST" action="/clearedReferral/{{referral[0]}}">
                         <button>Referred</button>
                     </form>
-                    {%endfor%}
                     </td>
             </tr>
             {%endfor%}

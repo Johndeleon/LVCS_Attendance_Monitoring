@@ -39,11 +39,11 @@
                   <table class="table table-striped table-hover">
                         <thead>
                               <th class="bg-primary">Date Absent</th>
+                              <th class="bg-primary">Reason</th>
                               <th class="bg-primary">Date Returned</th>
-                              <th class="bg-primary">Excuse</th>
                               <th class="bg-primary">Days Absent</th>
                               <th class="bg-primary">Remarks</th>
-                              <th class="bg-primary updateRemarks">Clear Student</th>
+                              <th class="bg-primary updateRemarks">Update Remarks</th>
                         </thead>
                         {%for absence in absences%}
                               <tr>
@@ -53,10 +53,11 @@
                                     <td>{{absence[4]}}</td>
                                     <td>{{absence[5]}}</td>
                                     <td>
-                                      <form method="POST" action="/clearedReferral/{{absence[0]}}">
-                                        <button class="btn btn-primary btn-lg center-block" >Clear</button>
+                                      <form method="POST" action="/returnedSlip/{{absence[0]}}">
+                                        <button class="btn btn-primary btn-lg center-block" >Returned</button>
                                       </form>
                                     </td>
+ 
 
                               </tr>
                         {%endfor%}
@@ -71,13 +72,12 @@
                         <thead>
                               <th class="bg-primary">Tardines Date</th>
                               <th class="bg-primary">Tardines Code</th>
-                              <th class="bg-primary">Remarks</th>
                         </thead>
                         {%for tardy in tardiness%}
                               <tr>
-                                    <td>{{tardy[0]}}</td>
                                     <td>{{tardy[1]}}</td>
                                     <td>{{tardy[2]}}</td>
+                                    
                               </tr>
                         {%endfor%}
                         <tr>
@@ -93,13 +93,19 @@
                           <th>Reason</th>
                           <th>Date Referred</th>
                           <th>Referral Count</th>
+                          <th>Clear Referral</th>
 
                           </thead>
                         {%for referral in referrals%}
                         <tr>
-                          <td>{{referral[2]}}</td>
                           <td>{{referral[3]}}</td>
-                          <td>{{referral[4]}} referral</td>
+                          <td>{{referral[4]}}</td>
+                          <td>{{referral[5]}}</td>
+                          <td>
+                            <form method="POST" action="/clearedReferral/{{referral[0]}}">
+                              <button class="btn btn-primary btn-lg center-block" >Clear</button>
+                            </form>
+                          </td>
                         </tr>
                         {%endfor%}
                       </table>
@@ -159,11 +165,14 @@
               </div>
   
               <div class="modal-body">
-                <div class="md-form mb-4">
-                    <label>Remarks</label>
-                  <input type="text" name = "remarks" class="form-control" >
+                  <div class="md-form mb-4">
+                      <label>Remarks</label>
+                    <select name = "remarks" class="form-control" >
+                      <option> </option>>
+                      <option>returned</option>
+                    </select>
+                  </div>
                 </div>
-              </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
               <button type="submit" class="btn btn-info">Create</button>                </div>

@@ -1,6 +1,7 @@
 {%extends 'layout.html'%}
 
 {%block content%}
+<br><br><br><br>
 <div class="container">
     <div class="btn btn-warning" onclick="history.back(-1)" />Back</div>
 </div>
@@ -21,7 +22,7 @@
                 <th>Remarks</th>
                 <th>Slip is Submitted</th>
             </thead>
-            {%for absence in unsubmitted%}
+            {%for absence in listedRecord%}
             <tr>
                     <td><a href="/{{absence[7]}}/{{absence[8]}}/{{absence[1]}}"></a>{{absence[5]}}</td>
                     <td>{{absence[2]}}</td>
@@ -32,9 +33,11 @@
                     <form method="POST" action="/returnedSlip/{{absence[0]}}">
                         <button>Returned</button>
                     </form>
+                    {%if absence[9] == 'enabled' and absence[9] != 'disabled'%}
                     <form method="POST" action="/forReferral/{{absence[0]}}/{{absence[4]}}">
                         <button>For Referral</button>
                     </form>
+                    {%endif%}
                     </td>
             </tr>
             {%endfor%}

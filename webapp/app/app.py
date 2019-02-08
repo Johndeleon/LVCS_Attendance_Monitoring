@@ -1,17 +1,29 @@
 import amarissedb
 import time
 import os
+import calendar
 from datetime import datetime
 from flask import Flask, render_template, request, redirect, url_for, session, escape
-from werkzeug.security import generate_password_hash, check_password_hash
+from flask_mail import Mail, Message
 
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 
+
+mail = Mail(app)
+app.config['MAIL_SERVER']='smtp.gmail.com'
+app.config['MAIL_PORT']=465
+app.config['MAIL_USERNAME']='angularjohn@gmail.com'
+app.config['MAIL_PASSWORD']='rkbcilhgxocwutiw'
+app.config['MAIL_USE_TLS']=False
+app.config['MAIL_USE_SSL']=True
+mail = Mail(app)
+
 cnx = amarissedb.connect()
 cursor = cnx.cursor()
+
 cursor.execute('SELECT DISTINCT(section) FROM students WHERE year_level = 1')
 grade1 = cursor.fetchall()
 cursor.execute('SELECT DISTINCT(section) FROM students WHERE year_level = 2')
@@ -45,7 +57,6 @@ def home():
     cursor.execute('SELECT COUNT(DISTINCT student_id)FROM students_absences')
     absenteePop = cursor.fetchone()
     students_record = []
-    maxAbsence = 0
     absencesCount = 0
     row = []
     mostAbsence = ''
@@ -60,7 +71,7 @@ def home():
                 total = 0;
                 for day in rows:
                     total = total + day[0]
-                    if total > maxAbsence:
+                    if total > absencesCount:
                         mostAbsence = student[0]
                         absencesCount = total
 
@@ -143,8 +154,8 @@ def home():
                 cursor.execute('SELECT days_absent FROM students_absences WHERE student_id = %s',(iden,))
                 daysAbsent = cursor.fetchall()
                 for day in daysAbsent:
-                    total = day[0]
-                    totalPerLevelAbsences.append(total)
+                    total = total+day[0]
+            totalPerLevelAbsences.append(total)
     else:
         totalPerLevelAbsences = [0,0,0,0,0,0,0,0,0,0,0,0]
 
@@ -201,10 +212,15 @@ def home():
                 total = total + day[0]
             studentsTotal = studentsTotal + total
         yearLevelSectionAbsences.append(studentsTotal)
+    for row in levelsections:
+        studentsTotal = 0
+        sections.append(row[0]+row[1])
+        cursor.execute('SELECT id FROM students WHERE year_level = %s AND section = %s',(row[0],row[1],))
+        students = cursor.fetchall()
         for student in students:
-            cursor.execute('SELECT COUNT(tardiness_date) FROM students_tardiness WHERE student_id = %s',(student[0],)) 
-            days = cursor.fetchone()   
-            studentsTotal = studentsTotal + days[0]
+            cursor.execute('SELECT COUNT(id) FROM students_tardiness WHERE student_id = %s',(student[0],)) 
+            days = cursor.fetchall()   
+            studentsTotal = studentsTotal + sum(days[0])
         yearLevelSectionTardiness.append(studentsTotal)
 
 
@@ -223,7 +239,7 @@ def showSection(year,section):
     cursor.execute('SELECT s.id,s.full_name,s.year_level,s.section,(SELECT COUNT(student_id) FROM students_absences AS a WHERE s.id = a.student_id) AS absences,(SELECT COUNT(t.student_id) FROM students_tardiness as t WHERE s.id = t.student_id) AS tardiness FROM students AS s WHERE s.section = %s AND s.year_level = %s',(section,year,))
     offensesCount = cursor.fetchall()
 
-    cursor.execute('SELECT code,title FROM tardiness_types')
+    cursor.execute('SELECT code,title FROM tardiness_types WHERE LENGTH(code) = 1')
     tardinessTypes = cursor.fetchall()
 
 
@@ -271,7 +287,7 @@ def studentRecord(level,section,offense):
         else:
             monthlyTardiness.append(output[0])
     
-    cursor.execute('SELECT code,title FROM tardiness_types')
+    cursor.execute('SELECT code,title FROM tardiness_types WHERE LENGTH(code) = 1')
     tardinessTypes = cursor.fetchall()
 
     referrals = []
@@ -400,9 +416,17 @@ def unreturnedSlips():
 
     cursor.execute('SELECT students_absences.id,students_absences.student_id,students_absences.reason,students_absences.date_absent,students_absences.date_returned,students.full_name,students_absences.remarks,students.year_level,students.section FROM students_absences  JOIN students ON students_absences.student_id = students.id  WHERE remarks =""' )
     unsubmitted = cursor.fetchall()
-
-    cursor.execute('SELECT * FROM referrals WHERE referral_type = "non submission of absence slip"')
-    referrals = cursor.fetchall()
+    
+    listedRecord = []
+    for rows in unsubmitted:
+        listedRecord.append([i for i in rows])
+    for rows in listedRecord:
+        cursor.execute('SELECT * FROM students_absences WHERE CONCAT("A",students_absences.id)NOT IN(SELECT referral_code FROM referrals) AND students_absences.id = %s',(rows[0],))
+        isPresent = cursor.fetchone()
+        if isPresent != None:
+            rows.append('enabled')
+        else:
+            rows.append('disabled')
 
     sections = []
     yearLevelSection =[] 
@@ -417,7 +441,7 @@ def unreturnedSlips():
             cursor.execute('SELECT student_id,COUNT(student_id) FROM students_tardiness WHERE student_id = %s AND students_tardiness.tardiness_date BETWEEN (DATE(NOW())-INTERVAL 13 DAY ) AND DATE(NOW())' ,(studentId,))
             twoWeeksTardyStudents.append(cursor.fetchone())
 
-    return render_template('unsubmittedSlips.html',referrals=referrals,now=now,year = year,month = month,monthInt = monthInt,day = day,unsubmitted = unsubmitted,grade1 = grade1,grade2 = grade2,grade3 = grade3,grade4 = grade4,grade5 = grade5,grade6 = grade6,grade7 = grade7,grade8 = grade8,grade9 = grade9,grade10 = grade10,grade11 = grade11,grade12 = grade12)
+    return render_template('unsubmittedSlips.html',now=now,year = year,month = month,monthInt = monthInt,day = day,listedRecord = listedRecord,grade1 = grade1,grade2 = grade2,grade3 = grade3,grade4 = grade4,grade5 = grade5,grade6 = grade6,grade7 = grade7,grade8 = grade8,grade9 = grade9,grade10 = grade10,grade11 = grade11,grade12 = grade12)
 
 @app.route('/returnedSlip/<absence>',methods=['POST'])
 def returnedSlip(absence):
@@ -463,7 +487,7 @@ def forReferral(absence,dateReturned):
     if referralRecord == None:
         referralCount = 0
     else:
-        referralCount = referralRecord[4]
+        referralCount = referralRecord[5]
     cursor.execute('INSERT INTO referrals SET student_id = %s,referral_code = %s,referral_type="non submission of absence slip",referral_date=%s,referral_count=%s,cleared=0',(studentId[0],referralCode,today,referralCount+1,))
     cnx.commit()
     return redirect('/unreturnedSlips')    
@@ -505,6 +529,12 @@ def skippedOSAReferral():
 
     return render_template('forReferralOSA.html',referrals = referrals,grade1 = grade1,grade2 = grade2,grade3 = grade3,grade4 = grade4,grade5 = grade5,grade6 = grade6,grade7 = grade7,grade8 = grade8,grade9 = grade9,grade10 = grade10,grade11 = grade11,grade12 = grade12)
 
+@app.route('/sendcopy')
+def sendReport():
+        msg = Message('Hello', sender='angularjohn@gmail.com',recipients=['huynthilandeleon@gmail.com'])
+        msg.body = "the bird has flown"
+        mail.send(msg)
+        return "Sent"
 
-if __name__ == "__main__":
-    app.run()
+
+app.run()
