@@ -1,0 +1,111 @@
+{%extends 'layout.html'%}
+
+{%block content%}
+<br><br><br><br>
+<div class="container">
+    <div class="btn btn-warning" onclick="history.back(-1)" />Back</div>
+</div>
+
+<div class="container">
+<table class="table table-striped">
+    <tr>
+        <th>
+            Choose Year Level and Section
+        </th>
+        <td>
+            <select name="levelsection" id="levSec" class="form-control">
+            {%for row in yearLevelSec%}
+                <option value="{{row[0]}}{{row[1]}}">{{row[0]}}{{row[1]}}</option>
+            {%endfor%}
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Select Month
+        </td>
+        <td>
+            <select name="selectedMonth" id="selectedMonth">
+                <option value='1'>January</option>
+                <option value='2'>February</option>
+                <option value='3'>March</option>
+                <option value='4'>April</option>
+                <option value='5'>May</option>
+                <option value='6'>June</option>
+                <option value='7'>July</option>
+                <option value='8'>August</option>
+                <option value='9'>September</option>
+                <option value='10'>October</option>
+                <option value='11'>Nobember</option>
+                <option value='12'>December</option>
+            </select>
+        </td>
+    </tr>
+</table>
+
+<div class="printable">
+    <div class="absences">
+        <table class="table" id="absencesTable">
+            <tr>
+                <td>Student</td>
+                <td>Reason</td>
+                <td>Date Absent</td>
+                <td>Date Returned</td>
+                <td>Days Absent</td>
+                <td>Remarks</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+</div>
+
+
+<script>
+$(document).ready(function(){
+
+    $(function(){
+        $('#levSec').change();
+    })
+
+    $('#selectedMonth').change(function(){
+        $('#levSec').change();
+    })    
+    
+    $('#levSec').change(function(){
+    var yearLevSec = document.getElementById('levSec').value
+    var selectedMonth = document.getElementById('selectedMonth').value
+            $.ajax(
+                {
+                    url:'/fetchreports/'+yearLevSec+'/'+selectedMonth,
+                    type: 'GET',
+                    datatype: "json",
+                    success: function(data){
+                        $('#absencesTable').empty()
+                        $('#absencesTable').append('<tr>'+
+                            '<td>Student</td>'+
+                            '<td>Reason</td>'+
+                            '<td>Date Absent</td>'+
+                            '<td>Date Returned</td>'+
+                            '<td>Days Absent</td>'+
+                            '<td>Remarks</td>'+
+                        '</tr>')
+                      
+                      data.forEach(element => {
+                          
+                        $('#absencesTable').append('<tr>')     
+                            element.forEach(row => {
+                                $('#absencesTable').append('<td>'+row+'<td>') 
+                            });                                                              
+                        $('#absencesTable').append('</tr>')                                
+                      });
+             
+                    }
+                }
+            )
+    })
+})
+
+
+</script>
+{%endblock%}

@@ -3,7 +3,7 @@ import time
 import os
 import calendar
 from datetime import datetime
-from flask import Flask, render_template, request, redirect, url_for, session, escape
+from flask import Flask, render_template, request, redirect, url_for, session, escape, jsonify
 from flask_mail import Mail, Message
 
 
@@ -529,6 +529,15 @@ def skippedOSAReferral():
 
     return render_template('forReferralOSA.html',referrals = referrals,grade1 = grade1,grade2 = grade2,grade3 = grade3,grade4 = grade4,grade5 = grade5,grade6 = grade6,grade7 = grade7,grade8 = grade8,grade9 = grade9,grade10 = grade10,grade11 = grade11,grade12 = grade12)
 
+@app.route('/levelsection')
+def levelsection():
+    cnx = amarissedb.connect()
+    cursor = cnx.cursor()
+
+    cursor.execute('SELECT DISTINCT(year_level),section FROM students ORDER by year_level ASC')
+    yearLevelSec = cursor.fetchall()
+    return render_template('levelsection.html',yearLevelSec=yearLevelSec,grade1 = grade1,grade2 = grade2,grade3 = grade3,grade4 = grade4,grade5 = grade5,grade6 = grade6,grade7 = grade7,grade8 = grade8,grade9 = grade9,grade10 = grade10,grade11 = grade11,grade12 = grade12)
+
 @app.route('/sendcopy')
 def sendReport():
         msg = Message('Hello', sender='angularjohn@gmail.com',recipients=['huynthilandeleon@gmail.com'])
@@ -536,5 +545,10 @@ def sendReport():
         mail.send(msg)
         return "Sent"
 
-
+@app.route('/fetchreports/<yearLevelSec>/<selectedMonth>')
+def fetchreports(yearLevelSec,selectedMonth):
+    absences = []
+    cursor.execute('SELECT students.full_name,students_absences.reason,students_absences.date_absent,students_absences.date_returned,students_absences.days_absent,students_absences.remarks FROM students JOIN students_absences ON students.id = students_absences.student_id  WHERE CONCAT(year_level,section) =%s AND MONTH(DATE(students_absences.date_absent))=%s',(yearLevelSec,selectedMonth,))
+    absences = cursor.fetchall()
+    return jsonify(absences)
 app.run()
