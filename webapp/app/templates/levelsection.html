@@ -1,78 +1,174 @@
 {%extends 'layout.html'%}
 
 {%block content%}
-<br><br><br><br>
-<div class="container">
-    <div class="btn btn-warning" onclick="history.back(-1)" />Back</div>
-</div>
 
 <div class="container">
-<table class="table table-striped">
-    <tr>
-        <th>
-            Choose Year Level and Section
-        </th>
-        <td>
-            <select name="levelsection" id="levSec" class="form-control">
-            {%for row in yearLevelSec%}
-                <option value="{{row[0]}}{{row[1]}}">{{row[0]}}{{row[1]}}</option>
-            {%endfor%}
-            </select>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Select Month
-        </td>
-        <td>
-            <select name="selectedMonth" id="selectedMonth">
-                <option value='1'>January</option>
-                <option value='2'>February</option>
-                <option value='3'>March</option>
-                <option value='4'>April</option>
-                <option value='5'>May</option>
-                <option value='6'>June</option>
-                <option value='7'>July</option>
-                <option value='8'>August</option>
-                <option value='9'>September</option>
-                <option value='10'>October</option>
-                <option value='11'>Nobember</option>
-                <option value='12'>December</option>
-            </select>
-        </td>
-    </tr>
-</table>
-
-<div class="printable">
-    <div class="absences">
-        <table class="table" id="absencesTable">
-            <tr>
-                <td>Student</td>
-                <td>Reason</td>
-                <td>Date Absent</td>
-                <td>Date Returned</td>
-                <td>Days Absent</td>
-                <td>Remarks</td>
-            </tr>
-        </table>
-    </div>
+        <div class="container">
+                <br><br><br><br>
+                <div class="unprintable container btn-group">
+                    <div class="btn btn-warning" onclick="history.back(-1)" />Back</div>
+                    <div class="btn btn-warning" onclick="print()" />Print</div>
+                </div>
+                <br><br>
+                <div class="unprintable container">
+                <table class="table table-striped">
+                    <tr>
+                        <th>
+                            Choose Year Level and Section
+                        </th>
+                        <td>
+                            <select name="levelsection" id="levSec" class="form-control">
+                            {%for row in yearLevelSec%}
+                                <option value="{{row[0]}}{{row[1]}}">{{row[0]}}{{row[1]}}</option>
+                            {%endfor%}
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Select Month
+                        </th>
+                        <td>
+                            <select name="selectedMonth" class="form-control" id="selectedMonth">
+                                <option value='1'>January</option>
+                                <option value='2'>February</option>
+                                <option value='3'>March</option>
+                                <option value='4'>April</option>
+                                <option value='5'>May</option>
+                                <option value='6'>June</option>
+                                <option value='7'>July</option>
+                                <option value='8'>August</option>
+                                <option value='9'>September</option>
+                                <option value='10'>October</option>
+                                <option value='11'>Nobember</option>
+                                <option value='12'>December</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Instructor</label>
+                        </td>
+                        <td>
+                            <input type="text" id="inputadviser" placeholder="Adviser" class="form-control col-md-4 input-group-lg">
+                        </td>
+                    </tr>
+                </table>
+        </div>
+        
+        <div id="printable" class="printable container">
+        <h3> <label >Section: </label> <label id="section"></label></h3> <div></div>
+        <h3> <label>Month: </label> <label id="month"></label></h3> 
+        <h3> <label>Adviser: </label> <label id="adviser"></label></h3> 
+        
+        <div class="absences">
+                <label for="absences"><h1>Attendance Monitoring(Absences)</h1></label>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td>Student</td>
+                            <td>Reason</td>
+                            <td>Date Absent</td>
+                            <td>Date Returned</td>
+                            <td>Days Absent</td>
+                            <td>Remarks</td>
+                        </tr>
+                    </thead>
+        
+                    <tbody id="absencesTable">
+        
+                    </tbody>
+                </table>
+            </div>
+        
+            <div class="tardiness">
+                    <label for="tardiness"><h1>Attendance Monitoring(Tardiness)</h1></label>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <td>Student</td>
+                                <td>Tardiness Date</td>
+                                <td>Tardiness Code</td>
+                            </tr>
+                        </thead>
+            
+                        <tbody id="tardinessTable">
+            
+                        </tbody>
+                    </table>
+                </div>
+        
+                <div class="referrals">
+                    <label for="referrals"><h1>Attendance Monitoring(Referrals)</h1></label>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <td>Student</td>
+                                <td>Reason for Referral</td>
+                                <td>Referral Date</td>
+                                <td>Referral Count for Specific Reason</td>
+                            </tr>
+                        </thead>
+            
+                        <tbody id="referralsTable">
+            
+                        </tbody>
+                    </table>
+                </div>
+        </div>
+        
+        </div>
+        </div>
+            
 </div>
-
-</div>
-
 
 <script>
 $(document).ready(function(){
 
     $(function(){
         $('#levSec').change();
+        $('#selectedMonth').change();
     })
 
     $('#selectedMonth').change(function(){
         $('#levSec').change();
+        var value =$(this).val();
+
+        switch (value) {
+            case '1':$('#month').text('January')
+                break;
+            case '2':$('#month').text('Febuary')
+                break;
+            case '3':$('#month').text('March')
+                break;
+            case '4':$('#month').text('April')
+                break;
+            case '5':$('#month').text('May')
+                break;
+            case '6':$('#month').text('June')
+                break;
+            case '7':$('#month').text('July')
+                break;
+            case '8':$('#month').text('August')
+                break;
+            case '9':$('#month').text('September')
+                break;
+            case '10':$('#month').text('October')
+                break;
+            case '11':$('#month').text('November')
+                break;
+            default:('#month').text('December')
+                break;
+        }
+        
+
     })    
     
     $('#levSec').change(function(){
+        var value =$(this).val();
+        $('#section').text(value)
+
+
     var yearLevSec = document.getElementById('levSec').value
     var selectedMonth = document.getElementById('selectedMonth').value
             $.ajax(
@@ -81,31 +177,98 @@ $(document).ready(function(){
                     type: 'GET',
                     datatype: "json",
                     success: function(data){
-                        $('#absencesTable').empty()
-                        $('#absencesTable').append('<tr>'+
-                            '<td>Student</td>'+
-                            '<td>Reason</td>'+
-                            '<td>Date Absent</td>'+
-                            '<td>Date Returned</td>'+
-                            '<td>Days Absent</td>'+
-                            '<td>Remarks</td>'+
-                        '</tr>')
-                      
-                      data.forEach(element => {
-                          
-                        $('#absencesTable').append('<tr>')     
-                            element.forEach(row => {
-                                $('#absencesTable').append('<td>'+row+'<td>') 
-                            });                                                              
-                        $('#absencesTable').append('</tr>')                                
-                      });
-             
+                        absences = data[0]
+                        tardiness = data[1]
+                        referrals = data[2]
+
+                        $('#absencesTable').empty();
+                        $('#tardinessTable').empty();
+                        $('#referralsTable').empty();
+
+                        if (data[0] != '') {
+                        absences.forEach(item => {
+                            var absencesTag = '<tr>'+
+                                        '<td> '+ item[0] +' </td>'+
+                                        '<td> '+ item[1] +' </td>'+
+                                        '<td> '+ item[2] +' </td>'+
+                                        '<td> '+ item[3] +' </td>'+
+                                        '<td> '+ item[4] +' </td>'+
+                                        '<td> '+ item[5] +' </td>'+
+                                      '</tr>';
+                                    $('#absencesTable').append(absencesTag);
+                        });
+                        }
+                        else{
+                            var absencesTag = '<tr>'+
+                                        '<td> '+ '-' +' </td>'+
+                                        '<td> '+ '-' +' </td>'+
+                                        '<td> '+ '-' +' </td>'+
+                                        '<td> '+ '-' +' </td>'+
+                                        '<td> '+ '-' +' </td>'+
+                                        '<td> '+ '-' +' </td>'+
+                                      '</tr>';
+                                    $('#absencesTable').append(absencesTag);
+                        }
+                        if (data[1] != '') {
+                        tardiness.forEach(item => {
+                            var tardinessTag = '<tr>'+
+                                        '<td> '+ item[0] +' </td>'+
+                                        '<td> '+ item[1] +' </td>'+
+                                        '<td> '+ item[2] +' </td>'+
+                                      '</tr>';
+                                      $('#tardinessTable').append(tardinessTag);
+                        });
+                        }
+                        else{
+                            var tardinessTag = '<tr>'+
+                                        '<td> '+ '-' +' </td>'+
+                                        '<td> '+ '-' +' </td>'+
+                                        '<td> '+ '-' +' </td>'+
+                                      '</tr>';
+                                      $('#tardinessTable').append(tardinessTag);
+                        }
+                        if (data[1] != '') {
+                        referrals.forEach(item => {
+                            var referralsTag = '<tr>'+
+                                        '<td> '+ item[0] +' </td>'+
+                                        '<td> '+ item[1] +' </td>'+
+                                        '<td> '+ item[2] +' </td>'+
+                                        '<td> '+ item[3] +' </td>'+
+                                      '</tr>';
+                                      $('#referralsTable').append(referralsTag);
+                        });
+                        }
+                        else{
+                            var referralsTag = '<tr>'+
+                                        '<td> '+ '-' +' </td>'+
+                                        '<td> '+ '-' +' </td>'+
+                                        '<td> '+ '-' +' </td>'+
+                                        '<td> '+'-' +' </td>'+
+                                      '</tr>';
+                                      $('#referralsTable').append(referralsTag);
+                        }
+
                     }
                 }
             )
     })
 })
 
+    $('#inputadviser').keyup(function(){
+        var value =$(this).val();
+        $('#adviser').text(value)
 
+    })
+    
 </script>
-{%endblock%}
+<style>
+    @media print{
+        .unprintable {
+            display: none;
+        }
+        #printable {
+            visibility: visible;
+        }
+    }
+</style>
+{%endblock%} 

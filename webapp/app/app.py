@@ -1,6 +1,7 @@
 import amarissedb
 import time
 import os
+import json
 import calendar
 from datetime import datetime
 from flask import Flask, render_template, request, redirect, url_for, session, escape, jsonify
@@ -10,16 +11,6 @@ from flask_mail import Mail, Message
 app = Flask(__name__)
 app.config['DEBUG'] = True
 app.config['TEMPLATES_AUTO_RELOAD'] = True
-
-
-mail = Mail(app)
-app.config['MAIL_SERVER']='smtp.gmail.com'
-app.config['MAIL_PORT']=465
-app.config['MAIL_USERNAME']='angularjohn@gmail.com'
-app.config['MAIL_PASSWORD']='rkbcilhgxocwutiw'
-app.config['MAIL_USE_TLS']=False
-app.config['MAIL_USE_SSL']=True
-mail = Mail(app)
 
 cnx = amarissedb.connect()
 cursor = cnx.cursor()
@@ -531,24 +522,26 @@ def skippedOSAReferral():
 
 @app.route('/levelsection')
 def levelsection():
-    cnx = amarissedb.connect()
-    cursor = cnx.cursor()
 
     cursor.execute('SELECT DISTINCT(year_level),section FROM students ORDER by year_level ASC')
     yearLevelSec = cursor.fetchall()
     return render_template('levelsection.html',yearLevelSec=yearLevelSec,grade1 = grade1,grade2 = grade2,grade3 = grade3,grade4 = grade4,grade5 = grade5,grade6 = grade6,grade7 = grade7,grade8 = grade8,grade9 = grade9,grade10 = grade10,grade11 = grade11,grade12 = grade12)
 
-@app.route('/sendcopy')
-def sendReport():
-        msg = Message('Hello', sender='angularjohn@gmail.com',recipients=['huynthilandeleon@gmail.com'])
-        msg.body = "the bird has flown"
-        mail.send(msg)
-        return "Sent"
-
 @app.route('/fetchreports/<yearLevelSec>/<selectedMonth>')
 def fetchreports(yearLevelSec,selectedMonth):
     absences = []
-    cursor.execute('SELECT students.full_name,students_absences.reason,students_absences.date_absent,students_absences.date_returned,students_absences.days_absent,students_absences.remarks FROM students JOIN students_absences ON students.id = students_absences.student_id  WHERE CONCAT(year_level,section) =%s AND MONTH(DATE(students_absences.date_absent))=%s',(yearLevelSec,selectedMonth,))
+    tardiness = []
+
+    cursor.execute('SELECT students.full_name,students_absences.reason,students_absences.date_absent,students_absences.date_returned,students_absences.days_absent,students_absences.remarks FROM students JOIN students_absences ON students.id = students_absences.student_id  WHERE CONCAT(year_level,section) =%s AND MONTH(DATE(students_absences.date_absent))=%s ORDER BY students.id ASC',(yearLevelSec,selectedMonth,))
     absences = cursor.fetchall()
-    return jsonify(absences)
+
+    cursor.execute('SELECT students.full_name,students_tardiness.tardiness_date,students_tardiness.tardiness_code FROM students JOIN students_tardiness ON students.id = students_tardiness.student_id WHERE CONCAT(year_level,section) =%s AND MONTH(DATE(students_tardiness.tardiness_date))=%s  ORDER BY students.id ASC',(yearLevelSec,selectedMonth,))
+    tardiness = cursor.fetchall()
+
+    cursor.execute('SELECT students.full_name,referrals.referral_type,referrals.referral_date,referrals.referral_count FROM students JOIN referrals ON students.id = referrals.student_id WHERE CONCAT(year_level,section) =%s AND MONTH(DATE(referrals.referral_date))=%s  ORDER BY students.id ASC',(yearLevelSec,selectedMonth,))
+    referrals = cursor.fetchall()
+
+    data = [absences,tardiness,referrals]
+
+    return jsonify(data)
 app.run()
