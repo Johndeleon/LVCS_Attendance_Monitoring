@@ -6,11 +6,13 @@
         <div class="container">
                 <br><br><br><br>
                 <div class="unprintable container btn-group">
-                    <div class="btn btn-warning" onclick="history.back(-1)" />Back</div>
-                    <div class="btn btn-warning" onclick="print()" />Print</div>
+                    <div class="btn btn-warning" onclick="history.back(-1)" >Back</div>
+                    <div class="btn btn-primary" onclick="print()" >Print</div>
+                    <div class="btn btn-success" data-toggle="modal" data-target="#sendMail">Send Copy To Teacher</div>
                 </div>
+        </div>
                 <br><br>
-                <div class="unprintable container">
+        <div class="unprintable container">
                 <table class="table table-striped">
                     <tr>
                         <th>
@@ -117,8 +119,52 @@
                 </div>
         </div>
         
+
+        <div class="modal" id="sendMail" tabindex="-1" role="dialog" aria-labelledby="">
+            <div class="modal-dialog" role="document">
+              <form action="send" method="POST" >
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                  <h5 class="modal-title" id="">Send Copy To</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                  </button>
+                  </div>
+
+                  <div class="modal-body">
+                    <div class="form-group">
+                       <label for="email">Email</label>
+                       <input type="email" name="email">
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="form-group">
+                           <label for="message">Message</label>
+                           <input type="textarea" name="text_body">
+                        </div>
+
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="file">Pdf report</label>
+                            <input type="file" name="pdf_report">
+                        </div>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Discard</button>
+                    <button type="submit" class="btn btn-info">Send</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+
         </div>
-        </div>
+
+
+
+<!-- Send form to teacher -->
             
 </div>
 

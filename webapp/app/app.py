@@ -6,11 +6,27 @@ import calendar
 from datetime import datetime
 from flask import Flask, render_template, request, redirect, url_for, session, escape, jsonify
 from flask_mail import Mail, Message
+import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.base import MIMEBase
+from email.mime.text import MIMEText
+from email import encoders
 
 
 app = Flask(__name__)
+mail = Mail(app)
+
 app.config['DEBUG'] = True
 app.config['TEMPLATES_AUTO_RELOAD'] = True
+app.config['MAIL_SERVER']='smtp.gmail.com'
+app.config['MAIL_PORT']=465
+app.config['MAIL_USERNAME']='angularjohn@gmail.com'
+app.config['MAIL_PASSWORD']='ofwplzunjdxkskvr'
+app.config['MAIL_USE_TLS']=False
+app.config['MAIL_USE_SSL']=True
+mail = Mail(app)
+
+
 
 cnx = amarissedb.connect()
 cursor = cnx.cursor()
@@ -522,6 +538,8 @@ def skippedOSAReferral():
 
 @app.route('/levelsection')
 def levelsection():
+    cnx = amarissedb.connect()
+    cursor = cnx.cursor()
 
     cursor.execute('SELECT DISTINCT(year_level),section FROM students ORDER by year_level ASC')
     yearLevelSec = cursor.fetchall()
@@ -529,6 +547,9 @@ def levelsection():
 
 @app.route('/fetchreports/<yearLevelSec>/<selectedMonth>')
 def fetchreports(yearLevelSec,selectedMonth):
+    cnx = amarissedb.connect()
+    cursor = cnx.cursor()
+
     absences = []
     tardiness = []
 
@@ -544,4 +565,38 @@ def fetchreports(yearLevelSec,selectedMonth):
     data = [absences,tardiness,referrals]
 
     return jsonify(data)
+
+@app.route('/send',methods=['POST'])
+def send():
+    email = request.form['email']
+    message = request.form['text_body']
+    attachment = request.form['pdf_report']
+    
+    server = smtplib.SMTP("smtp.gmail.com",587)
+    server.ehlo()
+    server.starttls()
+    server.ehlo()
+    server.login("angularjohn@gmail.com", "ofwplzunjdxkskvr")
+
+
+    fromaddr = "angularjohn@gmail.com"
+    toaddr = email
+    msg = MIMEMultipart()
+    msg['From'] = fromaddr
+    msg['To'] = toaddr
+    msg['Subject'] = "Attendance Monitoring"
+    body = "Attendance report PDF"
+    msg.attach(MIMEText(body, 'plain'))
+    part = MIMEBase('application', "octet-stream")
+    part.set_payload(open(attachment, "rb").read())
+    encoders.encode_base64(part)
+
+    part.add_header('Content-Disposition', 'attachment; filename="report.pdf"')
+
+    msg.attach(part)
+    text = msg.as_string()
+    server.sendmail(fromaddr, toaddr, text)
+
+    return "sent"
+
 app.run()
