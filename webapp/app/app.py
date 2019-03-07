@@ -570,7 +570,7 @@ def fetchreports(yearLevelSec,selectedMonth):
 def send():
     email = request.form['email']
     message = request.form['text_body']
-    attachment = request.form['pdf_report']
+    attachment = request.files['pdf_report']
     
     server = smtplib.SMTP("smtp.gmail.com",587)
     server.ehlo()
@@ -588,15 +588,15 @@ def send():
     body = "Attendance report PDF"
     msg.attach(MIMEText(body, 'plain'))
     part = MIMEBase('application', "octet-stream")
-    part.set_payload(open(attachment, "rb").read())
+    part.set_payload(attachment.read())
     encoders.encode_base64(part)
 
-    part.add_header('Content-Disposition', 'attachment; filename="report.pdf"')
+    part.add_header('Content-Disposition', 'attachment; filename= "report"')
 
     msg.attach(part)
     text = msg.as_string()
     server.sendmail(fromaddr, toaddr, text)
 
-    return "sent"
+    return redirect('/levelsection')
 
 app.run()

@@ -122,7 +122,7 @@
 
         <div class="modal" id="sendMail" tabindex="-1" role="dialog" aria-labelledby="">
             <div class="modal-dialog" role="document">
-              <form action="send" method="POST" >
+              <form action="send" method="POST"  enctype="multipart/form-data">
                 <div class="modal-content">
 
                   <div class="modal-header">
@@ -135,19 +135,19 @@
                   <div class="modal-body">
                     <div class="form-group">
                        <label for="email">Email</label>
-                       <input type="email" name="email">
+                       <input type="email" name="email" class="form-control" required>
                     </div>
 
                     <div class="modal-body">
                         <div class="form-group">
                            <label for="message">Message</label>
-                           <input type="textarea" name="text_body">
+                           <input type="textarea" class="form-control" name="text_body" required>
                         </div>
 
                     <div class="modal-body">
                         <div class="form-group">
                             <label for="file">Pdf report</label>
-                            <input type="file" name="pdf_report">
+                            <input type="file" id="pdf_report" class="pdf_report" name="pdf_report" class="form-control" required>
                         </div>
 
                   <div class="modal-footer">
